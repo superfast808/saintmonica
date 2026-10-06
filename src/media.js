@@ -123,16 +123,29 @@ function refresh() {
   const seenBulletins = new Set();
   const bulletins = files
     .filter(file => /bulletin/i.test(path.basename(file)) && /\.pdf$/i.test(file))
-    .map(file => ({
-      file,
-      url: webPath(file),
-      title: prettyFileName(file)
-        .replace(/\s+\d+$/,'')
-        .replace(/\bFacebook\b/ig,'')
-        .replace(/\s+/g,' ')
-        .trim(),
-      dateKey: bulletinDateKey(file)
-    }))
+    .map(file => {
+      const relative = rel(file);
+      const folderDate = relative.match(/(^|\/)(20\d{2})\/(0?[1-9]|1[0-2])\//);
+      const year = folderDate ? Number(folderDate[2]) : Number((relative.match(/20\d{2}/) || [])[0] || 0);
+      const month = folderDate ? Number(folderDate[3]) : 0;
+      const monthLabel = month
+        ? new Intl.DateTimeFormat('en-GB', { month: 'short', timeZone: 'UTC' }).format(new Date(Date.UTC(2024, month - 1, 1)))
+        : '';
+
+      return {
+        file,
+        url: webPath(file),
+        title: prettyFileName(file)
+          .replace(/\s+\d+$/,'')
+          .replace(/\bFacebook\b/ig,'')
+          .replace(/\s+/g,' ')
+          .trim(),
+        dateKey: bulletinDateKey(file),
+        year,
+        month,
+        monthLabel
+      };
+    })
     .filter(item => {
       const key = item.title.toLowerCase().replace(/\s+/g,' ').trim();
       if (seenBulletins.has(key)) return false;
