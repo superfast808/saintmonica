@@ -1,0 +1,14 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <article class="article-page">
+    <header>
+      <p class="eyebrow">Parish news</p>
+      <h1><%= post.title %></h1>
+      <% if(post.excerpt){ %><p class="article-intro"><%= post.excerpt %></p><% } %>
+    </header>
+    <div class="article-body"><%- post.body_html %></div>
+    <footer><a href="/news">← Back to parish news</a></footer>
+  </article>
+</main>
+<%- include('partials/footer') %>
