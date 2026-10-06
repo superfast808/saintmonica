@@ -1,0 +1,37 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <section class="page-hero scenic-hero">
+    <div class="page-hero-copy">
+      <p class="eyebrow">Parish Hall</p>
+      <h1>A flexible venue for functions and community events.</h1>
+      <p>St Monica’s Hall offers two licensed function rooms, parking and straightforward access in Coatbridge.</p>
+      <div class="hero-actions"><a class="button button-gold" href="tel:<%= settings.hall_phone.replace(/\s/g,'') %>">Call about a booking</a></div>
+    </div>
+    <div class="page-hero-art"><% if(meta.image){ %><img src="<%= meta.image %>" alt="" aria-hidden="true"><% } %></div>
+  </section>
+
+  <section class="section hall-grid">
+    <div>
+      <p class="eyebrow">The space</p>
+      <h2>Two rooms. Plenty of flexibility.</h2>
+      <p>The hall complex has a larger function room with capacity for approximately 140 people and a dance floor in the centre, plus a smaller room with capacity for around 80 people.</p>
+      <p>The smaller room is often used for buffet service. Both rooms have a bar, the hall is fully licensed, and there is ample parking and easy access.</p>
+    </div>
+    <div class="hall-facts">
+      <div><strong>140</strong><span>Approx. capacity<br>larger room</span></div>
+      <div><strong>80</strong><span>Approx. capacity<br>smaller room</span></div>
+      <div><strong>2</strong><span>Licensed<br>function rooms</span></div>
+      <div><strong>✓</strong><span>Parking &<br>easy access</span></div>
+    </div>
+  </section>
+
+  <section class="contact-band">
+    <div><p class="eyebrow">Hall enquiries</p><h2>Interested in a booking?</h2><p>Contact the hall directly for availability, prices and booking information.</p></div>
+    <div class="contact-band-actions">
+      <a class="button button-gold" href="tel:<%= settings.hall_phone.replace(/\s/g,'') %>"><%= settings.hall_phone %></a>
+      <a href="mailto:<%= settings.hall_email %>"><%= settings.hall_email %></a>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>
