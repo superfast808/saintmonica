@@ -1,0 +1,40 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <section class="page-hero scenic-hero">
+    <div class="page-hero-copy">
+      <p class="eyebrow">Our parish</p>
+      <h1>Faith, welcome and community in Coatbridge.</h1>
+      <p>St Monica’s is a Roman Catholic parish in the Diocese of Motherwell. We gather to celebrate the Eucharist, grow in faith and serve one another and our wider community.</p>
+    </div>
+    <div class="page-hero-art"><% if(meta.image){ %><img src="<%= meta.image %>" alt="" aria-hidden="true"><% } %></div>
+  </section>
+
+  <section class="story-grid section">
+    <div class="story-kicker"><p class="eyebrow">Our mission</p><strong class="big-word">Together.</strong></div>
+    <div class="story-copy">
+      <h2>Proclaiming the Good News in words and actions.</h2>
+      <p>Our parish exists to help people develop a personal relationship with Jesus Christ through prayer, the celebration of Mass and the Sacraments, and life within a welcoming Christian community.</p>
+      <p>Whether St Monica’s has been your spiritual home for years, you have recently moved to Coatbridge, or you are simply curious about the Catholic faith, you are welcome to join us.</p>
+    </div>
+  </section>
+
+  <section class="profile-section section">
+    <div class="profile-photo"><% if(media.priest){ %><img src="<%= media.priest %>" alt="<%= settings.parish_priest %>" loading="lazy"><% } else { %><div class="profile-placeholder"><span>SM</span></div><% } %></div>
+    <div class="profile-copy">
+      <p class="eyebrow">Parish priest</p>
+      <h2><%= settings.parish_priest %></h2>
+      <p>Fr Ghislain was born in 1972 in the Democratic Republic of Congo. Inspired by the Xaverian Missionaries, he entered seminary in 1995 and was ordained a priest on 2 October 2005.</p>
+      <p>His ministry has included mission work and teaching in Sierra Leone before returning to the United Kingdom, where he served at Saint Columbkille’s in Rutherglen. He is now Parish Priest of St Monica’s.</p>
+      <a class="button" href="/contact">Contact the parish</a>
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="section-inner">
+      <div class="split-heading"><div><p class="eyebrow">Part of something wider</p><h2>Diocese of Motherwell.</h2></div><p>St Monica’s belongs to the Roman Catholic Diocese of Motherwell, serving Catholic communities throughout Lanarkshire.</p></div>
+      <a class="button button-light dark-cta" href="<%= settings.diocese_url %>" target="_blank" rel="noopener">Visit the Diocese website ↗</a>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>
