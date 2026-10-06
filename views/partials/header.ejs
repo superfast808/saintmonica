@@ -25,7 +25,7 @@
     <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
 
     <div class="nav-group <%= path === '/mass-times' || path === '/sacraments' ? 'active' : '' %>" data-nav-group>
-      <button class="nav-trigger" type="button" data-nav-trigger aria-expanded="false">Mass & Sacraments <span>⌄</span></button>
+      <button class="nav-trigger" type="button" data-nav-trigger aria-expanded="false">Mass & Sacraments <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5"/></svg></span></button>
       <div class="nav-dropdown">
         <a href="/mass-times"><strong>Mass & prayer times</strong><small>Sunday, weekday, Adoration and Reconciliation</small></a>
         <a href="/sacraments"><strong>The Sacraments</strong><small>Baptism, Communion, Confirmation, Marriage and more</small></a>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="nav-group <%= path === '/parish' || path === '/parish-hall' || path === '/gallery' ? 'active' : '' %>" data-nav-group>
-      <button class="nav-trigger" type="button" data-nav-trigger aria-expanded="false">Our Parish <span>⌄</span></button>
+      <button class="nav-trigger" type="button" data-nav-trigger aria-expanded="false">Our Parish <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 4.5 6 7.5 9 4.5"/></svg></span></button>
       <div class="nav-dropdown">
         <a href="/parish"><strong>Parish & clergy</strong><small>Our mission and parish priest</small></a>
         <a href="/parish-hall"><strong>Parish Hall</strong><small>Functions, facilities and bookings</small></a>
