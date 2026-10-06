@@ -40,6 +40,14 @@ const CURATED = {
 const EXCLUDED_MEDIA = /(?:st[_-]?col(?:umbkille|_ps)|columbkille|rutherglen|trinity[_-]?high|patron_saint_columbkille|carfin[_-](?:church|parish)|first_st_columbkille)/i;
 const NON_PHOTO_MEDIA = /(?:logo|icon|schedule|bulletin|pdf|screenshot|screen-shot|word-cloud|clipart|poster|rota|alert|raffle|gift-aid|weather|cancelled|facebook|social-media|twitter)/i;
 
+const APPROVED_HALL_PHOTOS = [
+  '/images/hall/main-room.jpg',
+  '/images/hall/celebration-setup.jpg',
+  '/images/hall/bouncy-castle-wide.jpg',
+  '/images/hall/bouncy-castle-room.jpg',
+  '/images/hall/bouncy-castle.jpg'
+];
+
 function walk(dir, results = []) {
   if (!fs.existsSync(dir)) return results;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -184,8 +192,7 @@ function mediaSet() {
   const community = markUsed(used, firstExisting(CURATED.community))
     || choose(images, /community|parish|group|event/, used);
 
-  const hall = markUsed(used, firstExisting(CURATED.hall))
-    || choose(images, /hall|function|party/, used);
+  const hall = APPROVED_HALL_PHOTOS[0];
 
   const priest = markUsed(used, firstExisting(CURATED.priest))
     || choose(images, /ghislain|ghis|mulumanzi|priest|father|clergy/, used);
@@ -211,7 +218,7 @@ function mediaSet() {
     ...images.filter(item => !used.has(item.url)).map(item => item.url)
   ])].slice(0, 12);
 
-  return { hero, mission, sacraments, community, hall, priest, saint, gallery };
+  return { hero, mission, sacraments, community, hall, hallGallery: APPROVED_HALL_PHOTOS, priest, saint, gallery };
 }
 
 function bulletins(limit) {
