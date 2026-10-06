@@ -14,6 +14,18 @@
         <span class="brand-copy"><strong>St Monica’s</strong><small>Catholic Church · Coatbridge</small></span>
       </a>
       <p><%= settings.footer_text %></p>
+      <% if(settings.facebook_url || settings.youtube_url || settings.x_url){ %>
+      <div class="footer-socials" aria-label="St Monica’s social media">
+        <% if(settings.facebook_url){ %>
+          <a href="<%= settings.facebook_url %>" target="_blank" rel="noopener me" aria-label="St Monica’s Parish on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 22v-9h3l.45-3.5H13.7V7.27c0-1.01.28-1.7 1.74-1.7h1.86V2.44c-.32-.04-1.43-.14-2.72-.14-2.7 0-4.55 1.65-4.55 4.68V9.5H7v3.5h3.03v9h3.67Z"/></svg>
+            <span>Facebook</span>
+          </a>
+        <% } %>
+        <% if(settings.youtube_url){ %><a href="<%= settings.youtube_url %>" target="_blank" rel="noopener me"><span>YouTube</span></a><% } %>
+        <% if(settings.x_url){ %><a href="<%= settings.x_url %>" target="_blank" rel="noopener me"><span>X</span></a><% } %>
+      </div>
+      <% } %>
     </div>
     <div>
       <h3>Parish</h3>
