@@ -1,0 +1,125 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <section class="hero hero-photo">
+    <% if(media.hero){ %><img class="hero-image" src="<%= media.hero %>" alt="" fetchpriority="high"><% } %>
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">St Monica’s Catholic Church · Coatbridge</p>
+      <h1><%= settings.hero_title %></h1>
+      <p><%= settings.hero_text %></p>
+      <div class="hero-actions">
+        <a class="button button-gold" href="/mass-times">Mass times</a>
+        <a class="text-link text-link-light" href="/contact">Get in touch <span>→</span></a>
+      </div>
+    </div>
+    <div class="hero-service-card">
+      <span class="service-kicker">This week at St Monica’s</span>
+      <div><small>Sunday Masses</small><strong><%= settings.sunday_masses %></strong></div>
+      <div><small>Weekday Mass</small><strong><%= settings.weekday_masses %></strong></div>
+      <a href="/bulletins">Read the latest bulletin →</a>
+    </div>
+  </section>
+
+  <section class="marquee-band" aria-label="Parish life">
+    <span>Faith</span><i></i><span>Welcome</span><i></i><span>Prayer</span><i></i><span>Sacraments</span><i></i><span>Community</span>
+  </section>
+
+  <section class="story-grid section">
+    <div class="story-kicker">
+      <p class="eyebrow">Our parish community</p>
+      <strong class="big-word">Welcome.</strong>
+    </div>
+    <div class="story-copy">
+      <h2>A place to encounter Christ and grow together in faith.</h2>
+      <p>We strive to proclaim the Good News of Jesus Christ in our words and actions. Our church is a consecrated place where all are welcome to pray, celebrate Mass and the Sacraments, and share in the life of the parish.</p>
+      <div class="story-links"><a href="/parish">Discover our parish →</a><a href="/sacraments">Explore the Sacraments →</a></div>
+    </div>
+  </section>
+
+  <section class="image-feature">
+    <div class="image-feature-media">
+      <% if(media.mission){ %><img src="<%= media.mission %>" alt="St Monica’s Parish" loading="lazy"><% } %>
+    </div>
+    <div class="image-feature-copy">
+      <p class="eyebrow">Worship & prayer</p>
+      <h2>Come and celebrate with us.</h2>
+      <p>From Sunday Mass to weekday prayer and Reconciliation, the rhythm of parish life centres on worship and the Sacraments.</p>
+      <div class="mini-schedule">
+        <div><span>Sunday</span><strong>10am · 12 noon · 5pm</strong></div>
+        <div><span>Saturday Vigil</span><strong>4pm</strong></div>
+        <div><span>Weekdays</span><strong>10am</strong></div>
+      </div>
+      <a class="button" href="/mass-times">All Mass & prayer times</a>
+    </div>
+  </section>
+
+  <section class="quick-section section">
+    <div class="split-heading">
+      <div><p class="eyebrow">Here when you need us</p><h2>Parish life, made easier to find.</h2></div>
+      <p>Everything people most often need from the parish website, without hunting through menus.</p>
+    </div>
+    <div class="quick-grid">
+      <a href="/sacraments"><span>01</span><h3>Sacraments</h3><p>Baptism, First Communion, Confirmation, Marriage, Reconciliation and pastoral care.</p><strong>Find out more →</strong></a>
+      <a href="/bulletins"><span>02</span><h3>Weekly bulletins</h3><p>Mass changes, notices, parish events and the latest information in one place.</p><strong>Read bulletins →</strong></a>
+      <a href="/parish-hall"><span>03</span><h3>Parish Hall</h3><p>Two licensed function rooms, parking and flexible facilities for local events.</p><strong>Hall details →</strong></a>
+      <a href="/contact"><span>04</span><h3>Parish office</h3><p>Contact the parish about certificates, Sacraments, pastoral matters or general enquiries.</p><strong>Contact us →</strong></a>
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="section-inner">
+      <div class="split-heading">
+        <div><p class="eyebrow">Prayer & Sacraments</p><h2>At the heart of parish life.</h2></div>
+        <p>The Church accompanies us through life’s joys, decisions, sorrows and new beginnings.</p>
+      </div>
+      <div class="process-grid">
+        <div><span>01</span><h3>Baptism</h3><p>Welcoming children and adults into the life of the Church.</p></div>
+        <div><span>02</span><h3>Eucharist</h3><p>Gathering as one parish around the table of the Lord.</p></div>
+        <div><span>03</span><h3>Marriage</h3><p>Preparing couples for the Sacrament of Marriage and family life.</p></div>
+        <div><span>04</span><h3>Pastoral care</h3><p>Prayer, Reconciliation, Anointing and support when it matters.</p></div>
+      </div>
+      <a class="button button-light dark-cta" href="/sacraments">Explore the Sacraments</a>
+    </div>
+  </section>
+
+  <section class="section updates-section">
+    <div class="split-heading">
+      <div><p class="eyebrow">Latest</p><h2>News & bulletins.</h2></div>
+      <div class="heading-actions"><a href="/news">All news →</a><a href="/bulletins">All bulletins →</a></div>
+    </div>
+    <div class="updates-grid">
+      <div class="news-panel">
+        <h3>Parish news</h3>
+        <% if(latestNews.length){ %>
+          <% latestNews.forEach(post => { %>
+            <a class="news-row" href="/news/<%= post.slug %>"><span><%= post.title %></span><small><%= post.excerpt || 'Read parish update' %></small><b>→</b></a>
+          <% }) %>
+        <% } else { %>
+          <div class="empty-note"><strong>Parish updates will appear here.</strong><p>For current notices, please see the latest bulletin.</p></div>
+        <% } %>
+      </div>
+      <div class="bulletin-panel">
+        <h3>Recent bulletins</h3>
+        <% if(latestBulletins.length){ %>
+          <% latestBulletins.forEach(item => { %>
+            <a class="bulletin-row" href="<%= item.url %>" target="_blank"><span class="pdf-mark">PDF</span><span><%= item.title %></span><b>↗</b></a>
+          <% }) %>
+        <% } else { %><p>No bulletin PDFs were found in the imported media library.</p><% } %>
+      </div>
+    </div>
+  </section>
+
+  <% if(media.gallery && media.gallery.length >= 3){ %>
+  <section class="gallery-strip">
+    <% media.gallery.slice(0,5).forEach((image,index) => { %><a href="/gallery" class="gallery-tile gallery-tile-<%= index + 1 %>"><img src="<%= image %>" alt="" loading="lazy"></a><% }) %>
+    <div class="gallery-label"><p class="eyebrow">Parish life</p><strong>Our community in pictures</strong><a href="/gallery">View gallery →</a></div>
+  </section>
+  <% } %>
+
+  <section class="contact-band">
+    <div><p class="eyebrow">Need to speak to the parish?</p><h2>We’re here to help.</h2><p><%= settings.contact_intro %></p></div>
+    <div class="contact-band-actions"><a class="button button-gold" href="/contact">Contact the parish</a><a href="tel:<%= settings.phone.replace(/\s/g,'') %>"><%= settings.phone %></a></div>
+  </section>
+</main>
+<%- include('partials/footer') %>
