@@ -1,6 +1,8 @@
 require('dotenv/config');
 
+const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const express = require('express');
 const helmet = require('helmet');
 const compression = require('compression');
@@ -9,10 +11,11 @@ const rateLimit = require('express-rate-limit');
 const bcrypt = require('bcryptjs');
 const sanitizeHtml = require('sanitize-html');
 const nodemailer = require('nodemailer');
+const multer = require('multer');
 
 const { version } = require('./package.json');
 const { db, settingsObject, updateSettings, ensureInitialAdmin } = require('./src/db');
-const { uploadsRoot, mediaSet, bulletins, gallery } = require('./src/media');
+const { uploadsRoot, mediaSet, bulletins: legacyBulletins, gallery } = require('./src/media');
 const {
   signAdmin,
   readAdmin,
@@ -26,6 +29,23 @@ const app = express();
 const PORT = Number(process.env.PORT || 8080);
 const isProd = process.env.NODE_ENV === 'production';
 const configuredBaseUrl = String(process.env.BASE_URL || ('http://localhost:' + PORT)).replace(/\/$/, '');
+
+const bulletinDir = path.join(__dirname, 'data', 'bulletins');
+fs.mkdirSync(bulletinDir, { recursive: true });
+
+const bulletinUpload = multer({
+  storage: multer.diskStorage({
+    destination: (req, file, cb) => cb(null, bulletinDir),
+    filename: (req, file, cb) => cb(null, Date.now() + '-' + crypto.randomBytes(8).toString('hex') + '.pdf')
+  }),
+  limits: { fileSize: 20 * 1024 * 1024, files: 1 },
+  fileFilter: (req, file, cb) => {
+    const ext = path.extname(String(file.originalname || '')).toLowerCase();
+    const mime = String(file.mimetype || '').toLowerCase();
+    const acceptableMime = mime === 'application/pdf' || mime === 'application/octet-stream';
+    cb(null, ext === '.pdf' && acceptableMime);
+  }
+});
 
 if (isProd) {
   const sessionSecret = String(process.env.SESSION_SECRET || '');
@@ -66,6 +86,11 @@ app.use(express.urlencoded({ extended: false, limit: '256kb' }));
 app.use(express.json({ limit: '256kb' }));
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: isProd ? '1h' : 0, immutable: false }));
 app.use('/wp-content/uploads', express.static(uploadsRoot, { maxAge: isProd ? '7d' : 0, immutable: false }));
+app.use('/media/bulletins', express.static(bulletinDir, {
+  maxAge: isProd ? '1d' : 0,
+  immutable: false,
+  fallthrough: false
+}));
 
 app.use((req, res, next) => {
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=()');
@@ -121,6 +146,80 @@ function meta(title, description, image) {
 
 function cleanText(value, max = 4000) {
   return String(value || '').replace(/\0/g, '').trim().slice(0, max);
+}
+
+function validBulletinDate(value) {
+  const date = String(value || '');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return false;
+  const parsed = new Date(date + 'T12:00:00Z');
+  return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date;
+}
+
+function bulletinDateParts(date) {
+  const [year, month] = String(date || '').split('-').map(Number);
+  const monthLabel = month
+    ? new Intl.DateTimeFormat('en-GB', { month: 'short', timeZone: 'UTC' })
+        .format(new Date(Date.UTC(2024, month - 1, 1)))
+    : '';
+  return { year: year || 0, month: month || 0, monthLabel };
+}
+
+function defaultBulletinTitle(date) {
+  const formatted = new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'
+  }).format(new Date(date + 'T12:00:00Z'));
+  return 'Bulletin — ' + formatted;
+}
+
+function verifyPdf(filePath) {
+  try {
+    const fd = fs.openSync(filePath, 'r');
+    const signature = Buffer.alloc(5);
+    fs.readSync(fd, signature, 0, 5, 0);
+    fs.closeSync(fd);
+    return signature.toString('ascii') === '%PDF-';
+  } catch {
+    return false;
+  }
+}
+
+function safeUnlink(filePath) {
+  try { fs.unlinkSync(filePath); } catch {}
+}
+
+function managedBulletins(includeUnpublished = false) {
+  const rows = includeUnpublished
+    ? db.prepare('SELECT * FROM bulletins ORDER BY bulletin_date DESC,id DESC').all()
+    : db.prepare('SELECT * FROM bulletins WHERE published=1 ORDER BY bulletin_date DESC,id DESC').all();
+
+  return rows.map(row => {
+    const parts = bulletinDateParts(row.bulletin_date);
+    return {
+      ...row,
+      published: Boolean(row.published),
+      bulletinDate: row.bulletin_date,
+      url: '/media/bulletins/' + encodeURIComponent(row.filename),
+      year: parts.year,
+      month: parts.month,
+      monthLabel: parts.monthLabel,
+      dateKey: Number(row.bulletin_date.replace(/-/g, '')),
+      sortKey: Number(row.bulletin_date.replace(/-/g, '')),
+      managed: true
+    };
+  });
+}
+
+function publicBulletins() {
+  const managed = managedBulletins(false);
+  const legacy = legacyBulletins().map(item => ({
+    ...item,
+    sortKey: Number(item.dateKey || 0) * 100,
+    managed: false
+  }));
+
+  return [...managed, ...legacy].sort((a, b) =>
+    Number(b.sortKey || 0) - Number(a.sortKey || 0) || String(b.title).localeCompare(String(a.title))
+  );
 }
 
 function slugify(value) {
@@ -187,7 +286,7 @@ app.get('/', (req, res) => {
   res.render('home', {
     media: chosenMedia,
     latestNews: latestPosts(3),
-    latestBulletins: bulletins(4),
+    latestBulletins: publicBulletins().slice(0, 4),
     meta: meta(
       "St Monica's Catholic Church, Coatbridge",
       'Mass times, parish news, Sacraments, bulletins and contact information for St Monica’s Catholic Church in Coatbridge.',
@@ -248,7 +347,7 @@ app.get('/parish-hall', (req, res) => {
 });
 
 app.get('/bulletins', (req, res) => {
-  const archive = bulletins();
+  const archive = publicBulletins();
   const grouped = new Map();
 
   for (const item of archive) {
@@ -386,10 +485,14 @@ app.post('/admin/logout', requireAdmin, requireCsrf, (req, res) => {
 app.get('/admin', requireAdmin, (req, res) => {
   const posts = db.prepare('SELECT * FROM posts ORDER BY created_at DESC,id DESC LIMIT 30').all();
   const enquiries = db.prepare('SELECT * FROM enquiries ORDER BY created_at DESC,id DESC LIMIT 50').all();
+  const managedBulletinList = managedBulletins(true);
   res.render('admin', {
     csrf: req.admin.csrf,
     posts,
     enquiries,
+    bulletins: managedBulletinList,
+    legacyBulletinCount: legacyBulletins().length,
+    bulletinStatus: String(req.query.bulletin || ''),
     mediaChoices: gallery(16),
     smtpReady: Boolean(smtpConfig().host && smtpConfig().to),
     meta: { title: 'Parish CMS | St Monica’s', noindex: true }
@@ -406,6 +509,63 @@ const editableSettings = [
 app.post('/admin/settings', requireAdmin, requireCsrf, (req, res) => {
   updateSettings(req.body, editableSettings);
   res.redirect('/admin#settings');
+});
+
+
+app.post('/admin/bulletins', requireAdmin, bulletinUpload.single('pdf'), (req, res, next) => {
+  const supplied = String((req.body && req.body.csrf) || '');
+  if (supplied !== req.admin.csrf) {
+    if (req.file) safeUnlink(req.file.path);
+    return res.status(403).send('Invalid security token.');
+  }
+  next();
+}, (req, res) => {
+  const date = cleanText(req.body.bulletin_date, 10);
+  const title = cleanText(req.body.title, 180);
+  const published = req.body.published === '1' ? 1 : 0;
+
+  if (!req.file) return res.redirect('/admin?bulletin=file-required#bulletins');
+  if (!validBulletinDate(date)) {
+    safeUnlink(req.file.path);
+    return res.redirect('/admin?bulletin=date-invalid#bulletins');
+  }
+  if (!verifyPdf(req.file.path)) {
+    safeUnlink(req.file.path);
+    return res.redirect('/admin?bulletin=pdf-invalid#bulletins');
+  }
+
+  db.prepare('INSERT INTO bulletins(title,bulletin_date,filename,original_name,published) VALUES(?,?,?,?,?)')
+    .run(title || defaultBulletinTitle(date), date, req.file.filename, cleanText(req.file.originalname, 240), published);
+
+  res.redirect('/admin?bulletin=added#bulletins');
+});
+
+app.post('/admin/bulletins/:id/update', requireAdmin, requireCsrf, (req, res) => {
+  const id = Number(req.params.id);
+  const row = db.prepare('SELECT * FROM bulletins WHERE id=?').get(id);
+  if (!row) return res.status(404).send('Bulletin not found.');
+
+  const date = cleanText(req.body.bulletin_date, 10);
+  const title = cleanText(req.body.title, 180);
+  if (!validBulletinDate(date) || !title) {
+    return res.redirect('/admin?bulletin=update-invalid#bulletins');
+  }
+
+  db.prepare('UPDATE bulletins SET title=?,bulletin_date=?,published=?,updated_at=CURRENT_TIMESTAMP WHERE id=?')
+    .run(title, date, req.body.published === '1' ? 1 : 0, id);
+
+  res.redirect('/admin?bulletin=updated#bulletins');
+});
+
+app.post('/admin/bulletins/:id/delete', requireAdmin, requireCsrf, (req, res) => {
+  const id = Number(req.params.id);
+  const row = db.prepare('SELECT * FROM bulletins WHERE id=?').get(id);
+  if (!row) return res.redirect('/admin?bulletin=missing#bulletins');
+
+  db.prepare('DELETE FROM bulletins WHERE id=?').run(id);
+  safeUnlink(path.join(bulletinDir, path.basename(row.filename)));
+
+  res.redirect('/admin?bulletin=deleted#bulletins');
 });
 
 app.post('/admin/news', requireAdmin, requireCsrf, (req, res) => {
@@ -436,6 +596,16 @@ app.post('/admin/news/:id/delete', requireAdmin, requireCsrf, (req, res) => {
 app.post('/admin/enquiries/:id/read', requireAdmin, requireCsrf, (req, res) => {
   db.prepare('UPDATE enquiries SET read_at=COALESCE(read_at,CURRENT_TIMESTAMP) WHERE id=?').run(Number(req.params.id));
   res.redirect('/admin#enquiries');
+});
+
+app.use((err, req, res, next) => {
+  if (err instanceof multer.MulterError) {
+    if (req.file && req.file.path) safeUnlink(req.file.path);
+    if (req.path.startsWith('/admin/bulletins')) {
+      return res.redirect('/admin?bulletin=' + (err.code === 'LIMIT_FILE_SIZE' ? 'too-large' : 'upload-error') + '#bulletins');
+    }
+  }
+  next(err);
 });
 
 app.use((req, res) => {
