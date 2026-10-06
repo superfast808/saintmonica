@@ -1,0 +1,38 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <section class="page-hero scenic-hero">
+    <div class="page-hero-copy">
+      <p class="eyebrow"><%= page.eyebrow %></p>
+      <h1><%= page.title %></h1>
+      <p><%= page.intro %></p>
+    </div>
+    <div class="page-hero-art">
+      <% const hero = meta.image || media.hero; %>
+      <% if(hero){ %><img src="<%= hero %>" alt="" aria-hidden="true"><% } %>
+    </div>
+  </section>
+
+  <section class="section content-section">
+    <div class="content-intro">
+      <p class="eyebrow">St Monica’s Parish</p>
+      <h2><%= page.title %></h2>
+      <% if(page.note){ %><p><%= page.note %></p><% } %>
+    </div>
+    <div class="content-cards">
+      <% page.sections.forEach((section,index) => { %>
+        <article>
+          <span><%= String(index + 1).padStart(2,'0') %></span>
+          <h3><%= section.title %></h3>
+          <p><%= section.body %></p>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+
+  <section class="contact-band">
+    <div><p class="eyebrow">Questions?</p><h2>Speak to the parish.</h2><p>For pastoral or Sacramental matters, the parish office will help you with the next step.</p></div>
+    <div class="contact-band-actions"><a class="button button-gold" href="/contact">Contact us</a><a href="tel:<%= settings.phone.replace(/\s/g,'') %>"><%= settings.phone %></a></div>
+  </section>
+</main>
+<%- include('partials/footer') %>
