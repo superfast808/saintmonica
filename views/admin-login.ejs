@@ -1,0 +1,23 @@
+<%- include('partials/head') %>
+<main class="admin-login-shell">
+  <section class="admin-login-card">
+    <a class="brand admin-brand" href="/">
+      <span class="brand-mark" aria-hidden="true"><i></i><b>SM</b></span>
+      <span class="brand-copy"><strong>St Monica’s</strong><small>Parish website administration</small></span>
+    </a>
+    <div>
+      <p class="eyebrow">Secure administration</p>
+      <h1>Sign in</h1>
+      <p>Manage parish contact details, Mass times, homepage content and news.</p>
+    </div>
+    <% if(error){ %><div class="form-error" role="alert"><%= error %></div><% } %>
+    <form method="post" action="/admin/login" class="contact-form">
+      <label><span>Email address</span><input type="email" name="email" autocomplete="username" required></label>
+      <label><span>Password</span><input type="password" name="password" autocomplete="current-password" required></label>
+      <button class="button button-gold" type="submit">Sign in</button>
+    </form>
+    <a class="admin-back" href="/">← Back to website</a>
+  </section>
+</main>
+</body>
+</html>
