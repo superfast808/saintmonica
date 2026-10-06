@@ -1,0 +1,29 @@
+{
+  "name": "saint-monica-parish",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modern website and lightweight parish CMS for St Monica's Catholic Church, Coatbridge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node --watch server.js",
+    "check": "node --check server.js && node --check src/db.js && node --check src/auth.js && node --check src/media.js && node --check public/js/site.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.8.1",
+    "compression": "^1.7.5",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.10.0",
+    "sanitize-html": "^2.14.0"
+  }
+}
