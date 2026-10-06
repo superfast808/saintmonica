@@ -20,8 +20,8 @@ db.exec([
 const defaults = {
   site_name: "St Monica's Parish",
   site_strapline: 'Catholic Church · Coatbridge',
-  hero_title: 'A parish rooted in faith, welcome and community.',
-  hero_text: 'Welcome to St Monica’s Catholic Church in Coatbridge. Join us for Mass, prayer, the Sacraments and the life of our parish community.',
+  hero_title: 'Welcome to St Monica’s.',
+  hero_text: 'A Catholic parish in Coatbridge, gathering for Mass, prayer and the Sacraments, and serving our community with faith, hope and welcome.',
   address: 'Sharp Avenue, Coatbridge ML5 5RP, Scotland',
   phone: '01236 421750',
   email: 'stmonica@rcdom.org.uk',
@@ -49,6 +49,16 @@ const seed = db.transaction(() => {
   for (const [key, value] of Object.entries(defaults)) insertSetting.run(key, String(value));
 });
 seed();
+
+/* Refine first-release copy without overwriting anything the parish has edited. */
+db.prepare("UPDATE settings SET value=? WHERE key='hero_title' AND value=?").run(
+  'Welcome to St Monica’s.',
+  'A parish rooted in faith, welcome and community.'
+);
+db.prepare("UPDATE settings SET value=? WHERE key='hero_text' AND value=?").run(
+  'A Catholic parish in Coatbridge, gathering for Mass, prayer and the Sacraments, and serving our community with faith, hope and welcome.',
+  'Welcome to St Monica’s Catholic Church in Coatbridge. Join us for Mass, prayer, the Sacraments and the life of our parish community.'
+);
 
 function settingsObject() {
   const rows = db.prepare('SELECT key,value FROM settings').all();
