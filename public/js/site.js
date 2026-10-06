@@ -59,16 +59,21 @@ if (header) {
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if (!reducedMotion && 'IntersectionObserver' in window) {
+  /*
+   * Keep reveal animation opt-in and limited to independent cards.
+   * Never hide whole page sections or bulletin rows: nested reveal targets
+   * caused the bulletin archive to paint, animate, then appear to vanish.
+   */
   const targets = [
-    ...document.querySelectorAll('main > section:not(.hero):not(.page-hero)'),
-    ...document.querySelectorAll('.quick-grid > a,.process-grid > div,.content-cards > article,.news-card,.bulletin-list > a')
+    ...document.querySelectorAll('.quick-grid > a,.process-grid > div,.content-cards > article,.news-card,.hall-photo')
   ];
-  const unique = [...new Set(targets)];
-  unique.forEach((item, index) => {
+
+  targets.forEach((item, index) => {
     item.style.opacity = '0';
-    item.style.transform = 'translateY(18px)';
-    item.style.transition = 'opacity .55s ease ' + Math.min(index % 5, 4) * 45 + 'ms, transform .55s ease ' + Math.min(index % 5, 4) * 45 + 'ms';
+    item.style.transform = 'translateY(14px)';
+    item.style.transition = 'opacity .42s ease ' + Math.min(index % 4, 3) * 35 + 'ms, transform .42s ease ' + Math.min(index % 4, 3) * 35 + 'ms';
   });
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
@@ -76,6 +81,7 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
       entry.target.style.transform = 'translateY(0)';
       observer.unobserve(entry.target);
     });
-  }, { rootMargin: '0px 0px -7% 0px', threshold: 0.05 });
-  unique.forEach(item => observer.observe(item));
+  }, { rootMargin: '0px 0px -5% 0px', threshold: 0.04 });
+
+  targets.forEach(item => observer.observe(item));
 }
