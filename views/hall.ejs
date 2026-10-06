@@ -1,20 +1,20 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 <main id="main-content">
-  <section class="page-hero scenic-hero">
+  <section class="page-hero scenic-hero hall-hero">
     <div class="page-hero-copy">
-      <p class="eyebrow">Parish Hall</p>
-      <h1>A flexible venue for functions and community events.</h1>
-      <p>St Monica’s Hall offers two licensed function rooms, parking and straightforward access in Coatbridge.</p>
-      <div class="hero-actions"><a class="button button-gold" href="tel:<%= settings.hall_phone.replace(/\s/g,'') %>">Call about a booking</a></div>
+      <p class="eyebrow">St Monica’s Parish Hall</p>
+      <h1>A welcoming space for celebrations and community events.</h1>
+      <p>Flexible room layouts, a central dance floor, licensed bar facilities, parking and easy access in Coatbridge.</p>
+      <div class="hero-actions"><a class="button button-gold" href="tel:<%= settings.hall_phone.replace(/\s/g,'') %>">Ask about availability</a></div>
     </div>
-    <div class="page-hero-art"><% if(meta.image){ %><img src="<%= meta.image %>" alt="" aria-hidden="true"><% } %></div>
+    <div class="page-hero-art"><% if(media.hall){ %><img src="<%= media.hall %>" alt="St Monica’s Parish Hall main function room" fetchpriority="high"><% } %></div>
   </section>
 
   <section class="section hall-grid">
     <div>
       <p class="eyebrow">The space</p>
-      <h2>Two rooms. Plenty of flexibility.</h2>
+      <h2>Flexible for the occasion.</h2>
       <p>The hall complex has a larger function room with capacity for approximately 140 people and a dance floor in the centre, plus a smaller room with capacity for around 80 people.</p>
       <p>The smaller room is often used for buffet service. Both rooms have a bar, the hall is fully licensed, and there is ample parking and easy access.</p>
     </div>
@@ -26,8 +26,28 @@
     </div>
   </section>
 
+  <% if(media.hallGallery && media.hallGallery.length){ %>
+  <section class="hall-showcase">
+    <div class="section hall-showcase-heading">
+      <div>
+        <p class="eyebrow">A flexible venue</p>
+        <h2>From family celebrations to children’s parties.</h2>
+      </div>
+      <p>The room can be arranged around the event, from open-floor layouts to fully dressed tables and family entertainment.</p>
+    </div>
+
+    <div class="hall-photo-grid">
+      <% media.hallGallery.forEach((image,index) => { %>
+        <figure class="hall-photo hall-photo-<%= index + 1 %>">
+          <img src="<%= image %>" alt="<%= index === 0 ? 'St Monica’s Parish Hall main room' : index === 1 ? 'St Monica’s Parish Hall arranged for a celebration' : 'St Monica’s Parish Hall set up for a family event' %>" loading="<%= index < 2 ? 'eager' : 'lazy' %>">
+        </figure>
+      <% }) %>
+    </div>
+  </section>
+  <% } %>
+
   <section class="contact-band">
-    <div><p class="eyebrow">Hall enquiries</p><h2>Interested in a booking?</h2><p>Contact the hall directly for availability, prices and booking information.</p></div>
+    <div><p class="eyebrow">Hall enquiries</p><h2>Planning an event?</h2><p>Contact the hall directly for availability, prices and booking information.</p></div>
     <div class="contact-band-actions">
       <a class="button button-gold" href="tel:<%= settings.hall_phone.replace(/\s/g,'') %>"><%= settings.hall_phone %></a>
       <a href="mailto:<%= settings.hall_email %>"><%= settings.hall_email %></a>
