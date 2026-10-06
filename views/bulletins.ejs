@@ -1,0 +1,34 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <section class="page-hero compact-hero">
+    <div>
+      <p class="eyebrow">Parish updates</p>
+      <h1>Weekly bulletins.</h1>
+      <p>Mass information, parish notices, events and community news from St Monica’s.</p>
+    </div>
+  </section>
+
+  <section class="section bulletin-library">
+    <div class="split-heading">
+      <div><p class="eyebrow">Archive</p><h2>Parish bulletins</h2></div>
+      <p><%= bulletins.length %> bulletin PDF<%= bulletins.length === 1 ? '' : 's' %> found in the imported parish archive.</p>
+    </div>
+
+    <% if(bulletins.length){ %>
+      <div class="bulletin-list">
+        <% bulletins.forEach((item,index) => { %>
+          <a href="<%= item.url %>" target="_blank" rel="noopener">
+            <span class="bulletin-number"><%= String(index + 1).padStart(2,'0') %></span>
+            <span class="pdf-mark">PDF</span>
+            <strong><%= item.title %></strong>
+            <span class="bulletin-open">Open ↗</span>
+          </a>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <div class="empty-state"><h2>No bulletin PDFs found.</h2><p>The new site scans the existing WordPress media archive automatically. If bulletins are added under <code>wp-content/uploads</code>, they will appear here.</p></div>
+    <% } %>
+  </section>
+</main>
+<%- include('partials/footer') %>
