@@ -270,6 +270,7 @@ function latestPosts(limit = 6) {
 }
 
 app.get('/health', (req, res) => {
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
   try {
     db.prepare('SELECT 1').get();
     res.setHeader('Cache-Control', 'no-store');
@@ -310,7 +311,7 @@ app.get('/mass-times', (req, res) => {
       ],
       note: 'Times can occasionally change for funerals, holidays and parish events. Please check the latest bulletin for this week’s notices.'
     },
-    meta: meta('Mass Times | St Monica’s Parish', 'Sunday and weekday Mass times, Adoration and Confession at St Monica’s Catholic Church, Coatbridge.', mediaSet().mission)
+    meta: meta('Mass Times | St Monica’s Catholic Church, Coatbridge', 'Sunday and weekday Mass times, Adoration and Confession at St Monica’s Catholic Church, Coatbridge.', mediaSet().mission)
   });
 });
 
@@ -330,19 +331,19 @@ app.get('/sacraments', (req, res) => {
       ],
       note: 'For Sacramental enquiries, call ' + settingsObject().phone + ' or email ' + settingsObject().email + '.'
     },
-    meta: meta('Sacraments | St Monica’s Parish', 'Baptism, First Communion, Confirmation, Marriage, Reconciliation and Anointing of the Sick at St Monica’s, Coatbridge.', mediaSet().sacraments)
+    meta: meta('Sacraments | St Monica’s Catholic Church, Coatbridge', 'Baptism, First Communion, Confirmation, Marriage, Reconciliation and Anointing of the Sick at St Monica’s, Coatbridge.', mediaSet().sacraments)
   });
 });
 
 app.get('/parish', (req, res) => {
   res.render('parish', {
-    meta: meta('Our Parish | St Monica’s, Coatbridge', 'Meet the parish priest and learn about the mission and community of St Monica’s Catholic Church in Coatbridge.', mediaSet().priest || mediaSet().community)
+    meta: meta('Our Parish | St Monica’s Catholic Church, Coatbridge', 'Meet the parish priest and learn about the mission and community of St Monica’s Catholic Church in Coatbridge.', mediaSet().priest || mediaSet().community)
   });
 });
 
 app.get('/parish-hall', (req, res) => {
   res.render('hall', {
-    meta: meta('Parish Hall | St Monica’s Parish', 'St Monica’s Parish Hall in Coatbridge is available for functions, with two licensed rooms, parking and accessible entry.', mediaSet().hall)
+    meta: meta('Parish Hall | St Monica’s, Coatbridge', 'St Monica’s Parish Hall in Coatbridge is available for functions, with two licensed rooms, parking and accessible entry.', mediaSet().hall)
   });
 });
 
@@ -367,14 +368,14 @@ app.get('/bulletins', (req, res) => {
   res.render('bulletins', {
     bulletins: archive,
     bulletinGroups,
-    meta: meta('Parish Bulletins | St Monica’s', 'Read and download parish bulletins from St Monica’s Catholic Church, Coatbridge.', mediaSet().mission)
+    meta: meta('Parish Bulletins | St Monica’s Catholic Church, Coatbridge', 'Read and download parish bulletins from St Monica’s Catholic Church, Coatbridge.', mediaSet().mission)
   });
 });
 
 app.get('/news', (req, res) => {
   res.render('news', {
     posts: latestPosts(100),
-    meta: meta('Parish News | St Monica’s', 'Latest news and notices from St Monica’s Parish, Coatbridge.', mediaSet().community)
+    meta: meta('Parish News | St Monica’s Catholic Church, Coatbridge', 'Latest news and notices from St Monica’s Parish, Coatbridge.', mediaSet().community)
   });
 });
 
@@ -392,7 +393,7 @@ app.get('/contact', (req, res) => {
     sent: req.query.sent === '1',
     error: null,
     form: {},
-    meta: meta('Contact St Monica’s Parish', 'Contact St Monica’s Catholic Church, Sharp Avenue, Coatbridge ML5 5RP.', mediaSet().hero)
+    meta: meta('Contact St Monica’s Catholic Church, Coatbridge', 'Contact St Monica’s Catholic Church, Sharp Avenue, Coatbridge ML5 5RP.', mediaSet().hero)
   });
 });
 
@@ -409,7 +410,7 @@ app.post('/contact', contactLimiter, async (req, res) => {
       sent: false,
       error: 'Please enter your name, a valid email address and a little more detail in your message.',
       form,
-      meta: meta('Contact St Monica’s Parish', 'Contact St Monica’s Catholic Church, Coatbridge.', mediaSet().hero)
+      meta: meta('Contact St Monica’s Catholic Church, Coatbridge', 'Contact St Monica’s Catholic Church, Coatbridge.', mediaSet().hero)
     });
   }
 
@@ -438,7 +439,7 @@ app.get('/privacy', (req, res) => {
 app.get('/gallery', (req, res) => {
   res.render('gallery', {
     images: gallery(30),
-    meta: meta('Parish Gallery | St Monica’s', 'Images from the life and history of St Monica’s Parish, Coatbridge.', mediaSet().community)
+    meta: meta('Gallery | St Monica’s Catholic Church, Coatbridge', 'Images from the life and history of St Monica’s Parish, Coatbridge.', mediaSet().community)
   });
 });
 
@@ -448,14 +449,49 @@ app.get('/people/rev-fr-ghislain-bakulikire-mulumanzi', (req, res) => res.redire
 app.get(/^\/bulletin-/i, (req, res) => res.redirect(301, '/bulletins'));
 
 app.get('/robots.txt', (req, res) => {
-  res.type('text/plain').send('User-agent: *\nAllow: /\nDisallow: /admin\nSitemap: ' + configuredBaseUrl + '/sitemap.xml\n');
+  res.type('text/plain').send([
+    'User-agent: *',
+    'Allow: /',
+    'Disallow: /admin',
+    'Disallow: /health',
+    'Sitemap: ' + configuredBaseUrl + '/sitemap.xml',
+    ''
+  ].join('\n'));
 });
 
 app.get('/sitemap.xml', (req, res) => {
-  const fixed = ['/', '/mass-times', '/sacraments', '/parish', '/parish-hall', '/bulletins', '/news', '/gallery', '/contact', '/privacy'];
-  const news = db.prepare('SELECT slug FROM posts WHERE published=1 ORDER BY id').all().map(row => '/news/' + encodeURIComponent(row.slug));
-  const urls = fixed.concat(news).map(route => '<url><loc>' + configuredBaseUrl + route + '</loc></url>').join('');
-  res.type('application/xml').send('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls + '</urlset>');
+  const fixed = [
+    { route: '/', priority: '1.0', changefreq: 'weekly' },
+    { route: '/mass-times', priority: '0.9', changefreq: 'weekly' },
+    { route: '/bulletins', priority: '0.9', changefreq: 'weekly' },
+    { route: '/sacraments', priority: '0.8', changefreq: 'monthly' },
+    { route: '/parish', priority: '0.8', changefreq: 'monthly' },
+    { route: '/parish-hall', priority: '0.8', changefreq: 'monthly' },
+    { route: '/news', priority: '0.8', changefreq: 'weekly' },
+    { route: '/gallery', priority: '0.6', changefreq: 'monthly' },
+    { route: '/contact', priority: '0.7', changefreq: 'monthly' },
+    { route: '/privacy', priority: '0.2', changefreq: 'yearly' }
+  ];
+
+  const news = db.prepare('SELECT slug,updated_at FROM posts WHERE published=1 ORDER BY id').all()
+    .map(row => ({
+      route: '/news/' + encodeURIComponent(row.slug),
+      priority: '0.6',
+      changefreq: 'monthly',
+      lastmod: new Date(String(row.updated_at).replace(' ', 'T') + 'Z').toISOString()
+    }));
+
+  const xml = fixed.concat(news).map(item => [
+    '<url>',
+    '<loc>' + configuredBaseUrl + item.route + '</loc>',
+    item.lastmod ? '<lastmod>' + item.lastmod + '</lastmod>' : '',
+    '<changefreq>' + item.changefreq + '</changefreq>',
+    '<priority>' + item.priority + '</priority>',
+    '</url>'
+  ].join('')).join('');
+
+  res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.type('application/xml').send('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + xml + '</urlset>');
 });
 
 /* Admin */
