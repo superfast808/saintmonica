@@ -38,6 +38,12 @@
           postalCode: 'ML5 5RP',
           addressCountry: 'GB'
         },
+        foundingDate: '1950',
+        identifier: {
+          '@type': 'PropertyValue',
+          propertyID: 'Scottish Charity Number',
+          value: settings.charity_number
+        },
         areaServed: {
           '@type': 'City',
           name: 'Coatbridge'
@@ -113,8 +119,8 @@
           '@id': canonicalUrl + '#article',
           headline: post.title,
           description: post.excerpt || meta.description || undefined,
-          datePublished: post.created_at,
-          dateModified: post.updated_at || post.created_at,
+          datePublished: new Date(String(post.created_at).replace(' ', 'T') + 'Z').toISOString(),
+          dateModified: new Date(String(post.updated_at || post.created_at).replace(' ', 'T') + 'Z').toISOString(),
           mainEntityOfPage: { '@id': pageId },
           publisher: { '@id': parishId },
           author: { '@id': parishId },
@@ -196,8 +202,8 @@
   <% } %>
   <meta name="twitter:title" content="<%= meta.title %>">
   <% if(meta.description){ %><meta name="twitter:description" content="<%= meta.description %>"><% } %>
-  <% if(isArticle && post.created_at){ %><meta property="article:published_time" content="<%= post.created_at %>"><% } %>
-  <% if(isArticle && post.updated_at){ %><meta property="article:modified_time" content="<%= post.updated_at %>"><% } %>
+  <% if(isArticle && post.created_at){ %><meta property="article:published_time" content="<%= new Date(String(post.created_at).replace(' ', 'T') + 'Z').toISOString() %>"><% } %>
+  <% if(isArticle && post.updated_at){ %><meta property="article:modified_time" content="<%= new Date(String(post.updated_at).replace(' ', 'T') + 'Z').toISOString() %>"><% } %>
 
   <% if(!meta.noindex){ %><script type="application/ld+json"><%- schemaJson %></script><% } %>
   <link rel="stylesheet" href="/css/site.css?v=<%= assetVersion %>">
