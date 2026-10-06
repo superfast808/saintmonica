@@ -902,3 +902,36 @@
     justify-content:space-between;
   }
 }
+
+
+/* Social identity links */
+.footer-socials{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:18px;
+}
+.footer-socials a{
+  display:inline-flex!important;
+  align-items:center;
+  gap:8px;
+  width:auto;
+  padding:8px 11px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  color:#fff!important;
+  font-size:.76rem!important;
+  font-weight:800;
+  line-height:1;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease;
+}
+.footer-socials a:hover{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.28);
+  transform:translateY(-1px);
+}
+.footer-socials svg{
+  width:15px;
+  height:15px;
+  fill:currentColor;
+}
