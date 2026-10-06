@@ -739,3 +739,166 @@
     grid-template-columns:88px minmax(0,1fr);
   }
 }
+
+
+/* Bulletin CMS */
+.bulletin-admin-summary{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+  margin-bottom:20px;
+}
+.bulletin-admin-summary>div{
+  padding:18px 20px;
+  border-radius:12px;
+  background:var(--cream);
+}
+.bulletin-admin-summary strong{
+  display:block;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.9rem;
+  line-height:1;
+  color:var(--wine);
+}
+.bulletin-admin-summary span{
+  display:block;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:.75rem;
+}
+.bulletin-upload-form{
+  margin-bottom:28px;
+  padding:22px;
+  border-radius:14px;
+  background:#fbf8f4;
+  border:1px solid var(--line);
+}
+.bulletin-file-field input[type="file"]{
+  padding:10px;
+  background:#fff;
+}
+.admin-notice{
+  margin:0 0 18px;
+}
+.managed-bulletins{
+  border-top:1px solid var(--line);
+}
+.managed-bulletins-heading{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.managed-bulletins-heading>div{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+}
+.managed-bulletins-heading span{
+  color:var(--muted);
+  font-size:.72rem;
+}
+.managed-bulletins-heading>a{
+  color:var(--wine);
+  font-size:.78rem;
+  font-weight:800;
+}
+.managed-bulletin{
+  position:relative;
+  padding:17px 0;
+  border-top:1px solid var(--line);
+}
+.managed-bulletin-edit{
+  display:grid;
+  grid-template-columns:minmax(260px,1.6fr) 160px auto auto;
+  gap:12px;
+  align-items:end;
+  padding-right:58px;
+}
+.managed-bulletin-edit label{
+  display:grid;
+  gap:6px;
+  margin:0;
+}
+.managed-bulletin-edit label>span{
+  color:#53484e;
+  font-size:.7rem;
+  font-weight:850;
+}
+.managed-bulletin-edit input[type="text"],
+.managed-bulletin-edit input:not([type]){
+  width:100%;
+}
+.managed-bulletin-edit input{
+  border:1px solid #cfc4c0;
+  background:#fff;
+  border-radius:9px;
+  padding:10px 11px;
+  color:var(--ink);
+}
+.managed-bulletin-edit .checkbox-row{
+  align-self:center;
+  margin-bottom:5px;
+}
+.managed-bulletin-actions{
+  display:flex;
+  gap:9px;
+  align-items:center;
+  justify-content:flex-end;
+}
+.managed-bulletin-actions>a{
+  color:var(--wine);
+  font-size:.75rem;
+  font-weight:800;
+  white-space:nowrap;
+}
+.managed-bulletin-actions .button{
+  min-height:39px;
+  padding:0 15px;
+  font-size:.76rem;
+}
+.managed-bulletin-delete{
+  position:absolute;
+  top:28px;
+  right:0;
+}
+.bulletin-empty{
+  padding:24px 0;
+}
+.bulletin-empty p{
+  margin:.35rem 0 0;
+}
+
+@media(max-width:1000px){
+  .managed-bulletin-edit{
+    grid-template-columns:minmax(0,1fr) 150px;
+    padding-right:0;
+  }
+  .managed-bulletin-edit .checkbox-row{
+    align-self:end;
+  }
+  .managed-bulletin-actions{
+    justify-content:flex-start;
+  }
+  .managed-bulletin-delete{
+    position:static;
+    margin-top:10px;
+  }
+}
+@media(max-width:620px){
+  .bulletin-admin-summary{grid-template-columns:1fr 1fr}
+  .bulletin-upload-form{padding:16px}
+  .managed-bulletins-heading{
+    align-items:flex-start;
+    flex-direction:column;
+    padding:14px 0;
+    gap:7px;
+  }
+  .managed-bulletin-edit{
+    grid-template-columns:1fr;
+  }
+  .managed-bulletin-actions{
+    justify-content:space-between;
+  }
+}
