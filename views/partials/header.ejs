@@ -3,6 +3,7 @@
     <div class="utility-left">
       <span>Roman Catholic Parish · Diocese of Motherwell</span>
       <a href="<%= settings.diocese_url %>" target="_blank" rel="noopener">Diocese website ↗</a>
+      <% if(settings.facebook_url){ %><a href="<%= settings.facebook_url %>" target="_blank" rel="noopener me">Facebook ↗</a><% } %>
     </div>
     <div class="utility-contact">
       <a href="mailto:<%= settings.email %>"><span aria-hidden="true">✉</span><span><%= settings.email %></span></a>
