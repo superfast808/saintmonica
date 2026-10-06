@@ -1,0 +1,50 @@
+<footer class="site-footer">
+  <div class="footer-lead">
+    <div>
+      <p class="eyebrow">You are welcome here</p>
+      <h2>Join us for Mass, prayer and parish life.</h2>
+    </div>
+    <a class="button button-light" href="/mass-times">View Mass times</a>
+  </div>
+
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-light" href="/">
+        <span class="brand-mark" aria-hidden="true"><i></i><b>SM</b></span>
+        <span class="brand-copy"><strong>St Monica’s</strong><small>Catholic Church · Coatbridge</small></span>
+      </a>
+      <p><%= settings.footer_text %></p>
+    </div>
+    <div>
+      <h3>Parish</h3>
+      <a href="/mass-times">Mass times</a>
+      <a href="/sacraments">Sacraments</a>
+      <a href="/parish">Our parish</a>
+      <a href="/parish-hall">Parish Hall</a>
+      <a href="/gallery">Gallery</a>
+    </div>
+    <div>
+      <h3>Updates</h3>
+      <a href="/bulletins">Parish bulletins</a>
+      <a href="/news">Parish news</a>
+      <a href="/contact">Contact us</a>
+      <a href="/privacy">Privacy notice</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <span><%= settings.address %></span>
+      <a href="tel:<%= settings.phone.replace(/\s/g,'') %>"><%= settings.phone %></a>
+      <a href="mailto:<%= settings.email %>"><%= settings.email %></a>
+      <span><%= settings.diocese_name %></span>
+      <span>Scottish Charity <%= settings.charity_number %></span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <%= currentYear %> St Monica’s Parish, Coatbridge.</span>
+    <div><a href="/privacy">Privacy</a><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
+<script src="/js/site.js?v=<%= assetVersion %>" defer></script>
+</body>
+</html>
