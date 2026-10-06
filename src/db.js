@@ -32,7 +32,7 @@ const defaults = {
   charity_number: 'SC011041',
   diocese_name: 'Diocese of Motherwell',
   diocese_url: 'https://www.rcdom.org.uk/st-monicas-coatbridge',
-  facebook_url: '',
+  facebook_url: 'https://www.facebook.com/StMonicasRC/',
   youtube_url: '',
   x_url: '',
   sunday_masses: 'Saturday Vigil 4:00pm · Sunday 10:00am, 12 noon & 5:00pm',
@@ -59,6 +59,11 @@ db.prepare("UPDATE settings SET value=? WHERE key='hero_title' AND value=?").run
 db.prepare("UPDATE settings SET value=? WHERE key='hero_text' AND value=?").run(
   'A Catholic parish in Coatbridge, gathering for Mass, prayer and the Sacraments, and serving our community with faith, hope and welcome.',
   'Welcome to St Monica’s Catholic Church in Coatbridge. Join us for Mass, prayer, the Sacraments and the life of our parish community.'
+);
+
+/* Add the parish's verified public Facebook page while preserving future admin edits. */
+db.prepare("UPDATE settings SET value=? WHERE key='facebook_url' AND value=''").run(
+  'https://www.facebook.com/StMonicasRC/'
 );
 
 function settingsObject() {
