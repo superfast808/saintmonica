@@ -248,8 +248,26 @@ app.get('/parish-hall', (req, res) => {
 });
 
 app.get('/bulletins', (req, res) => {
+  const archive = bulletins();
+  const grouped = new Map();
+
+  for (const item of archive) {
+    const year = item.year || 'Archive';
+    if (!grouped.has(year)) grouped.set(year, []);
+    grouped.get(year).push(item);
+  }
+
+  const bulletinGroups = [...grouped.entries()]
+    .map(([year, items]) => ({ year, items }))
+    .sort((a, b) => {
+      if (a.year === 'Archive') return 1;
+      if (b.year === 'Archive') return -1;
+      return Number(b.year) - Number(a.year);
+    });
+
   res.render('bulletins', {
-    bulletins: bulletins(),
+    bulletins: archive,
+    bulletinGroups,
     meta: meta('Parish Bulletins | St Monica’s', 'Read and download parish bulletins from St Monica’s Catholic Church, Coatbridge.', mediaSet().mission)
   });
 });
