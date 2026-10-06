@@ -1,0 +1,24 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <section class="page-hero compact-hero">
+    <div><p class="eyebrow">Parish life</p><h1>News & notices.</h1><p>Updates from the life of St Monica’s Parish and our local community.</p></div>
+  </section>
+  <section class="section">
+    <% if(posts.length){ %>
+      <div class="news-grid">
+        <% posts.forEach(post => { %>
+          <a class="news-card" href="/news/<%= post.slug %>">
+            <span class="eyebrow">Parish update</span>
+            <h2><%= post.title %></h2>
+            <p><%= post.excerpt || 'Read the latest update from St Monica’s Parish.' %></p>
+            <strong>Read more →</strong>
+          </a>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <div class="empty-state"><h2>News updates will appear here.</h2><p>For current parish information in the meantime, please check the latest weekly bulletin.</p><a class="button" href="/bulletins">View bulletins</a></div>
+    <% } %>
+  </section>
+</main>
+<%- include('partials/footer') %>
