@@ -12,7 +12,6 @@ let cache = { at: 0, images: [], bulletins: [] };
 const CURATED = {
   hero: [
     '2020/06/church-picture-124728-1.jpg',
-    '2017/06/Church-renovated.jpg',
     '2017/06/Church-3.jpg'
   ],
   mission: [
@@ -39,6 +38,13 @@ const CURATED = {
 
 const EXCLUDED_MEDIA = /(?:st[_-]?col(?:umbkille|_ps)|columbkille|rutherglen|trinity[_-]?high|patron_saint_columbkille|carfin[_-](?:church|parish)|first_st_columbkille)/i;
 const NON_PHOTO_MEDIA = /(?:logo|icon|schedule|bulletin|pdf|screenshot|screen-shot|word-cloud|clipart|poster|rota|alert|raffle|gift-aid|weather|cancelled|facebook|social-media|twitter)/i;
+const EXCLUDED_FILES = new Set([
+  '2017/06/Church-renovated.jpg',
+  '2017/06/20170517_DSC6808.jpg',
+  '2017/06/20170517_DSC6797.jpg',
+  '2019/08/IMG_3101.jpg',
+  '2019/04/IMG_2709.jpg'
+].map(value => value.toLowerCase()));
 
 const APPROVED_HALL_PHOTOS = [
   '/images/hall/main-room.jpg',
@@ -121,6 +127,7 @@ function refresh() {
     .filter(file => !/-\d{2,4}x\d{2,4}\.(jpe?g|png|webp)$/i.test(file))
     .filter(file => !/\/(?:thumb|\.original)\//i.test(file))
     .filter(file => !EXCLUDED_MEDIA.test(rel(file)))
+    .filter(file => !EXCLUDED_FILES.has(rel(file).toLowerCase()))
     .filter(file => !NON_PHOTO_MEDIA.test(rel(file)))
     .filter(file => {
       try { return fs.statSync(file).size >= 60000; } catch { return false; }
@@ -207,10 +214,8 @@ function mediaSet() {
     hall,
     priest,
     saint,
-    webPathForRelative('2019/04/IMG_2709.jpg'),
-    webPathForRelative('2019/08/IMG_3101.jpg'),
-    webPathForRelative('2017/06/20170517_DSC6797.jpg'),
-    webPathForRelative('2017/06/20170517_DSC6808.jpg')
+    webPathForRelative('2017/06/Church-3.jpg'),
+    webPathForRelative('2017/06/Altar-Picture-2.jpg')
   ].filter(Boolean);
 
   const gallery = [...new Set([
