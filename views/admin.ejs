@@ -1,0 +1,134 @@
+<%- include('partials/head') %>
+<main class="admin-shell">
+  <aside class="admin-sidebar">
+    <a class="brand brand-light" href="/">
+      <span class="brand-mark" aria-hidden="true"><i></i><b>SM</b></span>
+      <span class="brand-copy"><strong>St Monica’s</strong><small>Parish CMS</small></span>
+    </a>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#settings">Site settings</a>
+      <a href="#news">Parish news</a>
+      <a href="#enquiries">Enquiries</a>
+      <a href="#media">Imported media</a>
+    </nav>
+    <form method="post" action="/admin/logout">
+      <input type="hidden" name="csrf" value="<%= csrf %>">
+      <button type="submit">Sign out</button>
+    </form>
+  </aside>
+
+  <section class="admin-main">
+    <header class="admin-topbar">
+      <div><p class="eyebrow">Parish website</p><h1>Content dashboard</h1></div>
+      <a class="button" href="/" target="_blank">View website ↗</a>
+    </header>
+
+    <section id="overview" class="admin-panel">
+      <div class="admin-panel-heading"><div><p class="eyebrow">Overview</p><h2>Website status</h2></div></div>
+      <div class="admin-stats">
+        <div><strong><%= posts.length %></strong><span>news items</span></div>
+        <div><strong><%= enquiries.filter(x => !x.read_at).length %></strong><span>unread enquiries</span></div>
+        <div><strong><%= mediaChoices.length %></strong><span>featured legacy images found</span></div>
+        <div><strong><%= smtpReady ? 'Ready' : 'Off' %></strong><span>email delivery</span></div>
+      </div>
+    </section>
+
+    <section id="settings" class="admin-panel">
+      <div class="admin-panel-heading">
+        <div><p class="eyebrow">Website content</p><h2>Site settings</h2></div>
+        <p>These values feed the public site immediately after saving.</p>
+      </div>
+      <form method="post" action="/admin/settings" class="admin-form">
+        <input type="hidden" name="csrf" value="<%= csrf %>">
+        <div class="admin-form-grid">
+          <label><span>Site name</span><input name="site_name" value="<%= settings.site_name %>"></label>
+          <label><span>Strapline</span><input name="site_strapline" value="<%= settings.site_strapline %>"></label>
+          <label class="wide"><span>Homepage headline</span><input name="hero_title" value="<%= settings.hero_title %>"></label>
+          <label class="wide"><span>Homepage introduction</span><textarea name="hero_text" rows="3"><%= settings.hero_text %></textarea></label>
+          <label class="wide"><span>Hero image path <small>leave blank to select automatically from imported imagery</small></span><input name="hero_image_path" value="<%= settings.hero_image_path %>" placeholder="/wp-content/uploads/..."></label>
+
+          <label><span>Parish phone</span><input name="phone" value="<%= settings.phone %>"></label>
+          <label><span>Parish email</span><input type="email" name="email" value="<%= settings.email %>"></label>
+          <label class="wide"><span>Address</span><input name="address" value="<%= settings.address %>"></label>
+          <label class="wide"><span>Parish priest</span><input name="parish_priest" value="<%= settings.parish_priest %>"></label>
+
+          <label class="wide"><span>Sunday Masses</span><input name="sunday_masses" value="<%= settings.sunday_masses %>"></label>
+          <label class="wide"><span>Weekday Masses</span><input name="weekday_masses" value="<%= settings.weekday_masses %>"></label>
+          <label><span>Holyday Masses</span><input name="holyday_masses" value="<%= settings.holyday_masses %>"></label>
+          <label><span>Adoration</span><input name="adoration_times" value="<%= settings.adoration_times %>"></label>
+          <label class="wide"><span>Confessions</span><input name="confession_times" value="<%= settings.confession_times %>"></label>
+
+          <label><span>Hall phone</span><input name="hall_phone" value="<%= settings.hall_phone %>"></label>
+          <label><span>Hall email</span><input type="email" name="hall_email" value="<%= settings.hall_email %>"></label>
+
+          <label><span>Diocese name</span><input name="diocese_name" value="<%= settings.diocese_name %>"></label>
+          <label><span>Charity number</span><input name="charity_number" value="<%= settings.charity_number %>"></label>
+          <label class="wide"><span>Diocese URL</span><input type="url" name="diocese_url" value="<%= settings.diocese_url %>"></label>
+          <label class="wide"><span>Facebook URL</span><input type="url" name="facebook_url" value="<%= settings.facebook_url %>"></label>
+          <label class="wide"><span>YouTube URL</span><input type="url" name="youtube_url" value="<%= settings.youtube_url %>"></label>
+          <label class="wide"><span>X / Twitter URL</span><input type="url" name="x_url" value="<%= settings.x_url %>"></label>
+
+          <label class="wide"><span>Contact introduction</span><textarea name="contact_intro" rows="2"><%= settings.contact_intro %></textarea></label>
+          <label class="wide"><span>Footer description</span><textarea name="footer_text" rows="3"><%= settings.footer_text %></textarea></label>
+        </div>
+        <button class="button button-gold" type="submit">Save site settings</button>
+      </form>
+    </section>
+
+    <section id="news" class="admin-panel">
+      <div class="admin-panel-heading"><div><p class="eyebrow">Updates</p><h2>Parish news</h2></div><p>Add short website updates without editing code.</p></div>
+      <form method="post" action="/admin/news" class="admin-form news-editor">
+        <input type="hidden" name="csrf" value="<%= csrf %>">
+        <label><span>Title</span><input name="title" required></label>
+        <label><span>Short summary</span><input name="excerpt" maxlength="500"></label>
+        <label><span>Body <small>basic HTML such as &lt;p&gt;, &lt;strong&gt;, &lt;ul&gt; and links is supported</small></span><textarea name="body" rows="8" required></textarea></label>
+        <label class="checkbox-row"><input type="checkbox" name="published" value="1" checked><span>Publish immediately</span></label>
+        <button class="button" type="submit">Add news item</button>
+      </form>
+
+      <div class="admin-list">
+        <% posts.forEach(post => { %>
+          <article>
+            <div><strong><%= post.title %></strong><small><%= post.published ? 'Published' : 'Draft' %> · /news/<%= post.slug %></small></div>
+            <form method="post" action="/admin/news/<%= post.id %>/delete" onsubmit="return confirm('Delete this news item?')">
+              <input type="hidden" name="csrf" value="<%= csrf %>">
+              <button type="submit" class="danger-link">Delete</button>
+            </form>
+          </article>
+        <% }) %>
+        <% if(!posts.length){ %><p class="admin-empty">No news items yet.</p><% } %>
+      </div>
+    </section>
+
+    <section id="enquiries" class="admin-panel">
+      <div class="admin-panel-heading"><div><p class="eyebrow">Inbox</p><h2>Website enquiries</h2></div><p>Every valid contact form submission is stored here even if SMTP is unavailable.</p></div>
+      <div class="enquiry-list">
+        <% enquiries.forEach(item => { %>
+          <article class="<%= item.read_at ? 'is-read' : '' %>">
+            <div class="enquiry-head"><strong><%= item.name %></strong><a href="mailto:<%= item.email %>"><%= item.email %></a><span><%= item.phone || '' %></span></div>
+            <p><%= item.message %></p>
+            <% if(!item.read_at){ %>
+              <form method="post" action="/admin/enquiries/<%= item.id %>/read">
+                <input type="hidden" name="csrf" value="<%= csrf %>">
+                <button type="submit" class="text-link">Mark as read</button>
+              </form>
+            <% } %>
+          </article>
+        <% }) %>
+        <% if(!enquiries.length){ %><p class="admin-empty">No website enquiries yet.</p><% } %>
+      </div>
+    </section>
+
+    <section id="media" class="admin-panel">
+      <div class="admin-panel-heading"><div><p class="eyebrow">Imported archive</p><h2>Legacy imagery</h2></div><p>The site automatically scans the existing WordPress uploads folder and prioritises large original images rather than thumbnails.</p></div>
+      <div class="admin-media-grid">
+        <% mediaChoices.forEach(image => { %>
+          <figure><img src="<%= image.url %>" alt="<%= image.name %>" loading="lazy"><figcaption><code><%= image.url %></code></figcaption></figure>
+        <% }) %>
+      </div>
+    </section>
+  </section>
+</main>
+</body>
+</html>
