@@ -443,10 +443,15 @@ app.get('/gallery', (req, res) => {
   });
 });
 
-/* Preserve common legacy WordPress links after cutover. */
+/* Preserve indexed WordPress URLs and pass their authority to the closest new page. */
 app.get('/contact-us', (req, res) => res.redirect(301, '/contact'));
+app.get('/contact-us/parish_clergy', (req, res) => res.redirect(301, '/parish'));
 app.get('/people/rev-fr-ghislain-bakulikire-mulumanzi', (req, res) => res.redirect(301, '/parish'));
 app.get(/^\/bulletin-/i, (req, res) => res.redirect(301, '/bulletins'));
+app.get(/^\/sacraments\/.+/i, (req, res) => res.redirect(301, '/sacraments'));
+app.get(/^\/category\/bulletin\/?$/i, (req, res) => res.redirect(301, '/bulletins'));
+app.get(/^\/category\/.+/i, (req, res) => res.redirect(301, '/news'));
+app.get(/^\/tag\/.+/i, (req, res) => res.redirect(301, '/news'));
 
 app.get('/robots.txt', (req, res) => {
   res.type('text/plain').send([
