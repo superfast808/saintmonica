@@ -38,7 +38,7 @@ const defaults = {
   weekday_masses: 'Monday–Saturday 10:00am',
   holyday_masses: '8:00am · 10:00am · 7:00pm',
   confession_times: 'Saturday after 10:00am Mass · upon request at any time',
-  adoration_times: 'Monday 6:00pm',
+  adoration_times: 'Monday–Saturday 9:00am–9:55am',
   footer_text: 'St Monica’s is a Roman Catholic parish in the Diocese of Motherwell, serving the community of Coatbridge and welcoming all who wish to pray with us.',
   hero_image_path: '',
   contact_intro: 'For parish enquiries, Sacraments, certificates or pastoral matters, please contact the parish office.'
