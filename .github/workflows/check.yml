@@ -52,4 +52,15 @@ jobs:
           test -s /tmp/home.html
           test -s /tmp/bulletins.html
           grep -q "Weekly bulletins" /tmp/bulletins.html
+
+      - name: Validate SEO output
+        run: |
+          curl -fsS -o /tmp/home.html http://127.0.0.1:18080/
+          curl -fsS -o /tmp/sitemap.xml http://127.0.0.1:18080/sitemap.xml
+          curl -fsS -o /tmp/robots.txt http://127.0.0.1:18080/robots.txt
+          grep -q 'application/ld+json' /tmp/home.html
+          grep -q 'https://schema.org' /tmp/home.html
+          grep -q 'https://www.facebook.com/StMonicasRC/' /tmp/home.html
+          grep -q '<loc>https://saint-monica.org.uk/</loc>' /tmp/sitemap.xml
+          grep -q 'Sitemap: https://saint-monica.org.uk/sitemap.xml' /tmp/robots.txt
           docker logs saintmonica-smoke
