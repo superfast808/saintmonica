@@ -1,0 +1,15 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main-content">
+  <section class="page-hero compact-hero">
+    <div><p class="eyebrow">Parish life</p><h1>Gallery.</h1><p>A selection of images from St Monica’s existing parish media archive.</p></div>
+  </section>
+  <section class="gallery-page section">
+    <% if(images.length){ %>
+      <div class="masonry-grid">
+        <% images.forEach((image,index) => { %><figure class="<%= index % 5 === 0 ? 'wide' : '' %>"><img src="<%= image.url %>" alt="<%= image.name %>" loading="lazy"></figure><% }) %>
+      </div>
+    <% } else { %><div class="empty-state"><h2>No suitable gallery images found.</h2><p>Images added to the WordPress uploads archive will be discovered automatically.</p></div><% } %>
+  </section>
+</main>
+<%- include('partials/footer') %>
