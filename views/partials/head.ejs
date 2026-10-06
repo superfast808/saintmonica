@@ -1,20 +1,205 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
+  <%
+    const canonicalUrl = baseUrl + (path === '/' ? '/' : path);
+    const socialImage = meta.image
+      ? (meta.image.startsWith('http') ? meta.image : baseUrl + meta.image)
+      : (media && media.hero ? baseUrl + media.hero : '');
+    const isArticle = typeof post !== 'undefined' && post && post.title;
+    const socialLinks = [
+      settings.facebook_url,
+      settings.youtube_url,
+      settings.x_url,
+      settings.diocese_url
+    ].filter(Boolean);
+
+    const parishId = baseUrl + '/#parish';
+    const churchId = baseUrl + '/#church';
+    const websiteId = baseUrl + '/#website';
+    const pageId = canonicalUrl + '#webpage';
+
+    const graph = [];
+
+    if (!meta.noindex) {
+      graph.push({
+        '@type': 'Organization',
+        '@id': parishId,
+        name: "St Monica's Parish, Coatbridge",
+        alternateName: "St Monica's Catholic Church, Coatbridge",
+        url: baseUrl + '/',
+        email: settings.email,
+        telephone: settings.phone,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Sharp Avenue',
+          addressLocality: 'Coatbridge',
+          addressRegion: 'North Lanarkshire',
+          postalCode: 'ML5 5RP',
+          addressCountry: 'GB'
+        },
+        areaServed: {
+          '@type': 'City',
+          name: 'Coatbridge'
+        },
+        parentOrganization: {
+          '@type': 'Organization',
+          name: settings.diocese_name,
+          url: 'https://www.rcdom.org.uk/'
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'Parish office',
+          telephone: settings.phone,
+          email: settings.email,
+          areaServed: 'GB',
+          availableLanguage: ['en']
+        },
+        sameAs: socialLinks
+      });
+
+      graph.push({
+        '@type': 'Church',
+        '@id': churchId,
+        name: "St Monica's Catholic Church",
+        url: baseUrl + '/',
+        image: socialImage || undefined,
+        telephone: settings.phone,
+        email: settings.email,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Sharp Avenue',
+          addressLocality: 'Coatbridge',
+          addressRegion: 'North Lanarkshire',
+          postalCode: 'ML5 5RP',
+          addressCountry: 'GB'
+        },
+        hasMap: 'https://www.google.com/maps/search/?api=1&query=St+Monica%27s+Catholic+Church+Coatbridge+ML5+5RP&query_place_id=ChIJwRjkvzZqiEgRGSA2TTHbso4',
+        sameAs: socialLinks
+      });
+
+      graph.push({
+        '@type': 'WebSite',
+        '@id': websiteId,
+        url: baseUrl + '/',
+        name: "St Monica's Catholic Church, Coatbridge",
+        alternateName: "St Monica's Parish",
+        inLanguage: 'en-GB',
+        publisher: { '@id': parishId }
+      });
+
+      let pageType = 'WebPage';
+      if (path === '/contact') pageType = 'ContactPage';
+      if (path === '/bulletins' || path === '/news' || path === '/gallery') pageType = 'CollectionPage';
+
+      const pageSchema = {
+        '@type': pageType,
+        '@id': pageId,
+        url: canonicalUrl,
+        name: meta.title,
+        description: meta.description || undefined,
+        isPartOf: { '@id': websiteId },
+        about: { '@id': parishId },
+        primaryImageOfPage: socialImage ? { '@type': 'ImageObject', url: socialImage } : undefined,
+        inLanguage: 'en-GB'
+      };
+
+      if (isArticle) pageSchema.mainEntity = { '@id': canonicalUrl + '#article' };
+      graph.push(pageSchema);
+
+      if (isArticle) {
+        graph.push({
+          '@type': 'NewsArticle',
+          '@id': canonicalUrl + '#article',
+          headline: post.title,
+          description: post.excerpt || meta.description || undefined,
+          datePublished: post.created_at,
+          dateModified: post.updated_at || post.created_at,
+          mainEntityOfPage: { '@id': pageId },
+          publisher: { '@id': parishId },
+          author: { '@id': parishId },
+          image: socialImage ? [socialImage] : undefined,
+          inLanguage: 'en-GB'
+        });
+      }
+
+      if (path !== '/') {
+        const labels = {
+          '/mass-times': 'Mass times',
+          '/sacraments': 'Sacraments',
+          '/parish': 'Our parish',
+          '/parish-hall': 'Parish Hall',
+          '/bulletins': 'Bulletins',
+          '/news': 'News',
+          '/gallery': 'Gallery',
+          '/contact': 'Contact',
+          '/privacy': 'Privacy'
+        };
+        const items = [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl + '/' }
+        ];
+
+        if (isArticle) {
+          items.push({ '@type': 'ListItem', position: 2, name: 'News', item: baseUrl + '/news' });
+          items.push({ '@type': 'ListItem', position: 3, name: post.title, item: canonicalUrl });
+        } else {
+          items.push({
+            '@type': 'ListItem',
+            position: 2,
+            name: labels[path] || meta.title.replace(/\s*\|.*$/, ''),
+            item: canonicalUrl
+          });
+        }
+
+        graph.push({
+          '@type': 'BreadcrumbList',
+          '@id': canonicalUrl + '#breadcrumb',
+          itemListElement: items
+        });
+      }
+    }
+
+    const schemaJson = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })
+      .replace(/</g, '\\u003c');
+  %>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#5f2137">
+  <meta name="application-name" content="St Monica's Parish">
+  <meta name="author" content="St Monica's Parish, Coatbridge">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
   <title><%= meta.title %></title>
   <% if(meta.description){ %><meta name="description" content="<%= meta.description %>"><% } %>
-  <% if(meta.noindex){ %><meta name="robots" content="noindex,nofollow,noarchive"><% } else { %><meta name="robots" content="index,follow,max-image-preview:large"><% } %>
-  <link rel="canonical" href="<%= baseUrl + (path === '/' ? '/' : path) %>">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="<%= settings.site_name %>">
+  <% if(meta.noindex){ %>
+    <meta name="robots" content="noindex,nofollow,noarchive">
+  <% } else { %>
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <% } %>
+
+  <link rel="canonical" href="<%= canonicalUrl %>">
+  <link rel="alternate" hreflang="en-GB" href="<%= canonicalUrl %>">
+
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="<%= isArticle ? 'article' : 'website' %>">
+  <meta property="og:site_name" content="St Monica's Parish, Coatbridge">
   <meta property="og:title" content="<%= meta.title %>">
   <% if(meta.description){ %><meta property="og:description" content="<%= meta.description %>"><% } %>
-  <meta property="og:url" content="<%= baseUrl + (path === '/' ? '/' : path) %>">
-  <% if(meta.image){ %><meta property="og:image" content="<%= meta.image.startsWith('http') ? meta.image : baseUrl + meta.image %>"><% } %>
+  <meta property="og:url" content="<%= canonicalUrl %>">
+  <% if(socialImage){ %>
+    <meta property="og:image" content="<%= socialImage %>">
+    <meta property="og:image:alt" content="St Monica's Catholic Church, Coatbridge">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="<%= socialImage %>">
+  <% } else { %>
+    <meta name="twitter:card" content="summary">
+  <% } %>
+  <meta name="twitter:title" content="<%= meta.title %>">
+  <% if(meta.description){ %><meta name="twitter:description" content="<%= meta.description %>"><% } %>
+  <% if(isArticle && post.created_at){ %><meta property="article:published_time" content="<%= post.created_at %>"><% } %>
+  <% if(isArticle && post.updated_at){ %><meta property="article:modified_time" content="<%= post.updated_at %>"><% } %>
+
+  <% if(!meta.noindex){ %><script type="application/ld+json"><%- schemaJson %></script><% } %>
   <link rel="stylesheet" href="/css/site.css?v=<%= assetVersion %>">
 </head>
 <body id="top">
