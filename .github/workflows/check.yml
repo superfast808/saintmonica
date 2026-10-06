@@ -30,3 +30,26 @@ jobs:
 
       - name: Build production Docker image
         run: docker build -t saintmonica-check .
+
+      - name: Smoke-test public routes
+        run: |
+          docker run -d --name saintmonica-smoke \
+            -p 127.0.0.1:18080:8080 \
+            -e NODE_ENV=production \
+            -e PORT=8080 \
+            -e BASE_URL=https://saint-monica.org.uk \
+            -e SESSION_SECRET=0123456789abcdef0123456789abcdef0123456789abcdef \
+            -e ADMIN_EMAIL=ci@example.org \
+            -e ADMIN_PASSWORD=ci-test-password-123456 \
+            -v "$PWD/wp-content:/app/wp-content:ro" \
+            saintmonica-check
+          for i in {1..30}; do
+            curl -fsS http://127.0.0.1:18080/health && break
+            sleep 1
+          done
+          curl -fsS -o /tmp/home.html http://127.0.0.1:18080/
+          curl -fsS -o /tmp/bulletins.html http://127.0.0.1:18080/bulletins
+          test -s /tmp/home.html
+          test -s /tmp/bulletins.html
+          grep -q "Weekly bulletins" /tmp/bulletins.html
+          docker logs saintmonica-smoke
