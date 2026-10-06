@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#5f2137">
+  <title><%= meta.title %></title>
+  <% if(meta.description){ %><meta name="description" content="<%= meta.description %>"><% } %>
+  <% if(meta.noindex){ %><meta name="robots" content="noindex,nofollow,noarchive"><% } else { %><meta name="robots" content="index,follow,max-image-preview:large"><% } %>
+  <link rel="canonical" href="<%= baseUrl + (path === '/' ? '/' : path) %>">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="<%= settings.site_name %>">
+  <meta property="og:title" content="<%= meta.title %>">
+  <% if(meta.description){ %><meta property="og:description" content="<%= meta.description %>"><% } %>
+  <meta property="og:url" content="<%= baseUrl + (path === '/' ? '/' : path) %>">
+  <% if(meta.image){ %><meta property="og:image" content="<%= meta.image.startsWith('http') ? meta.image : baseUrl + meta.image %>"><% } %>
+  <link rel="stylesheet" href="/css/site.css?v=<%= assetVersion %>">
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to content</a>
