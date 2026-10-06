@@ -8,6 +8,7 @@
     <nav>
       <a href="#overview">Overview</a>
       <a href="#settings">Site settings</a>
+      <a href="#bulletins">Bulletins</a>
       <a href="#news">Parish news</a>
       <a href="#enquiries">Enquiries</a>
       <a href="#media">Imported media</a>
@@ -27,9 +28,9 @@
     <section id="overview" class="admin-panel">
       <div class="admin-panel-heading"><div><p class="eyebrow">Overview</p><h2>Website status</h2></div></div>
       <div class="admin-stats">
+        <div><strong><%= bulletins.length %></strong><span>managed bulletins</span></div>
         <div><strong><%= posts.length %></strong><span>news items</span></div>
         <div><strong><%= enquiries.filter(x => !x.read_at).length %></strong><span>unread enquiries</span></div>
-        <div><strong><%= mediaChoices.length %></strong><span>featured legacy images found</span></div>
         <div><strong><%= smtpReady ? 'Ready' : 'Off' %></strong><span>email delivery</span></div>
       </div>
     </section>
@@ -74,6 +75,75 @@
         </div>
         <button class="button button-gold" type="submit">Save site settings</button>
       </form>
+    </section>
+
+    <section id="bulletins" class="admin-panel">
+      <div class="admin-panel-heading">
+        <div><p class="eyebrow">Weekly PDFs</p><h2>Parish bulletins</h2></div>
+        <p>Upload new bulletins here. The existing WordPress archive remains available automatically, while everything added here is fully managed through the CMS.</p>
+      </div>
+
+      <% if(bulletinStatus === 'added'){ %><div class="admin-notice success-message">Bulletin uploaded successfully.</div><% } %>
+      <% if(bulletinStatus === 'updated'){ %><div class="admin-notice success-message">Bulletin details updated.</div><% } %>
+      <% if(bulletinStatus === 'deleted'){ %><div class="admin-notice success-message">Bulletin deleted.</div><% } %>
+      <% if(bulletinStatus === 'file-required'){ %><div class="admin-notice form-error">Choose a PDF file to upload.</div><% } %>
+      <% if(bulletinStatus === 'date-invalid'){ %><div class="admin-notice form-error">Please choose a valid bulletin date.</div><% } %>
+      <% if(bulletinStatus === 'pdf-invalid'){ %><div class="admin-notice form-error">That file does not appear to be a valid PDF.</div><% } %>
+      <% if(bulletinStatus === 'too-large'){ %><div class="admin-notice form-error">The PDF is too large. Maximum upload size is 20 MB.</div><% } %>
+      <% if(bulletinStatus === 'upload-error'){ %><div class="admin-notice form-error">The PDF could not be uploaded. Please try again.</div><% } %>
+      <% if(bulletinStatus === 'update-invalid'){ %><div class="admin-notice form-error">The bulletin title and date are required.</div><% } %>
+
+      <div class="bulletin-admin-summary">
+        <div><strong><%= bulletins.length %></strong><span>CMS-managed PDFs</span></div>
+        <div><strong><%= legacyBulletinCount %></strong><span>legacy archive PDFs</span></div>
+      </div>
+
+      <form method="post" action="/admin/bulletins" enctype="multipart/form-data" class="admin-form bulletin-upload-form">
+        <input type="hidden" name="csrf" value="<%= csrf %>">
+        <div class="admin-form-grid">
+          <label><span>Bulletin date</span><input type="date" name="bulletin_date" required></label>
+          <label><span>Display title <small>optional — a title will be generated from the date</small></span><input name="title" maxlength="180" placeholder="e.g. 27th Sunday in Ordinary Time"></label>
+          <label class="wide bulletin-file-field">
+            <span>PDF file <small>maximum 20 MB</small></span>
+            <input type="file" name="pdf" accept="application/pdf,.pdf" required>
+          </label>
+          <label class="checkbox-row wide"><input type="checkbox" name="published" value="1" checked><span>Publish immediately</span></label>
+        </div>
+        <button class="button button-gold" type="submit">Upload bulletin</button>
+      </form>
+
+      <div class="managed-bulletins">
+        <div class="managed-bulletins-heading">
+          <div><strong>Managed bulletins</strong><span>Newest first</span></div>
+          <a href="/bulletins" target="_blank">View public archive ↗</a>
+        </div>
+
+        <% bulletins.forEach(item => { %>
+          <article class="managed-bulletin">
+            <form method="post" action="/admin/bulletins/<%= item.id %>/update" class="managed-bulletin-edit">
+              <input type="hidden" name="csrf" value="<%= csrf %>">
+              <label><span>Title</span><input name="title" maxlength="180" required value="<%= item.title %>"></label>
+              <label><span>Date</span><input type="date" name="bulletin_date" required value="<%= item.bulletin_date %>"></label>
+              <label class="checkbox-row"><input type="checkbox" name="published" value="1" <%= item.published ? 'checked' : '' %>><span>Published</span></label>
+              <div class="managed-bulletin-actions">
+                <a href="<%= item.url %>" target="_blank" rel="noopener">Open PDF ↗</a>
+                <button class="button button-muted" type="submit">Save</button>
+              </div>
+            </form>
+            <form method="post" action="/admin/bulletins/<%= item.id %>/delete" class="managed-bulletin-delete" onsubmit="return confirm('Delete this bulletin and its PDF permanently?')">
+              <input type="hidden" name="csrf" value="<%= csrf %>">
+              <button type="submit" class="danger-link">Delete</button>
+            </form>
+          </article>
+        <% }) %>
+
+        <% if(!bulletins.length){ %>
+          <div class="admin-empty bulletin-empty">
+            <strong>No CMS-managed bulletins yet.</strong>
+            <p>The <%= legacyBulletinCount %> PDFs from the old WordPress site still appear on the public archive. New weekly bulletins can now be uploaded above.</p>
+          </div>
+        <% } %>
+      </div>
     </section>
 
     <section id="news" class="admin-panel">
