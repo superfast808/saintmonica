@@ -21,6 +21,8 @@ cd /opt/saintmonica
 git pull
 
 cp -n .env.example .env
+mkdir -p data
+chown -R 10001:10001 data
 nano .env
 ```
 
@@ -95,7 +97,7 @@ SQLite data lives in:
 ./data/
 ```
 
-This directory is mounted into the container and is deliberately excluded from Git.
+This directory is mounted into the container and is deliberately excluded from Git. The application runs as UID/GID `10001`, so ensure the host `data/` directory is owned by `10001:10001` before first start.
 
 ## Existing media
 
