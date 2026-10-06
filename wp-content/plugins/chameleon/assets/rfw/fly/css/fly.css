@@ -1,0 +1,86 @@
+/*
+Form Name: Fly
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/fly/1.0/fly.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Fly
+*/
+
+.rfw-class.fly *, 
+.rfw-class.fly *::after, 
+.rfw-class.fly *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.fly .widget_dock {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 480px;	
+}
+.rfw-class.fly .widget_dock .bx-wrapper,
+.rfw-class.fly .widget_dock .rfw_list{
+	padding: 0px;
+	box-shadow: none;
+	border:0;	
+}
+.rfw-class.fly .widget_dock,
+.rfw-class.fly .widget_dock .bx-viewport{
+	padding: 10px 0;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif; 	
+}
+.rfw-class.fly .widget_dock .rfw_dock li > a,
+.rfw-class.fly .widget_dock .bx-viewport .rfw_dock li > a {
+	border-left: 5px solid #DC4537;
+	background-color: #FCD000;
+	width: 100%;
+	float: left;
+}
+.rfw-class.fly .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.rfw-class.fly .widget_dock .rfw_dock a h3.entry-title,
+
+.rfw-class.fly .widget_dock .bx-viewport .rfw_dock h3.entry-title{
+
+.rfw-class.fly .widget_dock .bx-viewport .rfw_dock h3{
+	background-color: #FCD000;
+	padding: 10px 8px;
+	margin:0;
+	line-height: 22px;
+	text-align: left;
+	box-shadow:none;
+}
+.rfw-class.fly .widget_dock li > div.text_div,
+.rfw-class.fly .widget_dock .bx-viewport li > div.text_div {
+	background-color: #4e9c99;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;	
+}
+.rfw-class.fly .widget_dock li > div.feed_img img,
+.rfw-class.fly .widget_dock .bx-viewport li > div.feed_img img{
+	margin-bottom: 0px;	
+}
+.rfw-class.fly .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #FCD000;
+	border: 2px solid #4E9C99;	
+}
+.rfw-class.fly .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #DC4537;
+	border: 2px solid #4E9C99;
+}
+.rfw-class.fly .text_div > a {
+  color: #fcd000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.fly .text_div > a:hover{
+	text-decoration: underline;	
+}

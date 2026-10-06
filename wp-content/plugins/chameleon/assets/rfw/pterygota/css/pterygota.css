@@ -1,0 +1,85 @@
+/*
+Style Name: Pterygota
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/pterygota/1.0/pterygota.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Pterygota
+*/
+
+.rfw-class.pterygota *, 
+.rfw-class.pterygota *::after, 
+.rfw-class.pterygota *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.pterygota .widget_dock {
+	margin: 0px auto;
+	width:100%;
+	max-width:480px;	
+}
+.rfw-class.pterygota .widget_dock .bx-wrapper,
+.rfw-class.pterygota .widget_dock .rfw_list{
+	padding: 0px;
+	box-shadow: none;
+	border:0;	
+	box-shadow: none;	
+	border: 0;
+}
+.rfw-class.pterygota .widget_dock,
+.rfw-class.pterygota .widget_dock .bx-viewport{
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif; 	
+	width: 100%;
+}
+.rfw-class.pterygota .widget_dock .rfw_dock li > a,
+.rfw-class.pterygota .widget_dock .bx-viewport .rfw_dock li > a {
+	background-color: #ffb499;
+	width: 100%;
+	float: left;
+}
+.rfw-class.pterygota .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.rfw-class.pterygota .widget_dock .rfw_dock a h3.entry-title,
+.rfw-class.pterygota .widget_dock .bx-viewport .rfw_dock h3{
+	background-color: #ffb499;
+	box-shadow:none;
+	padding: 10px 8px;
+	margin:0;
+	line-height: 22px;
+	text-align: center;
+	color: #4B5262;
+}
+.rfw-class.pterygota .widget_dock li > div.text_div,
+.rfw-class.pterygota .widget_dock .bx-viewport li > div.text_div {
+	background-color: #4B5262;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;	
+}
+.rfw-class.pterygota .widget_dock li > div.feed_img img,
+.rfw-class.pterygota .widget_dock .bx-viewport li > div.feed_img img{
+	margin-bottom: 0px;	
+}
+.rfw-class.pterygota .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #FCD000;
+	border: 2px solid #4B5262;
+}
+.rfw-class.pterygota .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #FFB499;
+	border: 3px solid #4B5262;
+}
+.rfw-class.pterygota .text_div > a {
+  color: #F4EA79;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.pterygota .text_div > a:hover{
+	text-decoration: underline;	
+}

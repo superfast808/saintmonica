@@ -1,0 +1,101 @@
+/*
+Style Name: Bug
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/bug/1.0/bug.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Bug
+*/
+
+.rfw-class.bug *, 
+.rfw-class.bug *::after, 
+.rfw-class.bug *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.bug .widget_dock {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 480px;	
+}
+.rfw-class.bug .widget_dock .bx-wrapper,
+.rfw-class.bug .widget_dock .rfw_list{
+	border-image: linear-gradient(to right, rgb(139, 191, 64) 25%, rgb(230, 27, 33) 25%, rgb(230, 27, 33) 50%, rgb(124, 196, 236) 50%, rgb(124, 196, 236) 75%, rgb(254, 181, 17) 75%);
+  	border-image-slice: 1;
+	border-image-width: 5px 5px 5px 5px;
+	box-shadow: none;
+		
+}
+ /*List View Style*/
+.rfw-class.bug .widget_dock .rfw_list{ 
+	padding: 0px; 
+
+.rfw-class.bug .widget_dock .bx-wrapper,
+.rfw-class.bug .widget_dock .rfw_list{ 
+	padding: 0px;
+	border:0; 
+	box-shadow: none;
+}
+.rfw-class.bug .widget_dock,
+.rfw-class.bug .widget_dock .bx-viewport{
+	font-family: Arial, Helvetica, sans-serif;
+	width:100%; 	
+}
+.rfw-class.bug .widget_dock .rfw_dock li > a,
+.rfw-class.bug .widget_dock .bx-viewport .rfw_dock li > a {
+	background-color: #000;
+	width: 100%;
+	float: left;
+}
+.rfw-class.bug .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.rfw-class.bug .widget_dock .rfw_dock a h3.entry-title,
+.rfw-class.bug .widget_dock .bx-viewport .rfw_dock a h3.entry-title{
+	background-color: #000;
+	box-shadow:none;
+	border-image: linear-gradient(to right, rgb(139, 191, 64) 25%, rgb(230, 27, 33) 25%, rgb(230, 27, 33) 50%, rgb(124, 196, 236) 50%, rgb(124, 196, 236) 75%, rgb(254, 181, 17) 75%);
+  	border-image-slice: 1;
+	border-image-width: 0px 0px 5px 0px;
+	padding: 10px 8px;
+	margin:0;
+	line-height: 22px;
+	text-align: left;
+	color: #fff;
+}
+.rfw-class.bug .widget_dock li > div.text_div,
+.rfw-class.bug .widget_dock .bx-viewport li > div.text_div {
+	background-color: #E61B21;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;
+}
+.rfw-class.bug .widget_dock li > div.feed_img,
+.rfw-class.bug .widget_dock .bx-viewport li > div.feed_img {
+
+}
+.rfw-class.bug .widget_dock li > div.feed_img img
+.rfw-class.bug .widget_dock .bx-viewport li > div.feed_img img{	
+	border: 0 none;	
+}
+.rfw-class.bug .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #FCD000;
+	border: 2px solid #4E9C99;	
+}
+.rfw-class.bug .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #DC4537;
+	border: 2px solid #4E9C99;
+}
+.rfw-class.bug .text_div > a {
+  color: #fcd000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.bug .text_div > a:hover{
+	text-decoration: underline;	
+}

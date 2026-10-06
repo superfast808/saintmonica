@@ -1,0 +1,478 @@
+# Translation of Plugins - Document Gallery - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Document Gallery - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-05-29 05:00:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Document Gallery - Stable (latest release)\n"
+
+#: inc/class-gallery.php:529
+msgid "&raquo;"
+msgstr "&rarr;"
+
+#: inc/class-gallery.php:528
+msgid "&laquo;"
+msgstr "&larr;"
+
+#: admin/tabs/thumber-co-tab.php:15
+msgid "User ID"
+msgstr "ID Пользователя"
+
+#: admin/media-manager-template.php:128
+msgid "Limit"
+msgstr "Количество выводимых записей"
+
+#: admin/media-manager-template.php:121
+msgid "Yes"
+msgstr "Нет"
+
+#: admin/media-manager-template.php:116
+msgid "No"
+msgstr "Да"
+
+#: admin/media-manager-template.php:110
+msgid "Paginate"
+msgstr "Нумерация страниц"
+
+#. Author URI of the plugin/theme
+msgid "http://danrossiter.org/"
+msgstr "http://danrossiter.org/"
+
+#. Author of the plugin/theme
+msgid "Dan Rossiter"
+msgstr "Dan Rossiter"
+
+#. Description of the plugin/theme
+msgid "Display non-images (and images) in gallery format on a page or post with the [dg] shortcode."
+msgstr "Отображение не-изображений (а также изображений) в виде галерей на страницах и в записях с помощью шорткода [dg]."
+
+#: inc/class-thumber.php:282
+msgid "Failed to save image: "
+msgstr "Не удалось сохранить изображение: "
+
+#: inc/class-thumber.php:270
+msgid "Failed to get image editor: "
+msgstr "Сбой при попытке использовании графического редактора (WP_Image_Editor): "
+
+#: inc/class-thumber.php:195
+msgid "No thumbnail generators enabled."
+msgstr "Отсутствуют включенные генераторы миниатюр."
+
+#: inc/class-thumber.php:193
+msgid "Thumbnail Generators: "
+msgstr "Генераторы миниатюр: "
+
+#: inc/thumbers/class-ghostscript-thumber.php:57
+msgid "Ghostscript failed: "
+msgstr "Сбой в Ghostscript: "
+
+#: inc/thumbers/class-imagick-thumber.php:73
+msgid "Failed to save image in Imagick: "
+msgstr "Не удалось сохранить изображение в Imagick: "
+
+#: inc/thumbers/class-imagick-thumber.php:61
+msgid "Failed to open file in Imagick: "
+msgstr "Не удалось открыть файл в Imagick: "
+
+#: inc/thumbers/class-audio-video-thumber.php:62
+msgid "Could not write file: "
+msgstr "Не удалось записать файл: "
+
+#: inc/thumbers/class-audio-video-thumber.php:56
+msgid "Could not open file: "
+msgstr "Не удалось открыть файл: "
+
+#: inc/class-thumber.php:51
+msgid "Attempting to generate thumbnail for attachment #%d with (%s)"
+msgstr "Попытка создания миниатюры для вложения №%d с помощью (%s)"
+
+#: inc/class-image-editor-imagick.php:133
+msgid "Failed to set Imagick page number"
+msgstr "Не удалось установить номер страницы в Imagick"
+
+#: inc/class-gallery-sanitization.php:197
+msgid "%s may only be a comma-delimited list of integers."
+msgstr "Параметр %s может быть только списком целых чисел разделенных запятыми."
+
+#: inc/class-gallery-sanitization.php:72
+msgid "Attempted to call invalid function: "
+msgstr "Попытка вызова недопустимой функции: "
+
+#: inc/class-gallery-sanitization.php:43
+msgid "The %s parameter may only be \"%s\" or \"%s.\" You entered \"%s.\""
+msgstr "Параметр %s может принимать только значения \"%s\" или \"%s.\" Вы же ввели \"%s.\""
+
+#: inc/class-gallery-sanitization.php:42
+msgid "The %s value entered, \"%s\", is not valid."
+msgstr "Введенный параметр %s со значением \"%s\" является недопустимым."
+
+#: inc/class-gallery.php:167
+msgid "No attachments to display. How boring! :("
+msgstr "Ни одного вложения для отображения. Скукотища! :("
+
+#: inc/class-gallery.php:165
+msgid "Generated using Document Gallery. Get yours here: "
+msgstr "Сгенерировано используя Document Gallery. Понравилось? Получите Вашу копию здесь: "
+
+#: admin/media-manager-template.php:27
+msgid "Columns"
+msgstr "Колонки"
+
+#: admin/media-manager-template.php:20
+msgid "Attachment Page"
+msgstr "Страница вложения"
+
+#: admin/media-manager-template.php:15
+msgid "Media File"
+msgstr "Медиафайл"
+
+#: admin/media-manager-template.php:9
+msgid "Link To"
+msgstr "Ссылка"
+
+#: admin/tabs/logging-tab.php:115
+msgid "is turned OFF"
+msgstr "выключен"
+
+#: admin/tabs/logging-tab.php:115
+msgid "is turned ON"
+msgstr "включён"
+
+#: admin/tabs/logging-tab.php:115
+msgid "For Your information:"
+msgstr "К Вашему сведению:"
+
+#: admin/tabs/logging-tab.php:115
+msgid "There are no log entries at this time."
+msgstr "На данный момент журнал пуст."
+
+#: admin/tabs/logging-tab.php:108
+msgid "Clear Log"
+msgstr "Очистить журнал"
+
+#: admin/tabs/logging-tab.php:56
+msgid "Collapse All"
+msgstr "Свернуть Все"
+
+#: admin/tabs/logging-tab.php:53
+msgid "Expand All"
+msgstr "Развернуть Все"
+
+#: admin/tabs/logging-tab.php:45
+msgid "Message"
+msgstr "Сообщение"
+
+#: admin/tabs/logging-tab.php:44
+msgid "Level"
+msgstr "Уровень"
+
+#: admin/class-admin.php:319
+msgid "<b>Thumbnail</b> for <i><b>Document Gallery</b></i>"
+msgstr "<b>Миниатюра</b> для <i><b>Document Gallery</b></i>"
+
+#: admin/tabs/thumbnail-management-tab.php:215
+msgid "View '%s' attachment page"
+msgstr "Посмотреть страницу вложения '%s'"
+
+#: admin/tabs/thumbnail-management-tab.php:174
+msgid "items per page"
+msgstr "записей на странице"
+
+#: admin/tabs/thumbnail-management-tab.php:172
+msgid "Go to the last page"
+msgstr "Перейти к последней странице"
+
+#: admin/tabs/thumbnail-management-tab.php:171
+msgid "Go to the next page"
+msgstr "Перейти к следующей странице"
+
+#: admin/tabs/thumbnail-management-tab.php:170
+msgid "of"
+msgstr "из"
+
+#: admin/tabs/thumbnail-management-tab.php:170
+msgid "Current page"
+msgstr "Текущая страница"
+
+#: admin/tabs/thumbnail-management-tab.php:168
+msgid "Go to the previous page"
+msgstr "Перейти к предыдущей странице"
+
+#: admin/tabs/thumbnail-management-tab.php:167
+msgid "Go to the first page"
+msgstr "Перейти к первой странице"
+
+#: admin/tabs/thumbnail-management-tab.php:164
+msgid "item"
+msgid_plural "items"
+msgstr[0] "запись"
+msgstr[1] "записи"
+msgstr[2] "записей"
+
+#: admin/tabs/thumbnail-management-tab.php:162
+msgid "Delete Selected"
+msgstr "Удалить выбранные"
+
+#: admin/tabs/logging-tab.php:43 admin/tabs/thumbnail-management-tab.php:159
+msgid "Date"
+msgstr "Дата"
+
+#: admin/tabs/thumbnail-management-tab.php:154
+msgid "Description"
+msgstr "Описание"
+
+#: admin/tabs/thumbnail-management-tab.php:153
+msgid "File name"
+msgstr "Имя файла"
+
+#: admin/tabs/thumbnail-management-tab.php:149
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: admin/tabs/thumbnail-management-tab.php:146
+msgid "Select All"
+msgstr "Выбрать всё"
+
+#: admin/tabs/advanced-tab.php:113
+msgid "The following <em>readonly text</em> should be provided when <a href=\"http://wordpress.org/support/plugin/document-gallery\" target=\"_blank\">reporting a bug</a>:"
+msgstr "Нижеследующий <em>доступный только для чтения текст</em> должен быть предоставлен при <a href=\"http://wordpress.org/support/plugin/document-gallery\" target=\"_blank\">сообщении об ошибке</a>:"
+
+#: admin/tabs/advanced-tab.php:98
+msgid "NOTE: <code>exec()</code> is not accessible. Ghostscript will not function."
+msgstr "ВНИМАНИЕ: <code>exec()</code> недоступный. Ghostscript не будет работать."
+
+#: admin/tabs/advanced-tab.php:95
+msgid "Unless you <em>really</em> know what you're doing, you should not touch these values."
+msgstr "Не стоит менять этих значений, за исключением случаев когда Вы <em>действительно</em> знаете что делаете."
+
+#: admin/tabs/general-tab.php:363
+msgid "Enter custom CSS styling for use with document galleries. To see which ids and classes you can style, take a look at <a href=\"%s\" target=\"_blank\">style.css</a>."
+msgstr "Введите индивидуальные CSS стили для использования с галереями документов. Чтобы увидеть, какие селекторы стоит использовать, посмотрите на <a href=\"%s\" target=\"_blank\">style.css</a>."
+
+#: admin/tabs/general-tab.php:353
+msgid "Select which tools to use when generating thumbnails."
+msgstr "Выберите, какие инструменты использовать для создании миниатюр."
+
+#: admin/tabs/general-tab.php:345
+msgid "The following values will be used by default in the shortcode. You can still manually set each of these values in each individual shortcode."
+msgstr "Следующие значения будут использоваться шорткодом [dg] по умолчанию. При этом вручную можно установить любые из этих значений в каждом конкретном экземпляре шорткода."
+
+#: admin/tabs/advanced-tab.php:83
+msgid "Invalid logging purge interval given: "
+msgstr "Задан неверный период очистки журнала событий: "
+
+#: admin/tabs/advanced-tab.php:71
+msgid "Invalid Ghostscript path given: "
+msgstr "Задан неверный путь Ghostscript: "
+
+#: admin/class-admin.php:288
+msgid "Failed to get uploaded file: "
+msgstr "Не удалось получить загруженный файл: "
+
+#: admin/class-admin.php:278
+msgid "Uploaded file is not an image: "
+msgstr "Загруженный файл не является изображением: "
+
+#: admin/class-admin.php:270
+msgid "Uploaded file size exceeds the allowable limit: "
+msgstr "Размер загруженого файла превышает допустимый предел: "
+
+#: admin/class-admin.php:264
+msgid "File extension doesn't match the MIME type of the image: "
+msgstr "Расширение файла не соответствует MIME-типу изображения: "
+
+#: admin/tabs/general-tab.php:311
+msgid "Invalid height given: "
+msgstr "Задана неверная высота: "
+
+#: admin/tabs/general-tab.php:298
+msgid "Invalid width given: "
+msgstr "Задана неверная ширина: "
+
+#: admin/tabs/advanced-tab.php:54
+msgid "Options Array Dump"
+msgstr "Дамп массива установленных настроек"
+
+#: admin/tabs/advanced-tab.php:50
+msgid "Failed to auto-detect the location of Ghostscript."
+msgstr "Не удалось автоматически определить местонахождение Ghostscript."
+
+#: admin/tabs/advanced-tab.php:49
+msgid "Successfully auto-detected the location of Ghostscript."
+msgstr "Успешно автоматически определено местонахождение Ghostscript."
+
+#: admin/tabs/advanced-tab.php:40
+msgid "Ghostscript Absolute Path"
+msgstr "Абсолютный путь к Ghostscript"
+
+#: admin/tabs/advanced-tab.php:36
+msgid "Number of days to keep old log entries (0 disables purging)."
+msgstr "Количество дней хранения старых записей журнала событий (0 отключает очистку)"
+
+#: admin/tabs/advanced-tab.php:27
+msgid "Logging Purge Interval"
+msgstr "Интервал очистки журнала событий"
+
+#: admin/tabs/advanced-tab.php:23
+msgid "Whether to log debug and error information related to Document Gallery."
+msgstr "Вести ли журнал отладки и информации об ошибках имеющих отношение к Document Gallery."
+
+#: admin/tabs/advanced-tab.php:15
+msgid "Logging Enabled"
+msgstr "Ведение журнала событий"
+
+#: admin/tabs/advanced-tab.php:11
+msgid "Advanced Thumbnail Generation"
+msgstr "Создание миниатюр"
+
+#: admin/tabs/general-tab.php:267
+msgid "The max width and height (in pixels) that thumbnails will be generated."
+msgstr "Максимальная ширина и высота (в пикселях) с которыми будут создаваться миниатюры."
+
+#: admin/tabs/general-tab.php:249
+msgid "Max Thumbnail Dimensions"
+msgstr "Максимальные размеры миниатюр"
+
+#: admin/tabs/general-tab.php:244
+msgid "Your server is not configured to run <a href=\"http://www.php.net/manual/en/book.imagick.php\" target=\"_blank\">Imagick</a>."
+msgstr "Ваш сервер не настроен для использования <a href=\"http://www.php.net/manual/ru/book.imagick.php\" target=\"_blank\">Imagick</a>."
+
+#: admin/tabs/general-tab.php:243
+msgid "Use <a href=\"http://www.php.net/manual/en/book.imagick.php\" target=\"_blank\">Imagick</a> to handle lots of filetypes locally."
+msgstr "Использовать <a href=\"http://www.php.net/manual/ru/book.imagick.php\" target=\"_blank\">Imagick</a> для локальной обработки множества типов файлов."
+
+#: admin/tabs/general-tab.php:229
+msgid "Your server is not configured to run <a href=\"http://www.ghostscript.com/\" target=\"_blank\">Ghostscript</a>."
+msgstr "Ваш сервер не настроен для использования <a href=\"http://www.ghostscript.com/\" target=\"_blank\">Ghostscript</a>."
+
+#: admin/tabs/general-tab.php:228
+msgid "Use <a href=\"http://www.ghostscript.com/\" target=\"_blank\">Ghostscript</a> for faster local PDF processing (compared to Imagick)."
+msgstr "Использовать <a href=\"http://www.ghostscript.com/\" target=\"_blank\">Ghostscript</a> для более быстрой локальной обработки PDF (в сравнении с Imagick)."
+
+#: admin/tabs/general-tab.php:215
+msgid "Locally generate thumbnails for audio & video files."
+msgstr "Локально создавать миниатюры для аудио и видео файлов."
+
+#: admin/tabs/general-tab.php:207
+msgid "Audio/Video"
+msgstr "Аудио/Видео"
+
+#: admin/tabs/general-tab.php:190
+msgid "Which post type to look for when querying documents."
+msgstr "Какие типы записей учитывать при поиске документов."
+
+#: admin/tabs/general-tab.php:177
+msgid "Which post status to look for when querying documents."
+msgstr "Какие статусы записей учитывать при поиске документов."
+
+#: admin/media-manager-template.php:47
+msgid "Open thumbnail links in new window"
+msgstr "Открывать ссылки миниатюр в новом окне"
+
+#: admin/tabs/general-tab.php:140
+msgid "Comma-delimited list of <a href=\"http://en.wikipedia.org/wiki/Internet_media_type#List_of_common_media_types\">MIME types</a>."
+msgstr "Список <a href=\"http://en.wikipedia.org/wiki/Internet_media_type#List_of_common_media_types\">MIME-типов</a> разделённых запятыми."
+
+#: admin/tabs/general-tab.php:127
+msgid "Limit the number of documents included. -1 means no limit."
+msgstr "Максимальное количество включаемых документов. -1 означает без ограничений."
+
+#: admin/media-manager-template.php:80
+msgid "Which field to order documents by"
+msgstr "По какому полю сортировать документы"
+
+#: admin/media-manager-template.php:95
+msgid "Ascending or descending sorting of documents"
+msgstr "Сортировка документов по возрастанию или по убыванию"
+
+#: admin/media-manager-template.php:69
+msgid "Use auto-generated document thumbnails"
+msgstr "Использовать автоматически создаваемые миниатюры документов"
+
+#: admin/media-manager-template.php:58
+msgid "Include document descriptions"
+msgstr "Включать описания документов"
+
+#: admin/tabs/general-tab.php:51
+msgid "The number of columns to display when not rendering descriptions."
+msgstr "Количество отображаемых колонок при отключенных описаниях."
+
+#: admin/tabs/general-tab.php:26
+msgid "Custom CSS"
+msgstr "Индивидуальные CSS"
+
+#: admin/tabs/general-tab.php:22
+msgid "Thumbnail Generation"
+msgstr "Создание миниатюр"
+
+#: admin/tabs/general-tab.php:18
+msgid "Default Settings"
+msgstr "Настройки по умолчанию"
+
+#: admin/class-admin.php:140
+msgid "Edit Document Gallery"
+msgstr "Редактировать галерею Document Gallery"
+
+#: admin/class-admin.php:138 admin/class-admin.php:139
+msgid "Add to Document Gallery"
+msgstr "Добавить в галерею Document Gallery"
+
+#: admin/class-admin.php:137
+msgid "Insert Document Gallery"
+msgstr "Вставить галерею Document Gallery"
+
+#: admin/class-admin.php:136
+msgid "Update Document Gallery"
+msgstr "Обновить галерею Document Gallery"
+
+#: admin/class-admin.php:135
+msgid "Cancel Document Gallery"
+msgstr "Отменить создание галереи Document Gallery"
+
+#: admin/class-admin.php:134
+msgid "Create a new Document Gallery"
+msgstr "Создать новую галерею Document Gallery"
+
+#: admin/class-admin.php:133
+msgid "Create Document Gallery"
+msgstr "Создать галерею Document Gallery"
+
+#. #-#-#-#-#  document-gallery-code.pot (Document Gallery 4.4.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/class-admin.php:105
+msgid "Document Gallery"
+msgstr "Document Gallery"
+
+#: admin/class-admin.php:92
+msgid "Donate"
+msgstr "Поддержать"
+
+#: admin/class-admin.php:74
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/class-admin.php:46 admin/class-admin.php:104
+#: admin/media-manager-template.php:5
+msgid "Document Gallery Settings"
+msgstr "Настройки Document Gallery"
+
+#: admin/class-admin.php:34
+msgid "Advanced"
+msgstr "Для опытных пользователей"
+
+#: admin/class-admin.php:33 admin/tabs/logging-tab.php:115
+msgid "Logging"
+msgstr "Журнал событий"
+
+#: admin/class-admin.php:32
+msgid "Thumbnail Management"
+msgstr "Управление миниатюрами"
+
+#: admin/class-admin.php:30
+msgid "General"
+msgstr "Основные"

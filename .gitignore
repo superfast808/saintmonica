@@ -1,0 +1,24 @@
+# WordPress runtime/cache
+wp-content/cache/
+wp-content/upgrade/
+wp-content/wflogs/
+wp-content/updraft/
+wp-content/ai1wm-backups/
+
+# Backups
+wp-content/backup/
+wp-content/backups/
+wp-content/backup-*/
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Database dumps / archives
+*.sql
+*.sql.gz
+*.bak
+*.tar
+*.tar.gz

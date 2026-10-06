@@ -1,0 +1,80 @@
+/*
+Style Name: Neuroptera
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/neuroptera/1.0/neuroptera.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Neuroptera
+*/
+
+.rfw-class.neuroptera *, 
+.rfw-class.neuroptera *::after, 
+.rfw-class.neuroptera *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.neuroptera .widget_dock {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 480px;	
+}
+.rfw-class.neuroptera .widget_dock .bx-wrapper,
+.rfw-class.neuroptera .widget_dock .rfw_list{
+	padding: 0px;
+	box-shadow: none;	
+}
+.rfw-class.neuroptera .widget_dock,
+.rfw-class.neuroptera .widget_dock .bx-viewport{
+	padding: 10px 0;
+	font-family: Arial, Helvetica, sans-serif; 	
+}
+.rfw-class.neuroptera .widget_dock .rfw_dock li > a,
+.rfw-class.neuroptera .widget_dock .bx-viewport .rfw_dock li > a {
+	background-color: #AC78DA;
+	width: 100%;
+	float: left;
+}
+.rfw-class.neuroptera .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.rfw-class.neuroptera .widget_dock .rfw_dock a h3,
+.rfw-class.neuroptera .widget_dock .bx-viewport .rfw_dock h3{
+	background-color: #AC78DA;
+	padding: 10px 8px;
+	margin:0;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+}
+.rfw-class.neuroptera .widget_dock li > div.text_div,
+.rfw-class.neuroptera .widget_dock .bx-viewport li > div.text_div {
+	background-color: #DFDFE1;
+    color: #545760;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;	
+}
+.rfw-class.neuroptera .widget_dock li > div.feed_img img,
+.rfw-class.neuroptera .widget_dock .bx-viewport li > div.feed_img img{
+	margin-bottom: 0px;	
+}
+.rfw-class.neuroptera .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #DFDFE1;
+	border: 2px solid #545760;
+}
+.rfw-class.neuroptera .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #AC78DA;
+	border: 2px solid #545760;
+}
+.rfw-class.neuroptera .text_div > a {
+  color: #F4EA79;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.neuroptera .text_div > a:hover{
+	text-decoration: underline;	
+}

@@ -1,0 +1,136 @@
+# Translation of Plugins - WP Rollback - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - WP Rollback - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-10-28 16:20:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - WP Rollback - Stable (latest release)\n"
+
+#. Author of the plugin
+msgid "Impress.org"
+msgstr "Impress.org"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://impress.org/"
+msgstr "https://impress.org/"
+
+#: wp-rollback.php:497
+msgid "It appears there are no version to select. This is likely due to the %s author not using tags for their versions and only committing new releases to the repository trunk."
+msgstr "Здається, немає версії для вибору. Це, мабуть, пов’язано з тим, що автор %s не використовує теги для своїх версій і лише здійснює нові випуски в транку репозиторію."
+
+#: includes/rollback-menu.php:77 includes/rollback-menu.php:142
+msgid "Test Rollback on Staging"
+msgstr "Тестуйте відкат на тесті"
+
+#: includes/rollback-menu.php:136
+msgid "<strong>Notice:</strong> We strongly recommend you perform a <a href=\"https://wptimecapsule.com/staging/?partner=impress\" target=\"_blank\">test rollback on a staging site</a> and <a href=\"https://wptimecapsule.com/incremental-backups/?partner=impress\" target=\"_blank\">create a complete backup</a> of your WordPress files and database prior to performing a rollback. We are not responsible for any misuse, deletions, white screens, fatal errors, or any other issue arising from using this plugin."
+msgstr "<strong>Зауважте:</strong> Ми настійно рекомендуємо виконати <a href=\"https://wptimecapsule.com/staging/?partner=impress\" target=\"_blank\">відкат на тестовій площадці</a> та <a href=\"https://wptimecapsule.com/incremental-backups/?partner=impress\" target=\"_blank\">створити повну резервну копію</a> ваших файлів і бази даних WordPress до того, як виконати відкат. Ми не несемо відповідальності за будь-яке неправильне використання, видалення, білі екрани, фатальні помилки або будь-яку іншу проблему, що виникає внаслідок використання цього плагіну."
+
+#: wp-rollback.php:524
+msgid "View Changelog"
+msgstr "Переглянути журнал змін"
+
+#: includes/rollback-menu.php:51
+msgid "Oh no! We're missing required rollback query strings. Please contact support so we can check this bug out and squash it!"
+msgstr "О ні! Нам не вистачає необхідних рядків запиту відкату. Зверніться до служби підтримки, щоб ми могли перевірити цю помилку та видалити її!"
+
+#: wp-rollback.php:299
+msgid "Sorry, we couldn't find a changelog entry found for this version. Try checking the <a href=\"%s\" target=\"_blank\">developer log</a> on WP.org."
+msgstr "На жаль, для цієї версії не вдалося знайти запис змін. Спробуйте перевірити <a href=\"%s\" target=\"_blank\">журнал розробника</a> на WP.org."
+
+#: wp-rollback.php:517
+msgid "Installed Version"
+msgstr "Встановлена версія"
+
+#: wp-rollback.php:268
+msgid "Loading..."
+msgstr "Завантажується..."
+
+#: wp-rollback.php:148 wp-rollback.php:160
+msgid "Cheatin&#8217; huh?"
+msgstr "Хитруєш?"
+
+#: includes/rollback-menu.php:125
+msgid "New Version:"
+msgstr "Нова версія:"
+
+#: includes/rollback-menu.php:119
+msgid "Installed Version:"
+msgstr "Встановлена версія:"
+
+#: includes/rollback-menu.php:110
+msgid "Theme Name:"
+msgstr "Назва теми:"
+
+#: includes/rollback-menu.php:108
+msgid "Plugin Name:"
+msgstr "Назва плагіну:"
+
+#: includes/rollback-menu.php:97
+msgid "Are you sure you want to perform the following rollback?"
+msgstr "Ви впевнені, що хочете виконати наступний відкат?"
+
+#: includes/rollback-menu.php:78 includes/rollback-menu.php:143
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: wp-rollback.php:266 wp-rollback.php:582 wp-rollback.php:657
+#: wp-rollback.php:712 includes/rollback-menu.php:76
+#: includes/rollback-menu.php:141
+msgid "Rollback"
+msgstr "Відкотити назад"
+
+#: includes/rollback-menu.php:26
+msgid "plugin"
+msgstr "плагін"
+
+#: includes/rollback-menu.php:26
+msgid "theme"
+msgstr "тема"
+
+#. Plugin Name of the plugin
+#: includes/rollback-menu.php:23
+msgid "WP Rollback"
+msgstr "WP Rollback"
+
+#: includes/rollback-menu.php:10
+msgid "WP Rollback is missing necessary parameters to continue. Please contact support."
+msgstr "У WP Rollback відсутні необхідні параметри для продовження. Зверніться до служби підтримки."
+
+#: includes/rollback-action.php:47
+msgid "This rollback request is missing a proper query string. Please contact support."
+msgstr "У цьому запиті на відкат відсутній правильний рядок запиту. Зверніться до служби підтримки."
+
+#: wp-rollback.php:267
+msgid "No Rollback Available: This is a non-WordPress.org theme."
+msgstr "Недоступний відкат: ця тема, відсутня на WordPress.org."
+
+#. Description of the plugin
+msgid "Rollback (or forward) any WordPress.org plugin or theme like a boss."
+msgstr "Відкотимо (або поновимо) будь-який плагін WordPress.org або тему, як бос."
+
+#: wp-rollback.php:828
+msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
+msgstr "(WordPress не зміг встановити безпечне з'єднання з сервером WordPress.org. Будь ласка, зв'яжіться з адміністратором вашого серверу.)"
+
+#: wp-rollback.php:300
+msgid "Please select a version number to perform a rollback."
+msgstr "Виберіть номер версії, щоб виконати відкат."
+
+#: wp-rollback.php:346
+msgid "You do not have sufficient permissions to perform rollbacks for this site."
+msgstr "Ви не маєте достатніх дозволів на виконання відкату на цьому веб-сайті."
+
+#: includes/rollback-menu.php:26
+msgid "Please select which %1$s version you would like to rollback to from the releases listed below. You currently have version %2$s installed of %3$s."
+msgstr "Виберіть версію %1$s, яку ви хочете відкотити, з перелічених нижче випусків. На даний момент у вас встановлена версія %2$s на %3$s."
+
+#: wp-rollback.php:828
+msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
+msgstr "Виникла несподівана помилка. Щось може бути не так з WordPress.org або конфігурацією цього сервера. Якщо у вас виникають проблеми, спробуйте <a href=\"https://uk.wordpress.org/support/\">форуми підтримки</a>."

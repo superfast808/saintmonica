@@ -1,0 +1,206 @@
+/*
+Form Name: Dunhill
+Form URI: https://github.com/uxglow/contact-form-7/blob/master/dunhill/1.0/dunhill.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Contact Form 7, Dunhill
+*/
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
+.wpcf7{
+	width:100%;	
+	font-family: 'Open Sans', sans-serif, Arial;
+  	margin: 0 auto;  	
+  	overflow: hidden;
+}
+
+.wpcf7 input, 
+.wpcf7 textarea{
+    
+    width: 100%;
+    padding:10px;
+    color:#8e8e8e;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height: 20px;
+
+    border: solid 1px #9f9f9f; 
+    
+    box-shadow: inset 2px 2px 8px #bababa;
+    
+    -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+    
+}
+
+.wpcf7 .wpcf7-list-item{
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+.wpcf7 .wpcf7-list-item input{
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.wpcf7 select{
+  outline: none;
+  font-size:16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.wpcf7 input:hover, 
+.wpcf7 input:focus, 
+.wpcf7 input:active, 
+.wpcf7 textarea:hover, 
+.wpcf7 textarea:focus, 
+.wpcf7 textarea:active {
+  background: #ebf7f5;
+  outline: none;
+}
+
+.wpcf7 input.wpcf7-submit{
+
+    -webkit-transition: 0;
+  -moz-transition: 0;
+  -o-transition: 0;
+  transition: 0;
+  
+  border: none;
+  position: relative;
+  
+  color: #fff;
+  
+  text-shadow: 1px -2px 0px black;
+  
+  text-transform: uppercase;
+  
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  
+  font-size: 14px;
+  
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  
+  /* Gradient background */
+  background-color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5E401F), to(#000000));  
+  background:  -moz-linear-gradient(top, #5E401F, #000000);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5E401F', endColorstr='#000000');
+  -ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=#5E401F, endColorstr=#000000)&quot;;
+  
+  /* Drop Shadow */
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  
+}
+
+/* On hover */
+.wpcf7 input.wpcf7-submit:hover{
+  
+  cursor: pointer;
+  text-decoration: none;
+  
+  background-color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5E401F), to(#906039));  
+  background:  -moz-linear-gradient(top, #5E401F, #906039);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5E401F', endColorstr='#906039');
+  -ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=#5E401F, endColorstr=#906039)&quot;; 
+}
+
+/* On click */
+.wpcf7 input.wpcf7-submit:active{
+  top: 1px;
+  
+  color: #d8c6e2;
+  
+  background-color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5E401F), to(#5E401F));  
+  background:  -moz-linear-gradient(top, #5E401F, #5E401F);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5E401F', endColorstr='#5E401F');
+  -ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=#5E401F, endColorstr=#5E401F)&quot;; 
+  
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* CF7 Messages */
+.wpcf7 .wpcf7-validation-errors{
+    border:none;
+    background-color:#f4ae46;
+    margin:0;
+    padding:20px;
+    
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.wpcf7 .wpcf7-mail-sent-ok{
+    border:none;
+    background-color:#7ad33f;
+    margin:0;
+    padding:20px;
+    
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.wpcf7 .wpcf7-mail-sent-ng{
+    border:none;
+    background-color:#cf2d38;
+    margin:0;
+    padding:20px;
+  
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  
+    color: white;
+}
+
+.wpcf7 span.wpcf7-not-valid-tip{
+    border:none;
+    background-color:#cf2d38;
+    padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius:10px;
+    width: 180px;
+    color: white;
+    
+    /* Drop shadow */
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.wpcf7-form .fleft{
+  float: left;
+}
+
+.wpcf7-form .mright20{
+  margin-right: 20px;
+}
+
+.wpcf7-form .mright40{
+  margin-right: 40px;
+}
+
+.wpcf7-form .clear{
+  clear: both;
+}

@@ -1,0 +1,98 @@
+/*
+Style Name: Bee
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/bee/1.0/bee.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Bee
+*/
+
+.rfw-class.bee *, 
+.rfw-class.bee *::after, 
+.rfw-class.bee *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.bee .widget_dock {
+
+	margin: 0px auto;
+	width: 100%;
+	max-width: 480px;	
+}
+.rfw-class.bee .widget_dock .bx-wrapper,
+.rfw-class.bee .widget_dock .rfw_list{
+	padding: 0px;
+	margin: 0;	
+}
+.rfw-class.bee .widget_dock .bx-wrapper,
+.rfw-class.bee .widget_dock .rfw_list{
+	padding: 0;
+	box-shadow: none;
+	border:0;	
+}
+.rfw-class.bee .widget_dock,
+.rfw-class.bee .widget_dock .bx-viewport{
+	padding: 10px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	width:100%; 	
+}
+.rfw-class.bee .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.rfw-class.bee .widget_dock .rfw_dock li > a{
+	border-top: 8px solid #FCD000;
+}
+.rfw-class.bee .widget_dock .rfw_dock li > a,
+.rfw-class.bee .widget_dock .bx-viewport .rfw_dock li > a {
+	background-color: #ff6600;
+	width: 100%;
+	float: left;
+}
+.rfw-class.bee .widget_dock .rfw_dock a h3.entry-title,
+
+.rfw-class.bee .widget_dock .bx-viewport li > div.feed_img h3.entry-title{
+	background-color: #ff6600;
+
+.rfw-class.bee .widget_dock .bx-viewport li > div.feed_img h3{
+	background-color: #ff6600;
+	box-shadow:none;
+
+	padding: 10px 8px;
+	margin:0;
+	line-height: 22px;
+	text-align: left;
+	color: #000;
+	
+}
+.rfw-class.bee .widget_dock li > div.text_div,
+.rfw-class.bee .widget_dock .bx-viewport li > div.text_div {
+	border-top: 8px solid #FCD000;
+	background-color: #303030;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;
+}
+.rfw-class.bee .widget_dock .bx-viewport li > div.feed_img img{	
+	border-bottom: 8px solid #FCD000;	
+}
+.rfw-class.bee .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #FCD000;
+	border: 2px solid #4E9C99;	
+}
+.rfw-class.bee .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #DC4537;
+	border: 2px solid #4E9C99;
+}
+.rfw-class.bee .text_div > a {
+  color: #fcd000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.bee .text_div > a:hover{
+	text-decoration: underline;	
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+ul.ap_pagination *, ul.ap_pagination:before *, ul.ap_pagination:after *{
+	box-sizing:border-box;
+}
+ul.ap_pagination {
+	background: none repeat scroll 0 0 #FFF;
+	border-bottom:1px solid #000;
+	padding:0px 0px 10px 0px;
+	width:98%;
+}
+ul.ap_pagination li{
+	padding:8px 10px;
+	margin:0px;
+}
+ul.layout_V.ap_pagination {
+	overflow: hidden;
+	width: 28px;	
+}
+ul.layout_V.ap_pagination li{
+	padding:2px 2%;
+	margin:0px;
+	width:98%;
+}
+ul.ap_pagination li {
+	padding:0;
+	width: 6%;
+	margin-bottom: 4px;
+	margin-right: 4px;
+	background-color: #ffa633;
+	border: medium none;
+	border-radius: 18px;
+	box-shadow: 0 1px 0 rgba(100, 100, 100, 0.25);
+	cursor: pointer;
+	font-size: 18px;
+}
+ul.ap_pagination li:not(.ap_reset) a {
+	color: #fff;
+	text-shadow: 1px 1px #E28916;
+	width:100%;
+	padding: 4px;
+	display: block;
+}
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited{
+	background-color: #e78e1b;
+}
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited,
+ul.ap_pagination li:not(.ap_reset) a:hover,
+ul.ap_pagination li:not(.ap_reset) a.selected{
+    text-decoration:none;
+	color: #fff;
+	text-shadow: 1px 1px #E28916;
+	border-radius: 18px;
+	background-color: #e78e1b;
+	padding:0;	
+}
+ul.ap_pagination li.ap_reset a.selected,
+ul.ap_pagination li.ap_reset a:hover{
+	background-color: transparent;	
+}

@@ -1,0 +1,87 @@
+/*
+Style Name: Pterygota
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/hoverfly/1.0/hoverfly.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Pterygota
+*/
+
+.rfw-class.hoverfly *, 
+.rfw-class.hoverfly *::after, 
+.rfw-class.hoverfly *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.hoverfly .widget_dock {
+	margin: 0px auto;
+	width:100%;
+	max-width:480px;
+	border: 1px solid #ccc;
+	border-radius: 4px;	
+}
+.rfw-class.hoverfly .widget_dock .bx-wrapper,
+.rfw-class.hoverfly .widget_dock .rfw_list{
+	padding: 0px;
+	box-shadow: none;
+	border:0;	
+}
+.rfw-class.hoverfly .widget_dock,
+.rfw-class.hoverfly .widget_dock .bx-viewport{
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif; 	
+}
+.rfw-class.hoverfly .widget_dock .rfw_dock li > a,
+.rfw-class.hoverfly .widget_dock .bx-viewport .rfw_dock li > a {
+	background-color: #fff;
+	width: 100%;
+	float: left;
+}
+.rfw-class.hoverfly .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.rfw-class.hoverfly .widget_dock .rfw_dock a h3.entry-title,
+.rfw-class.hoverfly .widget_dock .bx-viewport .rfw_dock h3{
+	background-color: #fff;
+	padding: 10px 8px;
+	margin:0;
+	line-height: 22px;
+	text-align:justify;
+	color: #4B5262;
+}
+.rfw-class.hoverfly .widget_dock li > div.text_div,
+.rfw-class.hoverfly .widget_dock .bx-viewport li > div.text_div {
+	background-color: #fff;
+    color: #333;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;
+	text-align:justify;	
+}
+.rfw-class.hoverfly .widget_dock li .image_only.imgn > img{
+	padding: 10px;
+}
+.rfw-class.hoverfly .widget_dock li > div.feed_img img,
+.rfw-class.hoverfly .widget_dock .bx-viewport li > div.feed_img img{
+	margin-bottom: 0px;	
+}
+.rfw-class.hoverfly .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #fff;
+	border: 2px solid #4B5262;
+}
+.rfw-class.hoverfly .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #4B5262;
+	border: 2px solid #4B5262;
+}
+.rfw-class.hoverfly .text_div > a {
+  color: #F4EA79;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.hoverfly .text_div > a:hover{
+	text-decoration: underline;	
+}

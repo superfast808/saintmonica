@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-03-08 08:21+0500\n"
+"PO-Revision-Date: 2019-03-08 08:21+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/functions.php:1 inc/wpc_settings.php:1 index.php:1
+msgid "No script kiddies please!"
+msgstr "No hay guiones para niños por favor!"
+
+#: inc/functions.php:179 inc/wpc_settings.php:97
+msgid "Pro"
+msgstr "Pro"
+
+#: inc/functions.php:236 inc/wpc_settings.php:3
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tiene permisos suficientes para acceder a esta página."
+
+#: inc/functions.php:255 inc/wpc_settings.php:97
+msgid "Settings"
+msgstr "Ajustes"
+
+#: inc/functions.php:261
+msgid "Go Premium"
+msgstr "Hazte Premium"
+
+#: inc/functions.php:439
+msgid "Themes"
+msgstr "Temas"
+
+#: inc/wpc_settings.php:26
+msgid "Sorry, your nonce did not verify."
+msgstr "Lo siento, tu nonce no verificó."
+
+#: inc/wpc_settings.php:93
+msgid "Click here to download pro version"
+msgstr "Haga clic aquí para descargar la versión pro"
+
+#: inc/wpc_settings.php:93
+msgid "Already a Pro Member?"
+msgstr "¿Ya eres miembro Pro?"
+
+#: inc/wpc_settings.php:118
+msgid "Resources"
+msgstr "Recursos"
+
+#: inc/wpc_settings.php:121
+msgid "About Chameleon"
+msgstr "Acerca de Chameleon"
+
+#: inc/wpc_settings.php:125
+msgid "Get Premium Styles"
+msgstr "Consigue Estilos Premium"
+
+#: inc/wpc_settings.php:130
+msgid "Supported Plugins"
+msgstr "Complementos compatibles"
+
+#: inc/wpc_settings.php:131
+msgid "need help?"
+msgstr "¿necesitas ayuda?"
+
+#: inc/wpc_settings.php:138
+msgid "installed"
+msgstr "instalado"
+
+#: inc/wpc_settings.php:140
+msgid "Coming Soon!"
+msgstr "¡Próximamente!"
+
+#: inc/wpc_settings.php:153
+msgid "Styles"
+msgstr "Estilos"
+
+#: inc/wpc_settings.php:164
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: inc/wpc_settings.php:211
+msgid "or"
+msgstr "o"
+
+#: inc/wpc_settings.php:212
+msgid "Select Forms"
+msgstr "Seleccionar formularios"
+
+#: inc/wpc_settings.php:218
+msgid "Hold ctrl key for multiple selection"
+msgstr "Mantenga presionada la tecla ctrl para selección múltiple"
+
+#: inc/wpc_settings.php:220
+msgid "Apply"
+msgstr "Aplicar"
+
+#: inc/wpc_settings.php:223
+msgid "No items found."
+msgstr "No se encontraron artículos."
+
+#: inc/wpc_settings.php:250
+msgid "is not activated."
+msgstr "no está activado."
+
+#: inc/wpc_settings.php:253
+msgid "Activate"
+msgstr "Activar"
+
+#: inc/wpc_settings.php:258
+msgid "is not installed."
+msgstr "no está instalado."
+
+#: inc/wpc_settings.php:261
+msgid "Install"
+msgstr "Instalar"

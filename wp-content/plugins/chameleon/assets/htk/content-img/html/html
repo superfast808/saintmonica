@@ -1,0 +1,48 @@
+
+		<div class="row">
+
+			<div class="col-md-8">
+
+				<h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+				<p>At vero eos et accusamus <a href="#" target="_blank">et iusto odio</a> dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+				</p>
+				
+				<p>At vero eos et accusamus <a href="#" target="_blank">et iusto odio</a> dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+				<button class="btn btn-lg btn-primary">Button</button>
+					
+			</div>
+
+			
+			<div class="col-md-4 delta" data-ed="delta">
+				<figure class="thumbnail">
+					<img class="img-responsive" src="http://placehold.it/400x300" alt="" />
+				</figure>
+			</div>
+										  
+		</div>
+		<hr />
+		<div class="row">
+
+			<div class="col-md-8">
+
+				<h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+				<p>At vero eos et accusamus <a href="#" target="_blank">et iusto odio</a> dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+				</p>
+				<ul class="list-unstyled">
+					<li><i class="fa fa-check"></i> voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</li>
+					<li><i class="fa fa-check"></i> id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est</li>
+					<li><i class="fa fa-check"></i> id est laborum et dolorum fuga. Et harum quidem rerum facilis est et</li>
+					<li><i class="fa fa-check"></i> laborum et dolorum id est laborum et dolorum fuga. Et harum quidem rerum facilis est et</li>
+					<li><i class="fa fa-check"></i> id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero</li>
+				</ul>
+					
+			</div>
+
+			
+			<div class="col-md-4 delta" data-ed="delta">
+				<figure class="thumbnail">
+					<img class="img-responsive" src="http://placehold.it/400x300" alt="" />
+				</figure>
+			</div>
+										  
+		</div>

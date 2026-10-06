@@ -1,0 +1,204 @@
+/*
+Form Name: Buddy
+Form URI: https://github.com/uxglow/contact-form-7/blob/master/buddy/1.0/buddy.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Contact Form 7, Buddy
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
+.wpcf7{
+    max-width:600px;
+	background-color: #fff; 
+	width:100%;	
+	font-family: 'Open Sans', sans-serif, Arial;
+  	margin: 30px 0;
+  	background-color: #fefefe;
+  	overflow: hidden;
+	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+	color: #fff;
+}
+.wpcf7 .wpcf7-form {
+	background-color:#fff;
+    float: left;
+    padding: 6%;
+    width: 100%;
+}
+.wpcf7 h1 {
+	font-size: 24px;
+	color: #555;
+	color: rgb(255, 255, 255);
+	padding: 22px 25px;
+	border-radius: 5px 5px 0px 0px;
+	margin: auto;
+	text-shadow: none; 
+	text-align:left;
+}
+
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
+    padding: 0;
+    margin: 10px 0 0 0;
+	width:100%;
+	float:left;
+}
+
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
+    color: #666;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight:normal;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%
+}
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
+	float: left;
+    margin-top: 4px;
+    width: 100%;
+	color: #555;
+}
+.wpcf7 .wpcf7-form input[type=text],
+.wpcf7 .wpcf7-form input[type=date],
+.wpcf7 .wpcf7-form input[type=datetime],
+.wpcf7 .wpcf7-form input[type=number],
+.wpcf7 .wpcf7-form input[type=search],
+.wpcf7 .wpcf7-form input[type=time],
+.wpcf7 .wpcf7-form input[type=url],
+.wpcf7 .wpcf7-form input[type=email],
+.wpcf7 .wpcf7-form input[type=tel],
+.wpcf7 .wpcf7-form textarea,
+.wpcf7 .wpcf7-form select{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+	font-size: 14px;
+	line-height: 18px;
+    height: 40px;
+    margin: 6px 0;
+    outline: medium none;
+    padding: 8px 10px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+	background-color: #E3E7E4;
+    border: 0;
+    border-radius: 3px;
+    color: #555555;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	transition: background-color 1s ease 0s;
+}
+.wpcf7 .wpcf7-form input[type=text]:focus,
+.wpcf7 .wpcf7-form input[type=date]:focus,
+.wpcf7 .wpcf7-form input[type=datetime]:focus,
+.wpcf7 .wpcf7-form input[type=number]:focus,
+.wpcf7 .wpcf7-form input[type=search]:focus,
+.wpcf7 .wpcf7-form input[type=time]:focus,
+.wpcf7 .wpcf7-form input[type=url]:focus,
+.wpcf7 .wpcf7-form input[type=email]:focus,
+.wpcf7 .wpcf7-form input[type=tel]:focus,
+.wpcf7 .wpcf7-form textarea:focus,
+.wpcf7 .wpcf7-form select:focus{
+	color: #eff1ef;
+	background-color:#43413e;
+	border:0;
+}
+.wpcf7 .wpcf7-form .field-divided{
+    width: 49%;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-form-control{
+    width: 100%;
+}
+.wpcf7 .wpcf7-form .wpcf7-textarea{
+    height: 100px;
+}
+.wpcf7 .wpcf7-form input[type=submit], 
+.wpcf7 .wpcf7-form input[type=button]{
+    background: #f0bf00 none repeat scroll 0 0;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3% 8%;
+    text-transform: capitalize;
+    transition: background-color 1s ease 0s;
+    width: auto;
+}
+.wpcf7 .wpcf7-form input[type=submit]:hover, 
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
+    background: #43413e;
+	border: 0;
+    box-shadow:0px 0px 10px 6px #555;
+    -moz-box-shadow:0px 10px 6px #555;
+    -webkit-box-shadow:0px 10px 6px #555;
+	color: #fff;
+}
+.wpcf7 .wpcf7-form .required{
+    color:red;
+}
+.wpcf7 .wpcf7-form .wpcf7-response-output{
+	background-color:#B1531F;
+	color:#fff;
+	margin:30px 0 0 0;
+	padding: 10px 2% 10px;
+	font-size:12px;
+	text-align:center;
+	width: 100%;
+	float:left;
+}
+.wpcf7 .wpcf7-form .wpcf7-not-valid-tip{
+	color:red;
+	font-size:10px;
+	font-weight:normal;
+}
+.wpcf7 .screen-reader-response{
+	display:none;
+}
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ok {
+	border:none;
+	background-color: #398f14;
+	color: #fff;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ng {
+	border: none;
+	background-color: #CD0000;
+	color: #fff;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-spam-blocked {
+	border: none;
+	background-color: #ffa500;
+	color: #fff;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-validation-errors {
+	border: none;
+	background-color: #f7e700;
+	color: #333;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}

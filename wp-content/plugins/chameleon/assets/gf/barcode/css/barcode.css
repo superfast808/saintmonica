@@ -1,0 +1,178 @@
+/*
+Form Name: Announcement
+Form URI: https://github.com/uxglow/gravity-forms/blob/master/announcement/1.0/announcement.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Gravity Forms, Announcement
+*/
+
+.gform_wrapper *, .gform_wrapper *::after, .gform_wrapper *::before {
+    box-sizing: border-box  !important;
+}
+.gform_wrapper {
+    background-color: #ffffff;
+    border-bottom: 5px solid #33b5e5;
+    border-top: 5px solid #33b5e5;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    color: #666;
+    font-family: "Open Sans",sans-serif,Arial;
+    margin: 5% auto;
+    overflow: hidden;
+    width: 450px;
+}
+.gform_wrapper form {
+	float: left;
+    padding: 40px 5%;
+    width: 100%;	
+}
+.gform_wrapper form:before {
+    background-color: #fff;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAYAAAB4d5a9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABAhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVFNjZCRDZCODUzOTExRTU4RTQwRkQwODFEOUZEMEE3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVFNjZCRDZBODUzOTExRTU4RTQwRkQwODFEOUZEMEE3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTk5NzA1OGEtZDI3OC00NDZkLWE4ODgtNGM4MGQ4YWI1NzNmIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YzRkZmQxMGMtY2NlNS0xMTc4LWE5OGQtY2NkZmM5ODk5YWYwIi8+IDxkYzp0aXRsZT4gPHJkZjpBbHQ+IDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Z2x5cGhpY29uczwvcmRmOmxpPiA8L3JkZjpBbHQ+IDwvZGM6dGl0bGU+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+S6qwiQAAAOhJREFUeNpi/P//PwOtACMj4wIwA2QJtTAQBAAxyOAPUP5/MKaCwQZAPAFkMNxQsNsptAQIFIC4AYgfIBtMsSVAIADEBUB8AZfBZFkCNTgBiDcQYzBRlkAj7T81MIol0LBFF6SqJYwwm4CCwGTNSLVMg2weEwMdAN0saYQWAQI0K16Qyy6gRaBcy0/rODmAxi8E4kQg3kipjcj5pAEtKS7AkjEvUJoZA9AUH8BTdhWQVXZBNWMoJrIUfkB02YXFVQLk1CfQ4IXkePSaEZgiQJFvjyTkCFRzgKo1IxA4IFVAH0jxCS4MEGAAKs1HmjH1a48AAAAASUVORK5CYII=");
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    float: right;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+}
+/*Custom Start*/
+.gform_wrapper ul li::after, .gform_wrapper ul li::before, .gform_wrapper ul.gform_fields {
+	width: 100%;
+	float: left;	
+}
+
+.gform_wrapper .gsection .gfield_label, 
+.gform_wrapper h2.gsection_title, 
+.gform_wrapper h3.gform_title {
+	color: #33B5E5;	
+}
+.gform_wrapper form li, .gform_wrapper li > div span {
+	float: left;
+    width: 100%;
+}
+.gform_wrapper .ginput_complex.ginput_container {
+	float: left;	
+}
+
+.gform_wrapper .ginput_complex .ginput_left input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex .ginput_right input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex select,
+.gform_wrapper input.large, 
+.gform_wrapper input.medium, 
+.gform_wrapper input.small, 
+.gform_wrapper select.large, 
+.gform_wrapper select.medium, 
+.gform_wrapper select.small,
+.gform_wrapper textarea  {
+	background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    height: 42px;
+    margin: 0 0 6px;
+    outline: medium none;
+    padding: 8px 10px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+}
+
+.gform_wrapper .ginput_complex .ginput_left input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
+.gform_wrapper .ginput_complex .ginput_right input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
+.gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
+.gform_wrapper .ginput_complex select:focus,
+.gform_wrapper input.large:focus, 
+.gform_wrapper input.medium:focus, 
+.gform_wrapper input.small:focus, 
+.gform_wrapper select.large:focus, 
+.gform_wrapper select.medium:focus, 
+.gform_wrapper select.small:focus ,
+.gform_wrapper textarea:focus {
+	border: 1px solid #33b5e5;
+    color: #333;
+}
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type="submit"], 
+.gform_wrapper .gform_page_footer input.button, 
+.gform_wrapper .gform_page_footer input[type="submit"] {
+    background: #33b5e5 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-transform: uppercase;
+	width: 100%;
+}
+.gform_wrapper .gform_footer input.button:hover, 
+.gform_wrapper .gform_footer input[type="submit"]:hover, 
+.gform_wrapper .gform_page_footer input.button:hover, 
+.gform_wrapper .gform_page_footer input[type="submit"] {
+	background: #178ab4 none repeat scroll 0 0;
+    box-shadow: none;
+    color: #fff;
+}
+body .gform_wrapper ul li.gfield {
+    margin-top: 16px;
+	margin-bottom: 6px;
+    padding-top: 0;
+}
+.gform_wrapper label.gfield_label {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+}
+body .gform_wrapper .top_label div.ginput_container {
+	margin-top: 4px;	
+}
+.gform_wrapper .gsection {
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    margin: 28px 0;
+    padding: 0 16px 8px 0;
+}
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label,
+.gform_wrapper .field_sublabel_below div.ginput_container[class*="gfield_time_"] label {
+	color: #da7777;	
+}
+/* Custome Error*/
+.gform_wrapper div.validation_error {
+    border-bottom: 2px solid #790000;
+    border-top: 2px solid #790000;
+    clear: both;
+    color: #790000;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+.gform_wrapper li.gfield.gfield_error, 
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    border-bottom: none;
+    border-top: none;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+	margin-top: 8px;
+    padding-bottom: 0;
+    padding-top: 0;	
+}
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container, 
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+	margin-top: 4px;
+}
+
+.gform_wrapper li.gfield_error div.ginput_complex.ginput_container label, 
+.gform_wrapper li.gfield_error ul.gfield_checkbox, 
+.gform_wrapper li.gfield_error ul.gfield_radio {
+    color: #da7777;
+}
+.gform_wrapper .validation_message {
+	color: #da7777;
+}
+.gform_wrapper .gfield_error .gfield_label {
+    color: #790000;
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+ul.ap_pagination *, ul.ap_pagination:before *, ul.ap_pagination:after *{
+	box-sizing:border-box;
+}
+ul.ap_pagination {
+	background: none repeat scroll 0 0 #FFF;
+	border-bottom:1px solid #000;
+	padding:0px 0px 10px 0px;
+	width:98%;
+}
+ul.ap_pagination li{
+	padding:8px 10px;
+	margin:0px;
+}
+ul.layout_V.ap_pagination {
+	overflow: hidden;
+	width: 28px;	
+}
+ul.layout_V.ap_pagination li{
+	padding:2px 2%;
+	margin:0px;
+	width:98%;
+}
+ul.ap_pagination li {
+  background-color: transparent;
+  border: medium none;
+  border-radius: 3em;
+  box-shadow: 0 1px 0 rgba(100, 100, 100, 0.25);
+  cursor: pointer;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  padding: 0;
+  width: 9%;
+}
+ul.ap_pagination li:not(.ap_reset) a {
+  background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+  background-position: 0 0;
+  background-size: 100% auto;
+  border-color: #1abc9c;
+  border-radius: 3em;
+  color: #333;
+  display: block;
+  transition: background 300ms ease-in-out 0s;
+  width: 100%;
+  line-height: 20px;
+  font-size: 14px;
+}
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited{
+	background-color: #00BF8F;
+}
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited,
+ul.ap_pagination li:not(.ap_reset) a:hover,
+ul.ap_pagination li:not(.ap_reset) a.selected{
+    text-decoration:none;
+	color: #fff;
+	text-shadow: 1px 1px #00BF8F;
+	background-color: #00BF8F;	
+}
+ul.ap_pagination li:not(.ap_reset) a:hover{
+	background-position: 100px center;	
+}

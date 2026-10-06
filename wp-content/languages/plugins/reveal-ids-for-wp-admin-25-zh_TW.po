@@ -1,0 +1,87 @@
+# Translation of Plugins - Reveal IDs - Development (trunk) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - Reveal IDs - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-02-24 15:24:53+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - Reveal IDs - Development (trunk)\n"
+
+#: authorplugins.inc.php:32
+msgid "Visit plugin homepage"
+msgstr "造訪外掛首頁"
+
+#: authorplugins.inc.php:35
+msgid "plugin"
+msgstr "外掛"
+
+#: authorplugins.inc.php:35
+msgid "Version"
+msgstr "版本"
+
+#: authorplugins.inc.php:35
+msgid "Author"
+msgstr "開發者"
+
+#: reveal-ids-for-wp-admin-25.php:217
+msgid "Enhanced by Reveal IDs Plugin"
+msgstr "由 Reveal IDs 外掛所加強"
+
+#: reveal-ids-for-wp-admin-25.php:217 reveal-ids-for-wp-admin-25.php:229
+msgid "ID"
+msgstr "ID"
+
+#. #-#-#-#-#  reveal-ids-for-wp-admin-25-code.pot (Reveal IDs 1.5.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: reveal-ids-for-wp-admin-25.php:322 reveal-ids-for-wp-admin-25.php:324
+#: reveal-ids-for-wp-admin-25.php:340
+msgid "Reveal IDs"
+msgstr "Reveal IDs"
+
+#: reveal-ids-for-wp-admin-25.php:351
+msgid "You may also be interested in some of my other plugins:"
+msgstr "這裡還有更多同一位開發者所開發的外掛:"
+
+#: reveal-ids-for-wp-admin-25.php:352
+msgid "Show other plugins by this author inline &raquo;"
+msgstr "顯示其他外掛 &raquo;"
+
+#: reveal-ids-for-wp-admin-25.php:365
+msgid "More plugins at: <a class=\"button rbutton\" href=\"http://www.schloebe.de/portfolio/\" target=\"_blank\">www.schloebe.de</a>"
+msgstr "在 <a class=\"button rbutton\" href=\"https://www.schloebe.de/portfolio/\" target=\"_blank\">www.schloebe.de</a> 還有更多外掛"
+
+#: reveal-ids-for-wp-admin-25.php:373
+msgid "Help"
+msgstr "外掛使用說明"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.schloebe.de/wordpress/reveal-ids-for-wp-admin-25-plugin/"
+msgstr "https://www.schloebe.de/wordpress/reveal-ids-for-wp-admin-25-plugin/"
+
+#. Author of the plugin/theme
+msgid "Oliver Schl&ouml;be"
+msgstr "Oliver Schl&ouml;be"
+
+#. Author URI of the plugin/theme
+msgid "https://www.schloebe.de/"
+msgstr "https://www.schloebe.de/"
+
+#. Description of the plugin/theme
+msgid "Reveals hidden IDs in Admin interface that have been removed with WordPress 2.5 (formerly known as Entry IDs in Manage Posts/Pages View for WP 2.5). See <a href=\"options-general.php?page=reveal-ids-for-wp-admin-25/reveal-ids-for-wp-admin-25.php\">options page</a> for information."
+msgstr "在管理後台介面中顯示隱藏的 ID 的功能已於 WordPress 2.5 移除 (前身為 Entry IDs in Manage Posts/Pages View for WP 2.5)。請參考<a href=\"options-general.php?page=reveal-ids-for-wp-admin-25/reveal-ids-for-wp-admin-25.php\">外掛設定頁</a>瞭解進一步資訊。"
+
+#: reveal-ids-for-wp-admin-25.php:346
+msgid "More of my WordPress plugins"
+msgstr "同一位開發者的其他外掛"
+
+#: reveal-ids-for-wp-admin-25.php:378
+msgid "All options to enable/disable the display of IDs have been removed in version 1.3.0! If you would like to hide the ID column on a specific panel, just remove it in the options panel."
+msgstr "從 1.3.0 版開始，移除全部啟用/停用顯示 ID 的設定；如需在指定面板隱藏 ID 欄位，請在指定面板頁面的 [顯示項目設定] 分頁中設定。"
+
+#: reveal-ids-for-wp-admin-25.php:400
+msgid "<strong>Reveal IDs</strong> 1.3.0 and above require at least WordPress 3.0! If you're still using a WP version prior to 3.0, please <a href='%s'>use Reveal IDs version 1.2.7</a>! Consider updating to the latest WP version for your own safety!"
+msgstr "<strong>Reveal IDs</strong> 1.3.0 及更新版本需要的 WordPress 最低版本需求為 3.0 版。如果這個網站仍使用早於 WordPress 3.0 之前的版本，請<a href='%s'>改用 Reveal IDs 1.2.7 版</a>！將網站的 WordPress 更新至最新版能為網站提供更加安全的保障。"

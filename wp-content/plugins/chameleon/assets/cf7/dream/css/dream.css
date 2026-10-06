@@ -1,0 +1,219 @@
+/*
+Form Name: Bulbul
+Form URI: https://github.com/uxglow/contact-form-7/blob/master/bulbul/1.0/bulbul.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Contact Form 7, Dream
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
+.wpcf7{ 
+	width:500px;	
+	font-family: 'Open Sans', sans-serif, Arial;
+  	margin: 0 auto;
+  	background: rgba(0, 0, 0, 0) linear-gradient(45deg, #b3bead 0%, #dfe5d7 60%, #fcfff4 100%) repeat scroll 0 0;
+  	overflow: hidden;
+	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+	color: #6c7a89;
+}
+.wpcf7 .wpcf7-form {
+	background-color:#6BE0FF;
+    float: left;
+    padding: 5%;
+    width: 100%;
+}
+.wpcf7 h1 {
+	font-size: 24px;
+	color: #333;
+	color: rgb(255, 255, 255);
+	padding: 22px 25px;
+	border-radius: 5px 5px 0px 0px;
+	margin: auto;
+	text-shadow: none; 
+	text-align:left;
+}
+
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
+    padding: 0;
+    margin: 10px 0 0 0;
+	width:100%;
+	float:left;
+	display:block;
+}
+
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
+    color:#C6F;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight:normal;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%
+}
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
+	float: left;
+    margin-top: 4px;
+    width: 100%;
+	color: #6c7a89;
+	display:block;
+}
+.wpcf7 .wpcf7-form label{
+	color:#0003CC;
+	font-size:16px;
+}	
+.wpcf7 .wpcf7-form ::-webkit-input-placeholder { color:#999; } /* chrome/webkit */
+.wpcf7 .wpcf7-form ::-moz-placeholder { color:#999; } /* firefox 19+ */
+.wpcf7 .wpcf7-form :-moz-placeholder { color:#999; } /* firefox 18- */
+.wpcf7 .wpcf7-form :-ms-input-placeholder { color:#999; } /* ie */
+
+.wpcf7 .wpcf7-form input[type=text],
+.wpcf7 .wpcf7-form input[type=date],
+.wpcf7 .wpcf7-form input[type=datetime],
+.wpcf7 .wpcf7-form input[type=number],
+.wpcf7 .wpcf7-form input[type=search],
+.wpcf7 .wpcf7-form input[type=time],
+.wpcf7 .wpcf7-form input[type=url],
+.wpcf7 .wpcf7-form input[type=email],
+.wpcf7 .wpcf7-form input[type=tel],
+.wpcf7 .wpcf7-form textarea,
+.wpcf7 .wpcf7-form select{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+	font-size: 16px;
+	line-height: 18px;
+    height: 40px;
+    margin: 6px 0;
+    outline: medium none;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+	background:rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #6c7a89;
+    border-radius:2px;
+    color: #000;
+	background-color: rgba(255,225,255,0.7);
+}
+.wpcf7 .wpcf7-form input[type=text]:focus,
+.wpcf7 .wpcf7-form input[type=date]:focus,
+.wpcf7 .wpcf7-form input[type=datetime]:focus,
+.wpcf7 .wpcf7-form input[type=number]:focus,
+.wpcf7 .wpcf7-form input[type=search]:focus,
+.wpcf7 .wpcf7-form input[type=time]:focus,
+.wpcf7 .wpcf7-form input[type=url]:focus,
+.wpcf7 .wpcf7-form input[type=email]:focus,
+.wpcf7 .wpcf7-form input[type=tel]:focus,
+.wpcf7 .wpcf7-form textarea:focus,
+.wpcf7 .wpcf7-form select:focus{
+	color: #302F44;
+	border-color: #332b2b;
+}
+.wpcf7 .wpcf7-form .field-divided{
+    width: 49%;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-form-control{
+    width: 100%;
+}
+.wpcf7 .wpcf7-form .wpcf7-textarea{
+    height: 100px;
+	border-radius:2px;
+	background-color: rgba(255,225,255,0.7);
+}
+.wpcf7 .wpcf7-form input[type=submit], 
+.wpcf7 .wpcf7-form input[type=button]{
+    background: #4942CC;
+    border: 1px solid #03c9a9;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    padding: 10px 40px;
+	letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in 0s;
+    width: auto;
+}
+.wpcf7 .wpcf7-form input[type=submit]:hover, 
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
+    background: #0D1EDD;
+	border: 1px solid #00ad8d;
+	color: #fff;
+	transform: none;
+}
+.wpcf7 .wpcf7-form .required{
+    color:red;
+}
+.wpcf7 .wpcf7-form .wpcf7-response-output{
+	background-color:#B1531F;
+	color:#fff;
+	margin:30px 0 0 0;
+	padding: 10px 2% 10px;
+	font-size:12px;
+	text-align:center;
+	width: 100%;
+	float:left;
+}
+.wpcf7 .wpcf7-form .wpcf7-not-valid-tip{
+	
+	font-size:12px;
+	font-weight:normal;
+	display:block;
+	color:red;
+}
+.wpcf7 .screen-reader-response{
+	display:none;
+}
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ok {
+	border:none;
+	background-color: #7fde57;
+	color: #060000;
+	font-size: 13px;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ng {
+	border: none;
+	background-color: #CD0000;
+	color: #fff;
+	font-size: 13px;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-spam-blocked {
+	border: none;
+	background-color: #ffa500;
+	color: #fff;
+	font-size: 13px;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-validation-errors {
+	border: none;
+	background-color: #f7e700;
+	color: #333;
+	font-size: 13px;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+	
+}

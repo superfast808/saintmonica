@@ -1,0 +1,11 @@
+[20-Sep-2017 17:20:04 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[28-Sep-2017 08:11:02 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[25-Mar-2018 14:04:08 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[27-May-2018 05:52:02 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[03-Jun-2018 01:06:37 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[11-Jun-2018 17:32:28 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[05-Jul-2018 17:13:37 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[13-Jul-2018 11:14:12 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[25-Jul-2018 00:03:34 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[26-Jul-2018 00:56:54 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60
+[21-Sep-2018 23:14:50 UTC] PHP Fatal error:  Call to undefined function add_action() in /var/www/vhosts/flowhelpdesk.co.uk/church.flowhelpdesk.co.uk/wp-content/plugins/hello.php on line 60

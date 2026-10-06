@@ -1,0 +1,318 @@
+# Translation of Plugins - Photo Gallery by WD &#8211; Responsive Photo Gallery for WordPress - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Photo Gallery by WD &#8211; Responsive Photo Gallery for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-09-14 08:27:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Photo Gallery by WD &#8211; Responsive Photo Gallery for WordPress - Stable (latest release)\n"
+
+#: addons/addons.php:69
+msgid "GET THIS ADD ON"
+msgstr "CONSIGUE ESTE COMPLEMENTO"
+
+#: addons/addons.php:34
+msgid "Add-ons are supported by premium version of Photo Gallery"
+msgstr "Los complementos están disponibles para las versiones premium de Photo Gallery"
+
+#: addons/addons.php:33
+msgid "Attention"
+msgstr "Atención"
+
+#: addons/addons.php:30
+msgid "Photo Gallery Add-ons"
+msgstr "Complementos de Photo Gallery"
+
+#: addons/addons.php:21
+msgid "Photo Gallery Export/Import helps to move created galleries and albums from one site to another. This way you can save the gallery/album options and manual modifications."
+msgstr "La Importación/Exportación de Photo Gallery te ayuda a mover galerías y álbumes creados de un sitio a otro. De este modo puedes guardar las opciones de galería o álbum y modificaciones manuales."
+
+#: addons/addons.php:19
+msgid "Photo Gallery Export / Import"
+msgstr "Importación / Exportación de Photo Gallery"
+
+#: addons/addons.php:14
+msgid "This addon integrates NextGen with Photo Gallery allowing to import images and related data from NextGen to use with Photo Gallery"
+msgstr "Este complemento integra NextGen con Photo Gallery permitiendo importar imágenes y datos relacionados desde NextGen para usar con Photo Gallery"
+
+#: addons/addons.php:12
+msgid "NextGen Gallery Import to Photo Gallery"
+msgstr "Importar galería NextGen a Photo Gallery"
+
+#: addons/addons.php:7
+msgid "Photo Gallery Facebook is an add-on, which helps to display Facebook photos and videos within Photo Gallery plugin. You can create Facebook-only galleries, embed individual images and videos or include Facebook albums within mixed type albums."
+msgstr "Photo Gallery Facebook es un complemento que ayuda a mostrar fotos y vídeos de Facebook en el plugin de Photo Gallery. Puedes crear galerías de Facebook, incluir imágenes y vídeos individuales o incluir álbumes de Facebook en álbumes mixtos."
+
+#: addons/addons.php:5
+msgid "Photo Gallery Facebook"
+msgstr "Photo Gallery Facebook"
+
+#. Author URI of the plugin/theme
+msgid "https://web-dorado.com/"
+msgstr "https://web-dorado.com/"
+
+#. Author of the plugin/theme
+msgid "WebDorado"
+msgstr "WebDorado"
+
+#. Description of the plugin/theme
+msgid "This plugin is a fully responsive gallery plugin with advanced functionality.  It allows having different image galleries for your posts and pages. You can create unlimited number of galleries, combine them into albums, and provide descriptions and tags."
+msgstr "Este es un plugin completamente responsive de galería de imágenes con funcionalidades avanzadas. Permite tener diferentes galerías de imágenes para tus posts y páginas. Puedes crear un número ilimitado de galerías, combinarlas en álbumes y proporcionales descripciones y etiquetas."
+
+#. Plugin URI of the plugin/theme
+msgid "https://web-dorado.com/products/wordpress-photo-gallery-plugin.html"
+msgstr "https://web-dorado.com/products/wordpress-photo-gallery-plugin.html"
+
+#. Plugin Name of the plugin/theme
+msgid "Photo Gallery"
+msgstr "Photo Gallery"
+
+#: photo-gallery.php:2564
+msgid "This is not a valid email address."
+msgstr "Esto no es una dirección de correo electrónico válida."
+
+#: photo-gallery.php:2563
+msgid "field is required."
+msgstr "Se requiere campo. "
+
+#: photo-gallery-notices.php:192
+msgid "Maybe Later"
+msgstr "Quizá más tarde"
+
+#: photo-gallery-notices.php:191
+msgid "I've already left a review"
+msgstr "Ya he dejado una crítica"
+
+#: photo-gallery-notices.php:190
+msgid "Sure! I'd love to!"
+msgstr "¡Claro! ¡Me encantaría!"
+
+#: photo-gallery-notices.php:189
+msgid "We hope you've enjoyed using WordPress %s! Would you consider leaving us a review on WordPress.org?"
+msgstr "¡Esperamos que hayas disfrutado usando WordPress %s! ¿Considerarías dejarnos una crítica en WordPress.org?"
+
+#: photo-gallery-notices.php:188
+msgid "Leave A Review?"
+msgstr "¿Dejar una crítica?"
+
+#: photo-gallery-notices.php:193 photo-gallery-notices.php:203
+msgid "Never show again"
+msgstr "No volver a mostrar"
+
+#: photo-gallery-notices.php:202
+msgid "Get Some Help"
+msgstr "Conseguir ayuda"
+
+#: photo-gallery-notices.php:201
+msgid "Check out User Guide"
+msgstr "Échale un ojo a nuestra guía"
+
+#: photo-gallery-notices.php:200
+msgid "Thank you for using WordPress %s! We hope that you've found everything you need, but if you have any questions:"
+msgstr "¡Gracias por usar WordPress %s! Esperamos que hayas encontrado todo lo que necesitas, pero si tienes alguna pregunta:"
+
+#: photo-gallery-notices.php:199
+msgid "Hey! How's It Going?"
+msgstr "¡Hey! ¿Cómo estás?"
+
+#: frontend/views/BWGViewImage_browser.php:77
+#: frontend/views/BWGViewSlideshow.php:124
+#: frontend/views/BWGViewThumbnails.php:161
+msgid "There is no gallery selected or the gallery was deleted."
+msgstr "No hay galería seleccionada o la galería se ha eliminado."
+
+#: frontend/views/BWGViewGalleryBox.php:2189
+#: frontend/views/BWGViewGalleryBox.php:2204
+#: frontend/views/BWGViewSlideshow.php:1433
+#: frontend/views/BWGViewSlideshow.php:1451
+msgid "Pause"
+msgstr "Pausa"
+
+#: frontend/views/BWGViewGalleryBox.php:2175
+msgid "Exit Fullscreen"
+msgstr "Salir de pantalla completa"
+
+#: frontend/views/BWGViewGalleryBox.php:2064
+#: frontend/views/BWGViewGalleryBox.php:2264
+msgid "Restore"
+msgstr "Restaurar"
+
+#: frontend/views/BWGViewGalleryBox.php:1909
+msgid "Hide info"
+msgstr "Anterior información"
+
+#: frontend/views/BWGViewGalleryBox.php:1765
+msgid "Hide Comments"
+msgstr "Ocultar comentarios"
+
+#: frontend/views/BWGViewGalleryBox.php:1722
+msgid "Show Comments"
+msgstr "Restaurar"
+
+#: frontend/views/BWGViewGalleryBox.php:871
+msgid "Download original image"
+msgstr "Descargar la imagen original"
+
+#: frontend/views/BWGViewGalleryBox.php:850
+msgid "Open image in original size."
+msgstr "Abrir imagen en tamaño original. "
+
+#: frontend/views/BWGViewGalleryBox.php:844
+#: frontend/views/BWGViewGalleryBox.php:1913
+msgid "Show info"
+msgstr "Mostrar info"
+
+#: frontend/views/BWGViewGalleryBox.php:842
+#: frontend/views/BWGViewGalleryBox.php:1576
+#: frontend/views/BWGViewGalleryBox.php:2125
+msgid "Fullscreen"
+msgstr "Pantalla completa"
+
+#: frontend/views/BWGViewGalleryBox.php:838
+#: frontend/views/BWGViewGalleryBox.php:1574
+#: frontend/views/BWGViewGalleryBox.php:2027
+#: frontend/views/BWGViewGalleryBox.php:2123
+msgid "Maximize"
+msgstr "Maximizar"
+
+#: frontend/views/BWGViewGalleryBox.php:814
+msgid "The image has been deleted."
+msgstr "La imagen ha sido borrada. "
+
+#: frontend/views/BWGViewAlbum_extended_preview.php:807
+msgid "Hide"
+msgstr "Ocultar"
+
+#: frontend/views/BWGViewAlbum_extended_preview.php:689
+#: frontend/views/BWGViewAlbum_extended_preview.php:812
+msgid "More"
+msgstr "Más"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:798
+#: frontend/views/BWGViewAlbum_extended_preview.php:768
+#: frontend/views/BWGViewGalleryBox.php:834
+#: frontend/views/BWGViewGalleryBox.php:2195
+#: frontend/views/BWGViewSlideshow.php:1442
+#: frontend/views/BWGViewThumbnails.php:448
+msgid "Play"
+msgstr "Juega"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:742
+#: frontend/views/BWGViewAlbum_extended_preview.php:724
+msgid "Gallery is empty."
+msgstr "Galería está vacía"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:737
+#: frontend/views/BWGViewAlbum_extended_preview.php:719 photo-gallery.php:2565
+msgid "There are no images matching your search."
+msgstr "No hay imágenes que coinciden con su búsqueda."
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:619
+#: frontend/views/BWGViewAlbum_extended_preview.php:588
+msgid "Album is empty."
+msgstr "Álbum está vacío"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:596
+#: frontend/views/BWGViewAlbum_extended_preview.php:577
+msgid "Back"
+msgstr "Back"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:177
+#: frontend/views/BWGViewAlbum_extended_preview.php:122
+#: frontend/views/BWGViewImage_browser.php:83
+#: frontend/views/BWGViewSlideshow.php:129
+#: frontend/views/BWGViewThumbnails.php:169
+msgid "There are no images in this gallery."
+msgstr "No hay imágenes en esta galería."
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:155
+#: frontend/views/BWGViewAlbum_compact_preview.php:189
+#: frontend/views/BWGViewAlbum_extended_preview.php:100
+#: frontend/views/BWGViewAlbum_extended_preview.php:134
+msgid "There is no album selected or the album was deleted."
+msgstr "No hay ningún álbum seleccionado o se eliminó el álbum"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:148
+#: frontend/views/BWGViewAlbum_extended_preview.php:93
+#: frontend/views/BWGViewImage_browser.php:72
+#: frontend/views/BWGViewSlideshow.php:46
+#: frontend/views/BWGViewSlideshow.php:86
+#: frontend/views/BWGViewThumbnails.php:150
+msgid "There is no theme selected or the theme was deleted."
+msgstr "No hay tema seleccionado o se ha eliminado el tema"
+
+#: framework/WDWLibrary.php:772
+msgid "Random"
+msgstr "aleatorio"
+
+#: framework/WDWLibrary.php:771
+msgid "Size"
+msgstr "tamaño"
+
+#: framework/WDWLibrary.php:770
+msgid "Filename"
+msgstr "Nombre Del Archivo"
+
+#: framework/WDWLibrary.php:769
+msgid "Default"
+msgstr "defecto"
+
+#: framework/WDWLibrary.php:767
+msgid "Order by: "
+msgstr "Ordenar por"
+
+#: framework/WDWLibrary.php:725
+msgid "Search"
+msgstr "Búsqueda"
+
+#: framework/WDWLibrary.php:722
+msgid "Reset"
+msgstr "Restablecer"
+
+#: framework/WDWLibrary.php:562
+msgid "Load More..."
+msgstr "Cargar más..."
+
+#: framework/WDWLibrary.php:550
+msgid "Go to the last page"
+msgstr "Ir a la última página"
+
+#: framework/WDWLibrary.php:549
+msgid "Go to the next page"
+msgstr "Ir a la página siguiente"
+
+#: framework/WDWLibrary.php:545
+msgid "of"
+msgstr "de"
+
+#: framework/WDWLibrary.php:543
+msgid "Go to the previous page"
+msgstr "Ir a la página anterior"
+
+#: framework/WDWLibrary.php:542
+msgid "Go to the first page"
+msgstr "Ir a la primera página"
+
+#: framework/WDWLibrary.php:524
+msgid "Last"
+msgstr "Pasado"
+
+#: framework/WDWLibrary.php:523
+msgid "Next"
+msgstr "Siguiente"
+
+#: framework/WDWLibrary.php:522
+msgid "Previous"
+msgstr "Anterior"
+
+#: framework/WDWLibrary.php:521
+msgid "First"
+msgstr "En primer lugar"
+
+#: framework/WDWLibrary.php:516
+msgid " item(s)"
+msgstr "artículo (s)"

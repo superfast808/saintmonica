@@ -1,0 +1,82 @@
+/*
+Style Name: Dobsonfly
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/dobsonfly/1.0/dobsonfly.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Dobsonfly
+*/
+
+.rfw-class.dobsonfly *, 
+.rfw-class.dobsonfly *::after, 
+.rfw-class.dobsonfly *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.dobsonfly .widget_dock {
+	width:100%;
+	max-width:480px;
+	margin: 0 auto;	
+}
+.rfw-class.dobsonfly .widget_dock .bx-wrapper,
+.rfw-class.dobsonfly .widget_dock .rfw_list{
+	padding: 0;
+	box-shadow: none;
+	border:0;	
+}
+.rfw-class.dobsonfly .widget_dock,
+.rfw-class.dobsonfly .widget_dock .bx-viewport{
+	padding: 10px 0;
+	font-family: Arial, Helvetica, sans-serif; 	
+}
+.rfw-class.dobsonfly .widget_dock .rfw_dock li > a,
+.rfw-class.dobsonfly .widget_dock .bx-viewport .rfw_dock li > a {
+	width: 100%;
+	float: left;
+}
+.rfw-class.dobsonfly .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.rfw-class.dobsonfly .widget_dock .rfw_dock a h3,
+.rfw-class.dobsonfly .widget_dock .bx-viewport .rfw_dock h3{
+	background-color: #008886;
+	padding: 10px 8px;
+	margin:0;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+}
+.rfw-class.dobsonfly .widget_dock li > div.text_div,
+.rfw-class.dobsonfly .widget_dock .bx-viewport li > div.text_div {
+	background-color: #000;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;	
+}
+.rfw-class.dobsonfly .widget_dock li > div.feed_img img,
+.rfw-class.dobsonfly .widget_dock .bx-viewport li > div.feed_img img{
+	margin-bottom: 0px;	
+}
+.rfw-class.dobsonfly .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #000;
+	border: 3px solid #008886;
+	border-radius: 0;
+}
+.rfw-class.dobsonfly .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #fff;
+	border: 3px solid #008886;
+	border-radius: 0;
+}
+.rfw-class.dobsonfly .text_div > a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.dobsonfly .text_div > a:hover{
+	text-decoration: underline;	
+}

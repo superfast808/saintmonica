@@ -1,0 +1,246 @@
+
+/*
+Form Name: Community
+Form URI: https://github.com/uxglow/gravity-forms/blob/master/community/1.0/community.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Gravity Forms, Community
+*/
+
+div.gform_wrapper *, 
+div.gform_wrapper *::after, 
+div.gform_wrapper *::before {
+    box-sizing: border-box  !important;
+}
+div.gform_wrapper {
+    background-color: #F55438;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    margin: 5% auto;
+    overflow: hidden;
+    width: auto;
+}
+div.gform_wrapper form {
+	background:transparent;
+	margin:0;
+	width: 100%;
+	display:table;	
+}
+div.gform_wrapper form > div.gform_heading{
+	position:relative;
+}
+
+div.gform_wrapper form > div.gform_heading,
+div.gform_wrapper form > div:nth-child(2),
+div.gform_wrapper form > div:nth-child(3),
+div.gform_wrapper form > div:nth-child(4){
+	padding: 20px;
+	margin:0;
+	width: 100%;
+	float:left;
+	display:block;
+}
+div.gform_wrapper form > div:nth-child(2),
+div.gform_wrapper form > div:nth-child(3),
+div.gform_wrapper form > div:nth-child(4){
+	padding: 0 20px;
+}
+div.gform_wrapper form div.gform_heading{
+	background:#F55438;
+	margin-bottom: 0px;
+	border-bottom: 4px solid #fff;
+}
+div.gform_wrapper form > div.gform_heading h1,
+div.gform_wrapper form > div.gform_heading h2,
+div.gform_wrapper form > div.gform_heading h3,
+div.gform_wrapper form > div.gform_heading h4{
+	color:#fff;	
+}
+div.gform_wrapper form > div.gform_heading span{
+	color:#fff;
+	margin:0;
+}
+div.gform_wrapper .gform_body{}
+div.gform_wrapper ul.gform_fields li.gfield{
+	background: transparent none repeat scroll 0 0;
+    margin: 20px 0;
+    padding-right: 0;
+    width: 100%;
+	max-width: 100%;	
+}
+div.gform_wrapper ul.gform_fields li.gsection{
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 0;	
+}
+div.gform_wrapper ul.gform_fields li.gfield h2.gsection_title{
+	background-color: transparent;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+	line-height: 24px;
+    width: 100%;
+	position:relative;
+}
+div.gform_wrapper ul.gform_fields li.gfield label.gfield_label{
+	color: #fff;
+	font-weight: normal;
+	font-size:14px;	
+}
+div.gform_wrapper .description, 
+div.gform_wrapper ul.gform_fields li.gfield .gsection_description, 
+div.gform_wrapper .instruction,
+div.gform_wrapper ul.gform_fields li.gfield .gfield_description{
+	color:#fff;
+	font-size: 12px;	
+}
+div.gform_wrapper ul.gform_fields li.gfield .gsection_description > p{
+	color:#fff;	
+}
+div.gform_wrapper ul.gform_fields li.gfield label.gfield_label span.gfield_required{
+	color: #ffd754;
+	font-size:18px;	
+}
+div.gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]){
+	padding: 6px 12px;
+}
+div.gform_wrapper ul.gform_fields li.gfield input[type="date"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="time"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="datetime-local"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="week"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="month"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="text"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="email"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="url"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="password"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="search"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="tel"], 
+div.gform_wrapper ul.gform_fields li.gfield input[type="number"],
+div.gform_wrapper ul.gform_fields li.gfield select, 
+div.gform_wrapper ul.gform_fields li.gfield textarea{
+	border: 1px solid #ff7d66;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    height: 42px;
+    width: 100%;
+	background-color:#F55438;
+	transition: all 0.3s ease-in-out 0s;
+}
+div.gform_wrapper ul.gform_fields li.gfield .ginput_container.ginput_container_checkbox label,
+div.gform_wrapper ul.gform_fields li.gfield .ginput_container.ginput_container_radio label{
+	color: #fff;
+	font-size:12px;	
+}
+div.gform_wrapper ul.gform_fields li.gfield textarea{
+	height: 100px;
+}
+div.gform_wrapper ul.gform_fields li.gfield.gf_scroll_text {
+	background-color:#F55438;
+	color: #fff;	
+}
+div.gform_wrapper ul.gform_fields li.gfield.gf_scroll_text p {
+	font-size: 13px;	
+}
+div.gform_wrapper ul.gform_fields li.gfield.gf_scroll_text h2.gsection_title{
+	color:#fff;
+}
+
+div.gform_wrapper ul.gform_fields li.gfield input[type="date"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="time"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="datetime-local"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="week"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="month"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="text"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="email"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="url"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="password"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="search"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="tel"]:focus, 
+div.gform_wrapper ul.gform_fields li.gfield input[type="number"]:focus,
+div.gform_wrapper ul.gform_fields li.gfield select:focus, 
+div.gform_wrapper ul.gform_fields li.gfield textarea:focus{
+	border-color: #ffaaaa;
+	color: #fff;		
+}
+div.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, 
+div.gform_wrapper .field_sublabel_below div.ginput_container[class*="gfield_time_"] label{
+	color: #fff;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div.gform_wrapper .gform_footer{}
+div.gform_wrapper ul.gform_fields li.gfield table.gfield_list th{
+	background-color: #fff;
+	color: #F55438;
+	padding: 2px 6px;
+	text-align:center;	
+}
+body div.gform_wrapper .ginput_container_list table.gfield_list tbody tr td.gfield_list_icons{
+	background-color: #fff;
+}
+body div.gform_wrapper .ginput_container_list table.gfield_list tbody tr td.gfield_list_icons img.add_list_item, 
+body div.gform_wrapper .ginput_container_list table.gfield_list tbody tr td.gfield_list_icons img.delete_list_item {
+	background-color: #fff !important;
+	height: 20px;
+	opacity: 1;
+	padding: 2px;
+	width: 20px;
+}
+div.gform_wrapper .gform_footer input.button, 
+div.gform_wrapper .gform_footer input[type="submit"], 
+div.gform_wrapper .gform_page_footer input.button, 
+div.gform_wrapper .gform_page_footer input[type="submit"] {
+	background-color: #f55438;
+	border: 1px solid #ff7d66;
+	border-radius: 4px;
+	color: #fff;
+ 	margin: 0 16px 20px 0;
+	transition: background .7s ease-in, transform .2s ease-out;
+}
+div.gform_wrapper .gform_footer input.button:hover, 
+div.gform_wrapper .gform_footer input[type="submit"]:hover, 
+div.gform_wrapper .gform_page_footer input.button:hover, 
+div.gform_wrapper .gform_page_footer input[type="submit"]:hover{	
+	transform: scale(1.1) rotateX( 10deg );
+	border-color: #ff7d66;
+	background-color:#f55438;
+	box-shadow:0 0 12px #ff7d66;
+}
+
+/* gform placeholders*/
+::-webkit-input-placeholder { color:#ccc; }
+:-moz-placeholder { opacity: 1; color:#ccc; } /* Firefox 18- */
+::-moz-placeholder { opacity: 1; color:#ccc; } /* firefox 19+ */
+:-ms-input-placeholder { color:#ccc; } /* ie */
+input:-moz-placeholder { color:#ccc; }
+
+div.gform_wrapper form > div.validation_error{
+	background-color: #FAD160;
+    border: 0 none;
+    color: #CD0000;
+    font-size: 16px;
+    margin-top: 4px;
+    padding: 10px 6px;
+	font-weight:normal;
+}
+div.gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half){
+	width: 100% !important;
+}
+div.gform_wrapper ul.gform_fields li.gfield.gfield_error .validation_message {
+	background-color: #FAD160;
+    color: #CD0000;
+    font-size: 14px;
+    margin-top: 4px;
+    padding: 2px 8px;
+	font-weight: normal;
+} 
+div.gform_wrapper ul.gform_fields li.gfield.gfield_error, 
+div.gform_wrapper ul.gform_fields li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning{
+	border-bottom: 1px solid #FAD160;
+	border-top: 0;
+	padding-bottom: 4px;
+	padding-top: 0;
+}

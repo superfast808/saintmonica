@@ -1,0 +1,124 @@
+/*
+Form Name: Asana
+Form URI: https://github.com/uxglow/gravity-forms/blob/master/asana/1.0/asana.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Gravity Forms, Asana
+*/
+
+.gform_wrapper *, .gform_wrapper *::after, .gform_wrapper *::before {
+    box-sizing: border-box  !important;
+}
+.gform_wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    color: #666;
+    font-family: "Open Sans",sans-serif,Arial;
+    margin: 5% auto;
+    overflow: hidden;
+    width: 500px;
+}
+.gform_wrapper form {
+    float: left;
+    padding: 40px 7%;
+    width: 100%;
+}
+.gform_wrapper form li, .gform_wrapper li > div span {
+	width: 100%;
+	float: left;
+}
+.gform_wrapper .ginput_complex.ginput_container {
+	float: left;	
+}
+
+.gform_wrapper .ginput_complex .ginput_left input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex .ginput_right input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]), .gform_wrapper .ginput_complex select,
+.gform_wrapper input.large, 
+.gform_wrapper input.medium, 
+.gform_wrapper input.small, 
+.gform_wrapper select.large, 
+.gform_wrapper select.medium, 
+.gform_wrapper select.small,
+.gform_wrapper textarea  {
+	border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #2c3e50;
+    height: 42px;
+    margin: 0 0 6px;
+    outline: medium none;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+}
+
+.gform_wrapper .ginput_complex .ginput_left input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
+.gform_wrapper .ginput_complex .ginput_right input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
+.gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]):focus, 
+.gform_wrapper .ginput_complex select:focus,
+.gform_wrapper input.large:focus, 
+.gform_wrapper input.medium:focus, 
+.gform_wrapper input.small:focus, 
+.gform_wrapper select.large:focus, 
+.gform_wrapper select.medium:focus, 
+.gform_wrapper select.small:focus,
+.gform_wrapper textarea:focus  {
+	border: 1px solid #27ae60;
+    color: #2c3e50;
+}
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type="submit"], 
+.gform_wrapper .gform_page_footer input.button, 
+.gform_wrapper .gform_page_footer input[type="submit"] {
+    font-size: 1em;
+    margin: 0 0 16px;
+    width: 100%;
+	background: #27ae60 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+.gform_wrapper .gform_footer input.button:hover, 
+.gform_wrapper .gform_footer input[type="submit"]:hover, 
+.gform_wrapper .gform_page_footer input.button:hover, 
+.gform_wrapper .gform_page_footer input[type="submit"] {
+	background: #27ae60 none repeat scroll 0 0;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+    color: #fff;
+}
+
+/* Custome Error*/
+.gform_wrapper div.validation_error {
+    border-bottom: 2px solid #790000;
+    border-top: 2px solid #790000;
+    clear: both;
+    color: #790000;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+.gform_wrapper li.gfield.gfield_error, 
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+	background-color: rgba(255, 223, 224, 0.25);
+    border-bottom: none;
+    border-top: none;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+	margin-top: 8px;
+    padding-bottom: 0;
+    padding-top: 0;	
+}
+.gform_wrapper .gfield_error .gfield_label {
+    color: #333;
+}
+

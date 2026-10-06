@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700');
+body {
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+p, ul, ol, li {
+    font-size: 18px;
+}
+p.small {
+    font-size: 14px;
+}
+a, a.active, a:active, a:focus, a:hover {
+    color: #18bc9c;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:20px 0;
+}
+hr.star-light, 
+hr.star-primary {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: currentcolor;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 5px medium medium;
+    margin: 25px auto 30px;
+    max-width: 250px;
+    padding: 0;
+    text-align: center;
+}
+hr.star-light {
+    border-color: #fff;
+}
+hr.star-light::after {
+    background-color: #18bc9c;
+    color: #fff;
+}
+hr.star-primary {
+    border-color: #2c3e50;
+}
+hr.star-primary::after {
+    background-color: #fff;
+    color: #2c3e50;
+}
+blockquote{
+    border-color: #777;
+    color: #777;
+    font-style: italic;
+}
+.img-center {
+    margin: 0 auto;
+}
+div.video-wrap,
+figure.video-wrap {
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+div.video-wrap iframe, 
+div.video-wrap video, 
+div.video-wrap object, 
+div.video-wrap embed,
+figure.video-wrap iframe, 
+figure.video-wrap video, 
+figure.video-wrap object, 
+figure.video-wrap embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

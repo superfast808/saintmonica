@@ -1,0 +1,60 @@
+.ap_results {
+	float: left;
+	width: 100%;
+}
+.ap_results .ap-citem {
+	border-bottom: 1px solid #e3e3e3;
+	float: left;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	width: 48%;
+	height:200px;
+}
+.ap_results .ap-citem:nth-child(odd){
+	margin-right: 4%;	
+}
+.ap_results .ap-citem:last-child{
+	border-bottom: 0 none;	
+}
+.ap_results .ap-citem .image {
+	box-shadow: 0 0 1px #8a8a8a;
+	float: left;
+	margin-right: 4%;
+	padding: 6px;
+	width: 100px;
+	border-radius: 50%;
+	height: 100px;
+}
+.ap_results .ap-citem .image > a{
+	margin: 0 auto;
+	width: 100%;
+}
+.ap_results .ap-citem .image > a img{
+	margin: 0 auto;
+	border-radius: 50%;
+	height: 100%;
+}
+.ap_results .ap-citem > a,
+.ap_results .ap-citem > span {
+	float: left;
+	text-decoration: none;
+	width: 71%;
+	box-shadow:none;
+}
+.ap_results .ap-citem > span {
+	font-size: 13px;
+}
+@media only screen and (max-width: 480px) {
+	.ap_results .ap-citem{
+		width: 100%;	
+	}
+	.ap_results .ap-citem .image { 
+		width: 100%;
+		float:left;
+	}
+	.ap_results .ap-citem > a,
+	.ap_results .ap-citem > span {
+		width: 100;
+		margin-top: 10px;	
+	}
+}

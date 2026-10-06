@@ -1,0 +1,329 @@
+# Translation of Plugins - Duplicate Post - Stable (latest release) in Vietnamese
+# This file is distributed under the same license as the Plugins - Duplicate Post - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-07-13 13:53:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Plugins - Duplicate Post - Stable (latest release)\n"
+
+#: duplicate-post-options.php:367
+msgid "now works on Edit screen too - check this option to use with Gutenberg enabled"
+msgstr "hiện tại cũng hoạt động ở màn hình Sửa - đánh dấu tùy chọn để sử dụng với Gutenberg"
+
+#: duplicate-post-admin.php:194
+msgid "What's new in Duplicate Post version %s:"
+msgstr "Có gì mới trong Duplicate Post phiên bản %s:"
+
+#: duplicate-post-admin.php:195
+msgid "Fixes for some bugs and incompatibilities with CF7, WPML, and custom post types with custom capabilities."
+msgstr "Sửa một số lỗi và không tương thích với CF7, WPML, và custom post type với custom capability."
+
+#: duplicate-post-admin.php:281
+msgid "Current user is not allowed to copy posts."
+msgstr "Người dùng hiện tại không cho phép sao chép bài viết."
+
+#: duplicate-post-admin.php:196
+msgid "Check out the documentation"
+msgstr "Hãy xem qua thông tin chi tiết nào"
+
+#: duplicate-post-admin.php:197
+msgid "Serving the WordPress community since November 2007."
+msgstr "Phục vụ cộng đồng WordPress từ Tháng Mười Một 2007"
+
+#. Plugin URI of the plugin
+msgid "https://duplicate-post.lopo.it/"
+msgstr "https://duplicate-post.lopo.it/"
+
+#: duplicate-post-options.php:232
+msgid "you probably want this unchecked, unless you have very special requirements"
+msgstr "Có lẽ bạn muốn bỏ chọn cái này, trừ phi bạn có một yêu cầu rất đặc biệt."
+
+#: duplicate-post-options.php:88 duplicate-post-admin.php:654
+msgid "Documentation"
+msgstr "Thông tin chi tiết"
+
+#: duplicate-post-admin.php:197
+msgid "Help me develop the plugin and provide support by <a href=\"%s\">donating even a small sum</a>."
+msgstr "Hãy giúp tôi phát triển plugin và hỗ trợ tôi bằng cách <a href=\"%s\">đóng góp một số tiền nho nhỏ nha</a>."
+
+#: duplicate-post-options.php:382
+msgid "Show update notice"
+msgstr "Hiển thị thông tin cập nhật"
+
+#: duplicate-post-options.php:371
+msgid "Bulk Actions"
+msgstr "Tác vụ"
+
+#: duplicate-post-options.php:282
+msgid "You can use * to match zero or more alphanumeric characters or underscores: e.g. field*"
+msgstr "Bạn có thể sử dụng * để không gắn hoặc nhiều kí tự hoặc dấu gạch dưới: ví dụ trường*"
+
+#: duplicate-post-options.php:241
+msgid "Menu order"
+msgstr "Hiện menu"
+
+#: duplicate-post-options.php:226
+msgid "Author"
+msgstr "Tác giả"
+
+#: duplicate-post-options.php:223
+msgctxt "post format"
+msgid "Format"
+msgstr "Định dạng"
+
+#: duplicate-post-options.php:220
+msgid "Template"
+msgstr "Chủ đề"
+
+#: duplicate-post-options.php:217
+msgid "Featured Image"
+msgstr "Ảnh đại diện"
+
+#: duplicate-post-options.php:90
+msgid "Support Forum"
+msgstr "Diễn Đàn Hỗ Trợ"
+
+#: duplicate-post-options.php:84
+msgid "Donate whatever sum you choose, even just 10¢."
+msgstr "Đóng góp tùy lòng hảo tâm, 1000 đồng cũng được."
+
+#: duplicate-post-options.php:82
+msgid "Help me develop the plugin, add new features and improve support!"
+msgstr "Hãy giúp tôi phát triển plugin, thêm nhiều tính năng mới và cải thiện khâu hỗ trợ!"
+
+#: duplicate-post-admin.php:196
+msgid "Please <a href=\"%s\">review the settings</a> to make sure it works as you expect."
+msgstr "Hãy <a href=\"%s\">xem qua phần tùy chỉnh</a> để chắc chắn rằng plugin hoạt động như ý bạn."
+
+#: duplicate-post-admin.php:665
+msgid "%s item copied."
+msgid_plural "%s items copied."
+msgstr[0] "Đã sao chép %s mục."
+
+#: duplicate-post-options.php:377
+msgid "You can also use the template tag duplicate_post_clone_post_link( $link, $before, $after, $id ). More info <a href=\"%s\">here</a>"
+msgstr "Bạn cũng có thể sử dụng template tag duplicate_post_clone_post_link( $link, $before, $after, $id ). Xem thêm thông tin <a href=\"%s\">ở đây</a>"
+
+#: duplicate-post-options.php:350 duplicate-post-options.php:376
+msgid "Whether the links are displayed for custom post types registered by themes or plugins depends on their use of standard WordPress UI elements"
+msgstr "Việc các liên kết được hiển thị cho các custom post type được đăng ký theo theme hoặc plugin tùy thuộc vào việc sử dụng các thành phần UI WordPress tiêu chuẩn của chúng"
+
+#: duplicate-post-options.php:349
+msgid "Select the post types you want the plugin to be enabled"
+msgstr "Chọn post type bạn muốn bật plugin"
+
+#: duplicate-post-options.php:340
+msgid "Enable for these post types"
+msgstr "Bật cho các post type"
+
+#: duplicate-post-options.php:334
+msgid "Passwords and contents of password-protected posts may become visible to undesired users and visitors"
+msgstr "Mật khẩu và nội dung của bài viết có mật khẩu có thể hiển thị với người dùng và khách truy cập không mong muốn"
+
+#: duplicate-post-options.php:289
+msgid "Show/hide private taxonomies"
+msgstr "Hiện/ẩn taxonomy riêng tư"
+
+#: duplicate-post-options.php:271
+msgid "Add this number to the original menu order (blank or zero to retain the value)"
+msgstr "Thêm số này vào thứ tự menu ban đầu (để trống hoặc zero để giữ nguyên giá trị)"
+
+#: duplicate-post-options.php:266
+msgid "Increase menu order by"
+msgstr "Tăng thứ tự menu theo"
+
+#: duplicate-post-options.php:238
+msgid "except pingbacks and trackbacks"
+msgstr "ngoại trừ pingbacks and trackbacks"
+
+#: duplicate-post-options.php:238
+msgid "Comments"
+msgstr "Bình luận"
+
+#: duplicate-post-options.php:235
+msgid "Children"
+msgstr "Con"
+
+#: duplicate-post-options.php:232
+msgid "Attachments"
+msgstr "Đính kèm"
+
+#: duplicate-post-options.php:229
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: duplicate-post-options.php:214
+msgid "Content"
+msgstr "Nội dung"
+
+#: duplicate-post-options.php:211
+msgid "Excerpt"
+msgstr "Tóm tắt"
+
+#: duplicate-post-options.php:208
+msgid "Slug"
+msgstr "Slug"
+
+#: duplicate-post-options.php:205
+msgid "Status"
+msgstr "Trạng thái"
+
+#: duplicate-post-options.php:202
+msgid "Date"
+msgstr "Ngày"
+
+#: duplicate-post-options.php:199
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: duplicate-post-options.php:195
+msgid "Post/page elements to copy"
+msgstr "Thành phần bài viết/trang để sao chép"
+
+#: duplicate-post-options.php:187
+msgid "Display"
+msgstr "Hiển thị"
+
+#: duplicate-post-options.php:185
+msgid "Permissions"
+msgstr "Quyền hạn"
+
+#: duplicate-post-options.php:183
+msgid "What to copy"
+msgstr "Những thứ cần sao chép"
+
+#: duplicate-post-admin.php:561
+msgid "Untitled"
+msgstr "Không có tiêu đề"
+
+#: duplicate-post-admin.php:542
+msgid "Copy features for this post type are not enabled in options page"
+msgstr "Tính năng sao chép cho post type này không được bật ở trang tùy chọn"
+
+#: duplicate-post-admin.php:200
+msgid "Dismiss this notice."
+msgstr "Ẩn thông báo này."
+
+#. Author URI of the plugin
+msgid "https://lopo.it"
+msgstr "https://lopo.it"
+
+#. Author of the plugin
+msgid "Enrico Battocchi"
+msgstr "Enrico Battocchi"
+
+#. Description of the plugin
+msgid "Clone posts and pages."
+msgstr "Nhân đôi bài viết và trang."
+
+#: duplicate-post.php:49
+msgid "Settings"
+msgstr "Thiết lập"
+
+#: duplicate-post-options.php:392
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
+
+#: duplicate-post-options.php:367
+msgid "Admin bar"
+msgstr "Thanh admin"
+
+#: duplicate-post-options.php:365
+msgid "Edit screen"
+msgstr "Màn hình chỉnh sửa"
+
+#: duplicate-post-options.php:363
+msgid "Post list"
+msgstr "Danh sách bài viết"
+
+#: duplicate-post-options.php:359
+msgid "Show links in"
+msgstr "Hiện liên kết ở"
+
+#: duplicate-post-options.php:333
+msgid "Warning: users will be able to copy all posts, even those of other users"
+msgstr "Cảnh báo: người dùng sẽ có thể sao chép toàn bộ bài viết, ngay cả những người dùng khác"
+
+#: duplicate-post-options.php:316
+msgid "Roles allowed to copy"
+msgstr "Nhóm được phép sao chép"
+
+#: duplicate-post-options.php:261
+msgid "Suffix to be added after the title, e.g. \"(dup)\" (blank for no suffix)"
+msgstr "Hậu tố đã được thêm vào sau tên, ví dụ \"dup\" (để trắng nếu không có hậu tố)"
+
+#: duplicate-post-options.php:256
+msgid "Title suffix"
+msgstr "Tên hậu tố"
+
+#: duplicate-post-options.php:251
+msgid "Prefix to be added before the title, e.g. \"Copy of\" (blank for no prefix)"
+msgstr "Tiền tố đã được thêm vào sau tên, ví dụ \"Nhân đôi của\" (để trắng nếu không có tiền tố)"
+
+#: duplicate-post-options.php:246
+msgid "Title prefix"
+msgstr "Tên tiền tố"
+
+#: duplicate-post-options.php:306
+msgid "Select the taxonomies you don't want to be copied"
+msgstr "Chọn taxonomy bạn không muốn sao chép"
+
+#: duplicate-post-options.php:287
+msgid "Do not copy these taxonomies"
+msgstr "Đừng sao chép các taxonomy"
+
+#: duplicate-post-options.php:281
+msgid "Comma-separated list of meta fields that must not be copied"
+msgstr "Danh sách các meta field được ngăn cách bởi dấu phẩy sẽ không được sao chép"
+
+#: duplicate-post-options.php:276
+msgid "Do not copy these fields"
+msgstr "Đừng sao chép các trường"
+
+#. Plugin Name of the plugin
+#: duplicate-post-options.php:46
+msgid "Duplicate Post"
+msgstr "Duplicate Post"
+
+#: duplicate-post-options.php:46 duplicate-post-options.php:76
+msgid "Duplicate Post Options"
+msgstr "Tùy chọn Duplicate Post"
+
+#: duplicate-post-options.php:89
+msgid "Translate"
+msgstr "Dịch thuật"
+
+#: duplicate-post-admin.php:655
+msgid "Donate"
+msgstr "Quyên góp"
+
+#: duplicate-post-admin.php:325
+msgid "Copy creation failed, could not find original:"
+msgstr "Tạo bản sao thất bại, không tìm thấy bản gốc:"
+
+#: duplicate-post-admin.php:285
+msgid "No post to duplicate has been supplied!"
+msgstr "Không có bài viết để nhân đôi!"
+
+#: duplicate-post-admin.php:238
+msgid "New Draft"
+msgstr "Bài nháp mới"
+
+#: duplicate-post-common.php:78 duplicate-post-common.php:81
+#: duplicate-post-common.php:115 duplicate-post-common.php:127
+#: duplicate-post-admin.php:237 duplicate-post-admin.php:254
+msgid "Copy to a new draft"
+msgstr "Sao chép sang một bài nháp mới"
+
+#: duplicate-post-admin.php:235 duplicate-post-admin.php:689
+msgid "Clone"
+msgstr "Nhân đôi"
+
+#: duplicate-post-admin.php:234
+msgid "Clone this item"
+msgstr "Nhân đôi mục này"

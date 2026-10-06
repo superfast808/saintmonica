@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+ul.ap_pagination *, ul.ap_pagination:before *, ul.ap_pagination:after *{
+	box-sizing:border-box;
+}
+ul.ap_pagination {
+	background: none repeat scroll 0 0 #FFF;
+	padding:0px 0px 10px 0px;
+	width:98%;
+	border: 0;
+}
+ul.ap_pagination li{
+	padding:8px 10px;
+	margin:0px;
+}
+ul.layout_V.ap_pagination {
+	overflow: hidden;
+	width: 28px;	
+}
+ul.layout_V.ap_pagination li{
+	padding:2px 2%;
+	margin:0px;
+	width:98%;
+}
+ul.ap_pagination li {
+	padding:0;
+    width: 3.7%;
+	background-color: #fff;
+	border: medium none;
+	border-radius: 18px;
+	box-shadow: 0 1px 0 rgba(100, 100, 100, 0.25);
+	cursor: pointer;
+	font-size: 14px;
+}
+ul.ap_pagination li:not(.ap_reset) a{
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(0% 0 270deg, #f8f8f8, #e9e9e9) repeat scroll 0 0;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    color: #717171;
+    font-size: 0.875em;
+    font-weight: normal;
+    text-decoration: none;
+	width:100%;
+	display:block;
+	padding: 1px 4px;	
+}
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited{
+	background-color: #e78e1b;
+}
+
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited,
+ul.ap_pagination li:not(.ap_reset) a:hover,
+ul.ap_pagination li:not(.ap_reset) a.selected{
+	color: #397DB5;
+	padding: 1px 4px;
+	border: 1px solid #777;
+	padding:0;
+		
+}
+ul.ap_pagination li.ap_reset a.selected,
+ul.ap_pagination li.ap_reset a:hover{
+	background-color: transparent;	
+}

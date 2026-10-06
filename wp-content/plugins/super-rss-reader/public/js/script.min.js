@@ -1,0 +1,9 @@
+/*
+ * Super RSS Reader - v1.2
+ * Included with "Super RSS Reader" Wordpress plugin @since v2.0
+ * Author: Aakash Chakravarthy, www.aakashweb.com
+ */
+!function(r){r(document).ready(function(){var a=r(".super-rss-reader-widget")
+a.find(".srr-wrap").hide(),a.find(".srr-wrap:first").show(),a.find(".srr-tab-wrap li:first").addClass("srr-active-tab"),r(".srr-tab-wrap li").click(function(){var a=r(this).attr("data-tab"),t=r(this).parent().parent()
+r(this).parent().children("li").removeClass("srr-active-tab"),r(this).addClass("srr-active-tab"),t.find(".srr-wrap").hide(),t.find(".srr-wrap[data-id="+a+"]").show()}),r(".srr-vticker").each(function(){var a=r(this).attr("data-visible"),t=r(this).attr("data-speed"),i=parseInt(a)<=20?"auto":a
+r(this).easyTicker({visible:a,height:i,interval:t})})})}(jQuery)

@@ -1,0 +1,52 @@
+# Translation of Plugins - External Links in New Window / New Tab - Stable (latest release) in Vietnamese
+# This file is distributed under the same license as the Plugins - External Links in New Window / New Tab - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-08-26 06:44:06+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Plugins - External Links in New Window / New Tab - Stable (latest release)\n"
+
+#: open-external-links-in-a-new-window.php:172
+msgid "Settings"
+msgstr "Thiết lập"
+
+#: open-external-links-in-a-new-window.php:160
+msgid "http:// or https://"
+msgstr "http:// hoặc https://"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/extend/plugins/open-external-links-in-a-new-window/"
+msgstr "https://vi.wordpress.org/extend/plugins/open-external-links-in-a-new-window/"
+
+#. Description of the plugin
+msgid "Opens all external links in a new window. XHTML Strict compliant and search engine optimized (SEO)."
+msgstr "Mở cửa sổ mới cho các liên kết không phải cùng website. Tối ưu hoá công cụ tìm kiếm SEO và XHTML Strict."
+
+#: open-external-links-in-a-new-window.php:125
+msgid "Open external links in a new window"
+msgstr "Liên kết ngoài trên cửa sổ mới"
+
+#: open-external-links-in-a-new-window.php:136
+msgid "By default, this plugins makes all external links (i.e. links that point outside the current host name) open in a new window/tab."
+msgstr "Mặc định, plugin này mở cửa sổ mới khi nhấp chuột vào tất cả liên kết ngoài website."
+
+#: open-external-links-in-a-new-window.php:138
+msgid "You can change this behavior by providing regular expressions that either forces or ignores whether the link should open in a new window."
+msgstr "Bạn có thể cài đặt bằng cách cung cấp điều kiện (regular expression) để bắt buộc hoặc bỏ qua các liên kết phù họp mở trong cửa sổ mới."
+
+#: open-external-links-in-a-new-window.php:159
+msgid "Forced, matching URLs"
+msgstr "Bắt buộc, nếu đáp ứng"
+
+#: open-external-links-in-a-new-window.php:158
+msgid "Ignored, matching URLs"
+msgstr "Bỏ quá, nếu đáp ứng"
+
+#: open-external-links-in-a-new-window.php:156
+msgid "The matches are prioritized in the following order:"
+msgstr "Thứ tự sắp xếp ưu tiên là:"

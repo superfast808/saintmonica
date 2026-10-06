@@ -1,0 +1,60 @@
+.ap_results{
+	width:100%;
+	float:left;
+}
+.ap_results .ap-citem {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 4%;
+	min-height: 410px;
+	padding-bottom: 10px;
+	width: 48%;
+}
+.ap_results .ap-citem:nth-child(2n+0){
+	margin-right: 0;	
+}
+.ap_results .ap-citem a{
+	float:left;
+	width:100%;
+}
+.ap_results .ap-citem div.image{
+	width: 100%;
+	height:200px;
+	overflow:hidden;
+	margin: 0 auto 10px;
+	
+}
+.ap_results .ap-citem img{				
+	min-height:200px;
+	width: 100%;
+	
+}
+.ap_results .ap-citem > a{
+	box-shadow: none;
+}
+.ap_results .ap-citem > a,
+.ap_results .ap-citem span{
+	width:100%;
+	margin:0 auto;
+}
+.ap_results .ap-citem strong {
+	color: #333333;
+	font-family: "Open Sans Condensed",Arial,Helvetica,sans-serif;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 38px;
+}
+.ap_results .ap-citem span{
+	color: #747474;
+}
+@media only screen and (max-width: 480px) {
+	.ap_results .ap-citem .image { 
+		width: 100%;
+		float:left;
+	}
+	.ap_results .ap-citem > a,
+	.ap_results .ap-citem > span {
+		width: 100;
+		margin-top: 10px;	
+	}
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+	
+	ul.ap_pagination {
+		background: none repeat scroll 0 0 #FFF;
+		border-bottom:1px solid #000;
+		padding:0px 0px 10px 0px;
+		width:98%;
+	}
+	ul.ap_pagination li{
+		padding:8px 10px;
+		margin:0px;
+	}
+	ul.layout_V.ap_pagination {
+		overflow: hidden;
+		width: 28px;	
+	}
+	ul.layout_V.ap_pagination li{
+		padding:2px 2%;
+		margin:0px;
+		width:98%;
+	}
+	ul.ap_pagination li {
+  		padding: 4px 6px;
+  		width: 5%;
+		margin-bottom: 4px;
+		margin-right: 4px;
+	}
+	ul.ap_pagination li:nth-child(odd) {background: #cecece; }
+	ul.ap_pagination li:nth-child(odd) a{color: #000; }
+	ul.ap_pagination li:nth-child(even) {background: #000; }
+	ul.ap_pagination li:nth-child(even) a{color: #FFF; }
+	
+	ul.ap_pagination li:nth-child(odd) a:hover,
+	ul.ap_pagination li:nth-child(odd) a.selected,
+	ul.ap_pagination li:nth-child(even) a:hover,
+	ul.ap_pagination li:nth-child(even) a.selected{
+		font-weight:bold; 
+		text-decoration:underline;
+		padding:0;
+	}
+	ul.ap_pagination li.ap_reset a.selected,
+	ul.ap_pagination li.ap_reset a:hover{
+		background-color: transparent;	
+	}

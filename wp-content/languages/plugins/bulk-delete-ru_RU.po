@@ -1,0 +1,1606 @@
+# Translation of Plugins - Bulk Delete - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Bulk Delete - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-06 14:22:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Bulk Delete - Stable (latest release)\n"
+
+#. Author URI of the plugin
+#: bulk-delete.php
+msgid "https://www.webfactoryltd.com/"
+msgstr "https://www.webfactoryltd.com/"
+
+#. Author of the plugin
+#: bulk-delete.php
+msgid "WebFactory Ltd"
+msgstr "WebFactory Ltd"
+
+#: include/Core/Base/Mixin/Renderer.php:92
+msgid "Select Post Type"
+msgstr "Выбрать тип записи"
+
+#: include/Core/Base/Mixin/Renderer.php:223
+msgid "Custom Taxonomies"
+msgstr "Пользовательские таксономии"
+
+#: include/Core/Addon/UpsellModule.php:55
+msgid "Buy Now"
+msgstr "Купить сейчас"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:198
+msgid "DATE"
+msgstr "ДАТА"
+
+#: include/Core/Base/Mixin/Renderer.php:297
+msgid "Date"
+msgstr "Дата"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:200
+msgid "DATETIME"
+msgstr "Дата и время"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:195
+msgid "DECIMAL"
+msgstr "ДЕСЯТИЧНОЕ"
+
+#: include/Core/Controller.php:155
+msgid " Posts"
+msgstr " Записи"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:199
+msgid "TIME"
+msgstr "ВРЕМЯ"
+
+#: include/Core/Base/Mixin/Renderer.php:437
+msgid " by "
+msgstr " от "
+
+#: include/Core/Base/Mixin/Renderer.php:269
+msgid "contains"
+msgstr "содержит"
+
+#: include/ui/form.php:230
+msgid "Custom Post Types"
+msgstr "Пользовательские типы записей"
+
+#: include/Core/Base/Mixin/Renderer.php:283
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:206
+msgid "less than"
+msgstr "менее чем"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:210
+msgid "like"
+msgstr "лайк"
+
+#: include/Core/Base/Mixin/Renderer.php:191
+msgid "No role"
+msgstr "Нет роли"
+
+#: include/Core/Base/Mixin/Renderer.php:295
+msgid "Number"
+msgstr "Число"
+
+#: include/Core/Cron/CronListTable.php:122
+msgid "Run Now"
+msgstr "Запустить сейчас"
+
+#: include/Core/Base/Mixin/Renderer.php:160
+msgid "Select User"
+msgstr "Выбрать пользователя"
+
+#: include/Core/Base/Mixin/Renderer.php:180
+msgid "Select User Role"
+msgstr "Выбрать роль пользователя"
+
+#: include/Core/Base/Mixin/Renderer.php:647
+msgid "Find out how"
+msgstr "Узнать как"
+
+#: include/ui/form.php:222
+msgid "Built-in Post Types"
+msgstr "Встроенные типы записей"
+
+#: include/Core/Posts/Modules/DeletePostsByPostTypeModule.php:23
+msgid "By Post Type"
+msgstr "По типу записи"
+
+#: include/Core/Posts/Modules/DeletePostsByTaxonomyModule.php:23
+msgid "By Taxonomy"
+msgstr "По Таксономии"
+
+#: include/Core/Base/Mixin/Renderer.php:296
+msgid "Character"
+msgstr "Символ"
+
+#: include/Core/Base/Mixin/Renderer.php:512
+msgid "Delete Post"
+msgstr "Удалить запись"
+
+#: include/Core/SystemInfo/SystemInfoPage.php:101
+msgid "Download System Info File"
+msgstr "Скачать файл с отчётом"
+
+#: include/Core/Base/Mixin/Renderer.php:268
+msgid "ends with"
+msgstr "заканчивается на"
+
+#: include/Core/Base/Mixin/Renderer.php:265
+#: include/Core/Base/Mixin/Renderer.php:281
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:204
+msgid "equal to"
+msgstr "равно"
+
+#: include/Core/Base/Mixin/Renderer.php:284
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:208
+msgid "greater than"
+msgstr "более чем"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:207
+msgid "less than or equal to"
+msgstr "меньше или равно"
+
+#: include/Core/Base/Mixin/Renderer.php:270
+msgid "not contains"
+msgstr "не содержит"
+
+#: include/Core/Base/Mixin/Renderer.php:266
+#: include/Core/Base/Mixin/Renderer.php:282
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:205
+msgid "not equal to"
+msgstr "не равно"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:211
+msgid "not like"
+msgstr "не подобно"
+
+#: include/Core/Base/Mixin/Renderer.php:436
+msgid "Published on"
+msgstr "Опубликовано в"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:196
+msgid "SIGNED"
+msgstr "ПОДПИСАНО"
+
+#: include/Core/Base/Mixin/Renderer.php:267
+msgid "starts with"
+msgstr "начинается с"
+
+#: include/Core/Terms/Modules/DeleteTermsByNameModule.php:38
+msgid "Term Name"
+msgstr "Название термина"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:54
+#: include/meta/class-bulk-delete-post-meta.php:98
+msgid "Delete based on post meta key name prefix or postfix"
+msgstr "Удалять на основе префикса или суффикса ключа мета-поля."
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:397
+msgid "Author ip"
+msgstr "IP автора"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:383
+msgid "Author Email"
+msgstr "Email автора"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:369
+msgid "Author Name"
+msgstr "Имя автора"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:392
+msgid "Only if author ip "
+msgstr "Только если IP автора"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:378
+msgid "Only if author email "
+msgstr "Только если email автора"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:364
+msgid "Only if author name "
+msgstr "Только если имя автора"
+
+#: include/base/users/class-bd-user-meta-box-module.php:174
+msgid "days."
+msgstr "дней."
+
+#: include/base/users/class-bd-user-meta-box-module.php:220
+#: include/Core/Users/UsersModule.php:311
+msgid "Restrict to users who don't have any posts."
+msgstr "Только пользователей, у которых нет записей."
+
+#: include/libraries/EDD_SL_Plugin_Updater.php:209
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr "Доступна новая версия %1$s. %2$sПосмотрите подробности версии %3$s%4$s или обновите %5$sсейчас%6$s."
+
+#: include/libraries/EDD_SL_Plugin_Updater.php:201
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "Доступна новая версия %1$s. %2$sПосмотреть подробности версии %3$s%4$s."
+
+#: include/base/users/class-bd-user-meta-box-module.php:229
+#: include/Core/Users/UsersModule.php:321
+msgid "Select the post types. By default all post types are considered."
+msgstr "Выберите типы записей. По умолчанию выбраны все типы записей."
+
+#: include/base/users/class-bd-user-meta-box-module.php:173
+msgid "Restrict to users who are registered in the site for at least "
+msgstr "Удалить пользователей зарегистрированных на сайте за последние"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:367
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:381
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:395
+msgid "is not"
+msgstr "не является"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:366
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:380
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:394
+msgid "is"
+msgstr "является"
+
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:73
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:94
+msgid "If you want to check for null values, then leave the value column blank"
+msgstr "Если вы хотите проверить нулевые значения, то оставьте поле значения пустым"
+
+#. Plugin Name of the plugin
+#: bulk-delete.php
+msgid "Bulk Delete"
+msgstr "Массовое удаление"
+
+#. Description of the plugin
+#: bulk-delete.php
+msgid "Bulk delete users and posts from selected categories, tags, post types, custom taxonomies or by post status like drafts, scheduled posts, revisions etc."
+msgstr "Массовое удаление пользователей и записей из выбранных рубрик, меток, произвольных типов записей, произвольных таксономий или по статусу записей: черновики, запланированные записи, редации и т.д."
+
+#. Plugin URI of the plugin
+#: bulk-delete.php
+msgid "https://bulkwp.com/"
+msgstr "https://bulkwp.com/"
+
+#: include/ui/form.php:83
+msgid "Public posts"
+msgstr "Публичные записи"
+
+#: include/ui/form.php:84
+msgid "Private Posts"
+msgstr "Личные записи"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:213
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:68
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:89
+msgid "Meta Value"
+msgstr "Мета значение"
+
+#: include/Core/Terms/Modules/DeleteTermsByNameModule.php:34
+#: include/Core/Terms/Modules/DeleteTermsByPostCountModule.php:34
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:355
+#: include/ui/form.php:22
+msgid "Choose your filtering options"
+msgstr "Выберите опции фильтрации"
+
+#: include/helpers/common.php:161 include/util/class-bd-util.php:273
+msgid "All mime types"
+msgstr "Все mime-типы"
+
+#: include/Core/Users/DeleteUsersPage.php:28
+#: include/Core/Users/DeleteUsersPage.php:29
+#: include/users/class-bd-users-page.php:48
+#: include/users/class-bd-users-page.php:49
+#: include/users/class-bd-users-page.php:72
+msgid "Bulk Delete Users"
+msgstr "Массовое удаление пользователей"
+
+#: include/Core/Users/Modules/DeleteUsersByUserRoleModule.php:189
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:154
+msgid "Are you sure you want to delete all the users from the selected user role?"
+msgstr "Вы уверены, что хотите удалить всех пользователей с выбранной ролью?"
+
+#. translators: 1 Number of users deleted
+#: include/Core/Users/Modules/DeleteUsersByUserRoleModule.php:199
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:52
+msgid "Deleted %d user from the selected roles"
+msgid_plural "Deleted %d users from the selected roles"
+msgstr[0] "Удален %d пользователь с выбранными ролями"
+msgstr[1] ""
+msgstr[2] ""
+
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:53
+msgid "Deleted %d users from the selected roles"
+msgstr "Удалено %d пользователей с выбранными ролями"
+
+#: include/Core/Users/Modules/DeleteUsersByUserRoleModule.php:192
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:157
+msgid "Select at least one user role from which users should be deleted"
+msgstr "Выберите хотя бы одну роль, пользователей с которой нужно удалить"
+
+#: include/Core/Users/Modules/DeleteUsersByUserRoleModule.php:42
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:65
+msgid "Select the user roles from which you want to delete users"
+msgstr "Выберите роли, пользователей с которой вы хотите удалить"
+
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:51
+msgid "Users from the selected userrole are scheduled for deletion."
+msgstr "Запланировано удаление пользователей с выбранной ролью."
+
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:151
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:185
+msgid "Please enter the value for the user meta field based on which you want to delete users"
+msgstr "Пожалуйста, введите значение для мета-поля пользователя, на основе которого вы хотите удалить пользователей"
+
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:148
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:182
+msgid "Are you sure you want to delete all the users from the selected user meta?"
+msgstr "Вы уверены, что хотите удалить всех пользователей с выбранными мета-данными?"
+
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:43
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:65
+msgid "Select the user meta from which you want to delete users"
+msgstr "Выберите мета-данные, пользователей с которыми вы хотите удалить"
+
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:53
+msgid "Deleted %d users with the selected user meta"
+msgstr "Удалено %d пользователей с выбранными мета-данными"
+
+#. translators: 1 Number of users deleted
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:158
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:52
+msgid "Deleted %d user with the selected user meta"
+msgid_plural "Deleted %d users with the selected user meta"
+msgstr[0] "Удален %d пользователь с выбранными мета-данными"
+msgstr[1] ""
+msgstr[2] ""
+
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:30
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:51
+msgid "Users from with the selected user meta are scheduled for deletion."
+msgstr "Запланировано удаление пользователей с выбранными мета-данными."
+
+#: include/Core/Users/Modules/DeleteUsersByUserMetaModule.php:29
+#: include/users/modules/class-bulk-delete-users-by-user-meta.php:50
+msgid "By User Meta"
+msgstr "По мета-данным пользователя"
+
+#: include/Core/Users/DeleteUsersPage.php:52
+#: include/users/class-bd-users-page.php:90
+msgid "This screen contains different modules that allows you to delete users or schedule them for deletion."
+msgstr "Этот экран содержит различные модули, которые позволяют удалить пользователей или запланировать их удаление."
+
+#: include/ui/form.php:144
+msgid "Enter time in <strong>Y-m-d H:i:s</strong> format or enter <strong>now</strong> to use current time"
+msgstr "Введите время в формате <strong>Y-m-d H:i:s</strong> или введите <strong>now</strong> для использования текущего времени"
+
+#: include/ui/class-bulk-delete-help-screen.php:107
+msgid "This plugin can be used to delete the posts, pages or users using various filters and conditions."
+msgstr "Этот плагин может быть использован для удаления записей, страниц или пользователей с применением различных фильтров и условий."
+
+#: include/Core/Users/DeleteUsersPage.php:33
+#: include/users/class-bd-users-page.php:53
+msgid "WARNING: Users deleted once cannot be retrieved back. Use with caution."
+msgstr "ВНИМАНИЕ: Удаленных пользователей невозможно восстановить. Используйте с осторожностью."
+
+#: include/ui/form.php:107
+msgid "Use this option if there are more than 1000 %s and the script times out."
+msgstr "Используйте эту настройку при удалении более, чем 1000 %s или при возникновении «белой страницы» после выполнения скрипта."
+
+#: include/Core/Cron/CronListPage.php:110
+#: include/Core/SystemInfo/BulkDeleteSystemInfo.php:72
+#: include/util/class-bd-util.php:125
+msgctxt "Cron table date format"
+msgid "M j, Y @ G:i"
+msgstr "d.m.Y @ H:i"
+
+#: include/ui/form.php:43
+msgid "Only restrict to %s which are "
+msgstr "Удалить только %s, которые "
+
+#: include/helpers/common.php:169 include/ui/form.php:262
+#: include/util/class-bd-util.php:281
+msgid "All"
+msgstr "Все"
+
+#: include/ui/class-bulk-delete-help-screen.php:83
+msgid "About Plugin"
+msgstr "О плагине"
+
+#: include/ui/class-bulk-delete-help-screen.php:106
+msgid "This plugin allows you to perform bulk operations in WordPress easily."
+msgstr "Этот плагин позволяет легко выполнять массовые операции в WordPress."
+
+#: include/Core/Pages/DeletePagesPage.php:45
+#: include/ui/class-bulk-delete-help-screen.php:73
+msgid "This screen contains different modules that allows you to delete pages or schedule them for deletion."
+msgstr "Этот экран содержит различные модули, которые позволяют удалить страницы или запланировать их удаление."
+
+#: include/Core/Posts/DeletePostsPage.php:82
+#: include/ui/class-bulk-delete-help-screen.php:61
+msgid "This screen contains different modules that allows you to delete posts or schedule them for deletion."
+msgstr "Этот экран содержит различные модули, которые позволяют удалить записи или запланировать их удаление."
+
+#: include/ui/class-bulk-delete-help-screen.php:36
+msgid "Plugin author's blog"
+msgstr "Блог автора плагина"
+
+#: include/ui/class-bulk-delete-help-screen.php:37
+msgid "Other Plugin's by Author"
+msgstr "Другие плагины автора"
+
+#: include/ui/class-bulk-delete-help-screen.php:35
+msgid "Buy pro addons"
+msgstr "Купить pro-дополнения"
+
+#: include/Core/Metas/DeleteMetasPage.php:43
+#: include/Core/Pages/DeletePagesPage.php:43
+#: include/Core/Posts/DeletePostsPage.php:80
+#: include/Core/Terms/DeleteTermsPage.php:42
+#: include/Core/Users/DeleteUsersPage.php:50
+#: include/ui/class-bulk-delete-help-screen.php:59
+#: include/ui/class-bulk-delete-help-screen.php:71
+#: include/users/class-bd-users-page.php:88
+msgid "Overview"
+msgstr "Обзор"
+
+#: include/ui/class-bulk-delete-help-screen.php:33
+msgid "More information"
+msgstr "Больше информации"
+
+#: include/ui/admin-ui.php:56
+msgid "Buy Addons"
+msgstr "Купить дополнения"
+
+#: include/settings/class-bd-settings.php:29
+msgid "Add Addon License"
+msgstr "Добавить лицензию дополнения"
+
+#: include/ui/admin-ui.php:23
+msgid "Thank you for using <a href = \"%1$s\">Bulk Delete</a> plugin! Kindly <a href = \"%2$s\">rate us</a> at <a href = \"%2$s\">WordPress.org</a>"
+msgstr "Спасибо за использование плагина <a href = \"%1$s\">Bulk Delete</a>! Пожалуйста, <a href = \"%2$s\">оцените нас</a> на <a href = \"%2$s\">WordPress.org</a>"
+
+#: include/system-info/class-bd-system-info-page.php:101
+#: include/system-info/class-bulk-delete-system-info.php:83
+msgid "To copy the system info, click below then press Ctrl + C (PC) or Cmd + C (Mac)."
+msgstr "Чтобы скопировать информацию о системе, нажмите ниже, а затем нажмите Ctrl + C (PC) или Cmd + C (Mac)."
+
+#: include/system-info/class-bulk-delete-system-info.php:50
+msgid "System Information"
+msgstr "Информация о системе"
+
+#: include/system-info/class-bd-system-info-page.php:83
+#: include/system-info/class-bulk-delete-system-info.php:72
+msgid "DISABLE_WP_CRON is <a href=\"%s\" target=\"_blank\">enabled</a>. This prevents scheduler from running."
+msgstr "DISABLE_WP_CRON <a href=\"%s\" target=\"_blank\">включен</a>. Это препятствует запуску планировщика."
+
+#. translators: 1 Codex URL
+#: include/Core/SystemInfo/SystemInfoPage.php:68
+#: include/system-info/class-bd-system-info-page.php:75
+#: include/system-info/class-bulk-delete-system-info.php:64
+msgid "SAVEQUERIES is <a href=\"%s\" target=\"_blank\">enabled</a>. This puts additional load on the memory and will restrict the number of items that can be deleted."
+msgstr "SAVEQUERIES <a href=\"%s\" target=\"_blank\">включен</a>. Это создает дополнительную нагрузку на память и будет ограничивать количество элементов, которые могут быть удалены."
+
+#: include/Core/SystemInfo/SystemInfoPage.php:56
+#: include/system-info/class-bd-system-info-page.php:55
+#: include/system-info/class-bulk-delete-system-info.php:58
+msgid "Please include this information when posting support requests."
+msgstr "Пожалуйста, укажите эту информацию при отправке запросов на поддержку."
+
+#: include/ui/class-bulk-delete-help-screen.php:34
+msgid "Support Forums"
+msgstr "Форумы поддержки"
+
+#: include/settings/class-bd-settings-page.php:47
+#: include/settings/class-bd-settings-page.php:101
+msgid "Bulk Delete Settings"
+msgstr "Настройки Bulk Delete"
+
+#: include/Core/Posts/Modules/DeletePostsByCategoryModule.php:74
+#: include/posts/class-bulk-delete-posts.php:979
+msgid "Please select at least one category"
+msgstr "Пожалуйста, выберите хотя бы одну рубрику"
+
+#: include/Core/Posts/Modules/DeletePostsByTagModule.php:74
+#: include/posts/class-bulk-delete-posts.php:983
+msgid "Please select at least one tag"
+msgstr "Пожалуйста, выберите хотя бы одну метку"
+
+#: include/Core/Cron/CronListPage.php:90
+#: include/posts/class-bulk-delete-posts.php:1011
+msgid "The selected scheduled job was successfully deleted "
+msgstr "Выбранное запланированное задание было успешно удалено"
+
+#: include/Core/Base/BaseModule.php:226
+#: include/posts/class-bulk-delete-posts.php:974
+msgid "Are you sure you want to delete all the posts based on the selected option?"
+msgstr "Вы уверены, что хотите удалить все записи с выбранными опциями?"
+
+#: include/posts/class-bulk-delete-posts.php:926
+msgid "Deleted %d post revision"
+msgid_plural "Deleted %d post revisions"
+msgstr[0] "Удалена %d редакция"
+msgstr[1] "Удалено %d редакции"
+msgstr[2] "Удалено %d редакций"
+
+#: include/Core/Base/BaseModule.php:227
+#: include/posts/class-bulk-delete-posts.php:975
+msgid "Please select posts from at least one option"
+msgstr "Пожалуйста, выберите хотя бы одну опцию"
+
+#: include/Core/Posts/Modules/DeletePostsByURLModule.php:53
+#: include/posts/class-bulk-delete-posts.php:987
+msgid "Please enter at least one post url"
+msgstr "Пожалуйста, введите хотя бы один url записи"
+
+#: include/settings/class-bd-settings-page.php:48
+msgid "Settings"
+msgstr "Настройки"
+
+#: include/Core/Posts/Modules/DeletePostsByRevisionModule.php:30
+#: include/posts/class-bulk-delete-posts.php:897
+msgid "Select the posts which you want to delete"
+msgstr "Выберите записи, которые вы хотите удалить"
+
+#: include/Core/Posts/Modules/DeletePostsByRevisionModule.php:37
+#: include/posts/class-bulk-delete-posts.php:904
+msgid "Revisions"
+msgstr "Редакции"
+
+#: include/Core/Posts/Modules/DeletePostsByRevisionModule.php:37
+#: include/posts/class-bulk-delete-posts.php:904
+msgid "All Revisions"
+msgstr "Все редакции"
+
+#: include/posts/class-bulk-delete-posts.php:870
+msgid "Deleted %d post with the specified urls"
+msgid_plural "Deleted %d posts with the specified urls"
+msgstr[0] "Удалена %d запись с указанными URL-адресами"
+msgstr[1] "Удалено %d записи с указанными URL-адресами"
+msgstr[2] "Удалено %d записей с указанными URL-адресами"
+
+#: include/Core/Posts/Modules/DeletePostsByURLModule.php:33
+#: include/posts/class-bulk-delete-posts.php:834
+msgid "Enter one post url (not post ids) per line"
+msgstr "Введите один url записи (не id записи) в каждой строке"
+
+#: include/Core/Posts/Modules/DeletePostsByURLModule.php:27
+#: include/posts/class-bulk-delete-posts.php:828
+msgid "Delete posts and pages that have the following Permalink"
+msgstr "Удалить записи и страницы, которые имеют следующие постоянные ссылки"
+
+#: include/posts/class-bulk-delete-posts.php:753
+msgid "Deleted %d post from the selected custom post type"
+msgid_plural "Deleted %d posts from the selected custom post type"
+msgstr[0] "Удалена %d запись из выбранного произвольного типа записей"
+msgstr[1] "Удалено %d записи из выбранного произвольного типа записей"
+msgstr[2] "Удалено %d записей из выбранного произвольного типа записей"
+
+#: include/posts/class-bulk-delete-posts.php:749
+msgid "Posts from the selected custom post type are scheduled for deletion."
+msgstr "Запланировано удаление записей из выбранного произвольного типа записей."
+
+#: include/posts/class-bulk-delete-posts.php:688
+msgid "Select the custom post types from which you want to delete posts"
+msgstr "Выберите произвольные типы записей, записи из которых вы хотите удалить"
+
+#: include/posts/class-bulk-delete-posts.php:584
+msgid "Deleted %d post from the selected custom taxonomies"
+msgid_plural "Deleted %d posts from the selected custom taxonomies"
+msgstr[0] "Удалена %d запись из выбранной произвольной таксономии"
+msgstr[1] "Удалено %d записи из выбранной произвольной таксономии"
+msgstr[2] "Удалено %d записей из выбранной произвольной таксономии"
+
+#: include/posts/class-bulk-delete-posts.php:580
+msgid "Posts from the selected custom taxonomies are scheduled for deletion."
+msgstr "Запланировано удаление записей из выбранной произвольной таксономии."
+
+#: include/posts/class-bulk-delete-posts.php:717
+msgid "This WordPress installation doesn't have any non-empty custom post types"
+msgstr "На данном сайте отсутствуют записи с произвольными типами"
+
+#: include/posts/class-bulk-delete-posts.php:546
+msgid "This WordPress installation doesn't have any non-empty custom taxonomies defined"
+msgstr "На данном сайте отсутствуют записи, связанные с произвольными таксономиями"
+
+#: include/Core/Posts/Modules/DeletePostsByTaxonomyModule.php:78
+#: include/posts/class-bulk-delete-posts.php:509
+msgid "Note: The post count below for each term is the total number of posts in that term, irrespective of post type"
+msgstr "Примечание: количество записей в каждом термине указано независимо от типа записи"
+
+#: include/Core/Posts/Modules/DeletePostsByTaxonomyModule.php:74
+#: include/posts/class-bulk-delete-posts.php:508
+msgid "The selected taxonomy has the following terms. Select the terms from which you want to delete posts"
+msgstr "Выбранная таксономия содержит следующие термины. Выберите термины, записи с которыми вы хотите удалить"
+
+#: include/Core/Posts/Modules/DeletePostsByTaxonomyModule.php:53
+#: include/posts/class-bulk-delete-posts.php:489
+msgid "Select the taxonomies from which you want to delete posts"
+msgstr "Выберите таксономии, записи из которых вы хотите удалить"
+
+#: include/posts/class-bulk-delete-posts.php:406
+msgid "Deleted %d post from the selected tags"
+msgid_plural "Deleted %d posts from the selected tags"
+msgstr[0] "Удалена %d запись с выбранными метками"
+msgstr[1] "Удалено %d записи с выбранными метками"
+msgstr[2] "Удалено %d записей с выбранными метками"
+
+#: include/posts/class-bulk-delete-posts.php:370
+msgid "You don't have any posts assigned to tags in this blog."
+msgstr "На данном сайте отсутствуют записи связанные с метками."
+
+#: include/posts/class-bulk-delete-posts.php:402
+msgid "Posts from the selected tags are scheduled for deletion."
+msgstr "Запланировано удаление записей с выбранными метками."
+
+#: include/posts/class-bulk-delete-posts.php:482
+msgid "Select the post type from which you want to delete posts by custom taxonomy"
+msgstr "Выберите тип записи, записи которого вы хотите удалить"
+
+#: include/Core/Base/Mixin/Renderer.php:376
+#: include/posts/class-bulk-delete-posts.php:347
+msgid "Select Tags"
+msgstr "Выберите метки"
+
+#: include/Core/Base/Mixin/Renderer.php:381
+#: include/posts/class-bulk-delete-posts.php:348
+msgid "All Tags"
+msgstr "Все метки"
+
+#: include/Core/Posts/Modules/DeletePostsByTagModule.php:43
+#: include/posts/class-bulk-delete-posts.php:340
+msgid "Select the tags from which you want to delete posts"
+msgstr "Выберите метки, записи с которыми вы хотите удалить"
+
+#: include/posts/class-bulk-delete-posts.php:272
+msgid "Deleted %d post from the selected categories"
+msgid_plural "Deleted %d posts from the selected categories"
+msgstr[0] "Удалена %d запись с выбранными рубриками"
+msgstr[1] "Удалено %d записи с выбранными рубриками"
+msgstr[2] "Удалено %d записей с выбранными рубриками"
+
+#: include/posts/class-bulk-delete-posts.php:268
+msgid "Posts from the selected categories are scheduled for deletion."
+msgstr "Запланировано удаление записей с выбранными рубриками."
+
+#: include/Core/Base/Mixin/Renderer.php:246
+#: include/posts/class-bulk-delete-posts.php:216
+msgid "All Categories"
+msgstr "Все рубрики"
+
+#: include/posts/class-bulk-delete-posts.php:55
+msgid "Note"
+msgstr "Примечание"
+
+#: include/posts/class-bulk-delete-posts.php:53
+msgid "All Sticky Posts"
+msgstr "Все прилепленные записи"
+
+#: include/Core/Base/Mixin/Renderer.php:241
+#: include/posts/class-bulk-delete-posts.php:215
+msgid "Select Categories"
+msgstr "Выберите рубрики"
+
+#: include/posts/class-bulk-delete-posts.php:205
+msgid "Note: The post count below for each category is the total number of posts in that category, irrespective of post type"
+msgstr "Примечание: количество записей в каждой рубрике указано независимо от типа записи"
+
+#: include/posts/class-bulk-delete-posts.php:204
+msgid "Select the categories from which you wan to delete posts"
+msgstr "Выберите рубрики, записи из которых вы хотите удалить"
+
+#. translators: 1 Number of pages deleted
+#. translators: 1 Number of posts deleted
+#: include/Core/Posts/Modules/DeletePostsByRevisionModule.php:72
+#: include/Core/Posts/Modules/DeletePostsByURLModule.php:87
+#: include/posts/class-bulk-delete-posts.php:116
+msgid "Deleted %d post with the selected post status"
+msgid_plural "Deleted %d posts with the selected post status"
+msgstr[0] "Удалена %d запись с выбранным статусом"
+msgstr[1] "Удалено %d записи с выбранным статусом"
+msgstr[2] "Удалено %d записей с выбранным статусом"
+
+#: include/posts/class-bulk-delete-posts.php:108
+msgid "Posts with the selected status are scheduled for deletion."
+msgstr "Запланировано удаление записей с выбранным статусом."
+
+#: include/posts/class-bulk-delete-posts.php:55
+msgid "The date filter will not work for sticky posts"
+msgstr "Фильтр по дате не работает для прилепленных записей"
+
+#: include/Core/Posts/Modules/DeletePostsByCategoryModule.php:35
+#: include/posts/class-bulk-delete-posts.php:198
+msgid "Select the post type from which you want to delete posts by category"
+msgstr "Выберите тип записи, записи которого вы хотите удалить"
+
+#: include/pages/class-bulk-delete-pages.php:72
+msgid "All Private Pages"
+msgstr "Все личные страницы"
+
+#: include/pages/class-bulk-delete-pages.php:65
+msgid "All Pending Pages"
+msgstr "Все страницы на утверждении"
+
+#: include/pages/class-bulk-delete-pages.php:58
+msgid "All Scheduled Pages"
+msgstr "Все запланированные страницы"
+
+#: include/pages/class-bulk-delete-pages.php:51
+msgid "All Draft Pages"
+msgstr "Все черновики страниц"
+
+#: include/pages/class-bulk-delete-pages.php:120
+msgid "The selected pages are scheduled for deletion."
+msgstr "Запланировано удаление выбранных страниц."
+
+#: include/Core/Base/Mixin/Fetcher.php:64
+#: include/Core/Base/Mixin/Renderer.php:41
+#: include/Core/Base/Mixin/Renderer.php:251
+#: include/Core/Base/Mixin/Renderer.php:386
+#: include/Core/Base/Mixin/Renderer.php:422
+#: include/Core/Posts/Modules/DeletePostsByTaxonomyModule.php:96
+#: include/posts/class-bulk-delete-posts.php:40
+#: include/posts/class-bulk-delete-posts.php:54
+#: include/posts/class-bulk-delete-posts.php:218
+#: include/posts/class-bulk-delete-posts.php:350
+#: include/posts/class-bulk-delete-posts.php:522 include/ui/form.php:262
+msgid "Posts"
+msgstr "записей"
+
+#: include/pages/class-bulk-delete-pages.php:124
+msgid "Deleted %d page"
+msgid_plural "Deleted %d pages"
+msgstr[0] "Удалена %d страница"
+msgstr[1] "Удалено %d страницы"
+msgstr[2] "Удалено %d страниц"
+
+#: include/Core/Posts/Modules/DeletePostsByStatusModule.php:38
+#: include/posts/class-bulk-delete-posts.php:26
+msgid "Select the post statuses from which you want to delete posts"
+msgstr "Выберите статусы, записи с которыми вы хотите удалить"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:142
+#: include/ui/form.php:66
+msgid "Delete permanently"
+msgstr "Удалить навсегда"
+
+#: include/pages/class-bulk-delete-pages.php:44
+#: include/pages/class-bulk-delete-pages.php:51
+#: include/pages/class-bulk-delete-pages.php:58
+#: include/pages/class-bulk-delete-pages.php:65
+#: include/pages/class-bulk-delete-pages.php:72
+msgid "Pages"
+msgstr "страниц"
+
+#: include/pages/class-bulk-delete-pages.php:44
+msgid "All Published Pages"
+msgstr "Все опубликованные страницы"
+
+#: include/pages/class-bulk-delete-pages.php:37
+msgid "Select the status from which you want to delete pages"
+msgstr "Выберите статус, страницы с которым вы хотите удалить"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:243
+msgid "Deleted %d Jetpack contact form message"
+msgid_plural "Deleted %d Jetpack contact form messages"
+msgstr[0] "Удалено %d сообщение контактной формы Jetpack"
+msgstr[1] "Удалено %d сообщения контактной формы Jetpack"
+msgstr[2] "Удалено %d сообщений контактной формы Jetpack"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:239
+msgid "Jetpack contact form messages with the selected criteria are scheduled for deletion."
+msgstr "Запланировано удаление сообщений контактной формы Jetpack с выбранными критериями."
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:198
+msgid "Are you sure you want to delete all the Jetpack contact form messages based on the selected filters?"
+msgstr "Вы уверены, что хотите удалить все сообщения контактной формы Jetpack на основе выбранных фильтров?"
+
+#: include/misc/class-bulk-delete-misc.php:36
+msgid "Bulk Delete Misc"
+msgstr "Массовое удаление других элементов"
+
+#: include/misc/class-bulk-delete-misc.php:35
+#: include/misc/class-bulk-delete-misc.php:114
+msgid "Bulk Delete Miscellaneous Items"
+msgstr "Массовое удаление других элементов"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:122
+#: include/ui/form.php:105
+msgid "Only delete first "
+msgstr "Удалить только первые"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:99
+msgid "Choose your date options"
+msgstr "Выберите опции даты"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:73
+msgid "Delete all Contact Form Messages"
+msgstr "Удалить все сообщения контактной формы"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:57
+msgid "Jetpack contact form is not enabled."
+msgstr "Контактная форма Jetpack не включена."
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:31
+msgid "Bulk Delete Jetpack Contact Form Messages"
+msgstr "Массовое удаление сообщений контактной формы Jetpack"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:82
+msgid "Delete Messages based on filters"
+msgstr "Удалить сообщения на основе фильтров"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:73
+msgid "in total"
+msgstr "всего"
+
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:138
+#: include/ui/form.php:65
+msgid "Move to Trash"
+msgstr "Переместить в корзину"
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:63
+#: include/meta/class-bulk-delete-user-meta.php:99
+msgid "User Meta Key "
+msgstr "Мета-ключ пользователя"
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:53
+#: include/meta/class-bulk-delete-user-meta.php:90
+msgid "Delete based on user meta key name and value"
+msgstr "Удалять на основе мета-ключа пользователя и значения"
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:45
+#: include/meta/class-bulk-delete-user-meta.php:83
+msgid "Delete based on user meta key name only"
+msgstr "Удалять только на основе ключа мета-поля пользователя"
+
+#: include/meta/class-bulk-delete-user-meta.php:123
+msgid "Only delete user meta field from first "
+msgstr "Удалить мета-поле только у первых"
+
+#: include/meta/class-bulk-delete-user-meta.php:124
+msgid "users."
+msgstr "пользователей."
+
+#. translators: 1 Number of posts deleted
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:158
+#: include/meta/class-bulk-delete-user-meta.php:224
+msgid "Deleted user meta field from %d user"
+msgid_plural "Deleted user meta field from %d users"
+msgstr[0] "Мета-поле было удалено у %d пользователя"
+msgstr[1] "Мета-поле было удалено у %d пользователей"
+msgstr[2] "Мета-поле было удалено у %d пользователей"
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:22
+#: include/meta/class-bulk-delete-user-meta.php:220
+msgid "User meta fields from the users with the selected criteria are scheduled for deletion."
+msgstr "Пользовательские мета-поля пользователей с выбранными критериями запланированы для удаления."
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:151
+#: include/meta/class-bulk-delete-user-meta.php:182
+msgid "Are you sure you want to delete all the user meta fields that match the selected filters?"
+msgstr "Вы действительно хотите удалить все мета-поля пользователей, соответствующие выбранным фильтрам?"
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:40
+#: include/meta/class-bulk-delete-user-meta.php:78
+msgid "Choose your user meta field settings"
+msgstr "Выберите настройки пользовательского мета поля"
+
+#: include/meta/class-bulk-delete-user-meta.php:125
+msgid "Use this option if there are more than 1000 users and the script times out."
+msgstr "Используйте этот параметр, если число пользователей превышает 1000 и время работы скрипта превышает максимально допустимое."
+
+#: include/meta/class-bulk-delete-post-meta.php:146
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:108
+msgid "Only restrict to posts which are "
+msgstr "Только удалять записи"
+
+#: include/meta/class-bulk-delete-post-meta.php:149
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:111
+#: include/ui/form.php:46
+msgid "posted within last"
+msgstr "опубликованные за последние"
+
+#: include/meta/class-bulk-delete-post-meta.php:159
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:123
+msgid "posts."
+msgstr "записей."
+
+#: include/Core/Base/Mixin/Renderer.php:184
+#: include/Core/Base/Mixin/Renderer.php:191
+#: include/meta/class-bulk-delete-user-meta.php:70
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:76
+msgid "Users"
+msgstr "Пользователи"
+
+#: include/Core/Base/Mixin/Renderer.php:577
+#: include/meta/class-bulk-delete-comment-meta.php:151
+#: include/meta/class-bulk-delete-post-meta.php:166
+#: include/meta/class-bulk-delete-user-meta.php:131
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:151
+#: include/ui/form.php:126
+msgid "Delete now"
+msgstr "Удалить сейчас"
+
+#: include/meta/class-bulk-delete-meta.php:121
+msgid "WARNING: Items deleted once cannot be retrieved back. Use with caution."
+msgstr "ВНИМАНИЕ: Удаленные элементы невозможно восстановить. Используйте с осторожностью."
+
+#: include/Core/Metas/DeleteMetasPage.php:25
+#: include/Core/Metas/DeleteMetasPage.php:26
+#: include/meta/class-bulk-delete-meta.php:40
+#: include/meta/class-bulk-delete-meta.php:41
+#: include/meta/class-bulk-delete-meta.php:106
+msgid "Bulk Delete Meta Fields"
+msgstr "Массовое удаление мета полей"
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:21
+#: include/meta/class-bulk-delete-user-meta.php:38
+msgid "Bulk Delete User Meta"
+msgstr "Массовое удаление мета-информации пользователей"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:64
+#: include/meta/class-bulk-delete-post-meta.php:108
+msgid "Delete based on post meta key name and value"
+msgstr "Удалять на основе ключа мета-поля и его значения"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:73
+#: include/meta/class-bulk-delete-post-meta.php:117
+msgid "Post Meta Key "
+msgstr "Мета-ключ записи"
+
+#: include/Core/Base/Mixin/Renderer.php:593
+#: include/meta/class-bulk-delete-comment-meta.php:155
+#: include/meta/class-bulk-delete-post-meta.php:170
+#: include/meta/class-bulk-delete-user-meta.php:135
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:159
+#: include/ui/form.php:130
+msgid "Don't repeat"
+msgstr "Не повторять"
+
+#: include/Core/Base/Mixin/Renderer.php:588
+#: include/meta/class-bulk-delete-comment-meta.php:153
+#: include/meta/class-bulk-delete-post-meta.php:168
+#: include/meta/class-bulk-delete-user-meta.php:133
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:157
+#: include/ui/form.php:128
+msgid "repeat "
+msgstr "повторять"
+
+#. translators: 1 Number of posts deleted
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:190
+#: include/meta/class-bulk-delete-post-meta.php:263
+msgid "Deleted post meta field from %d post"
+msgid_plural "Deleted post meta field from %d posts"
+msgstr[0] "Мета-поле было удалено у %d записи"
+msgstr[1] "Мета-поле было удалено у %d записей"
+msgstr[2] "Мета-поле было удалено у %d записей"
+
+#: include/meta/class-bulk-delete-post-meta.php:158
+msgid "Only delete post meta field from first "
+msgstr "Удалить мета-поле только у первых"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:21
+#: include/meta/class-bulk-delete-post-meta.php:38
+msgid "Bulk Delete Post Meta"
+msgstr "Массовое удаление мета-полей"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:36
+#: include/meta/class-bulk-delete-post-meta.php:70
+msgid "Select the post type whose post meta fields you want to delete"
+msgstr "Выберите тип записей, мета-поля которого вы хотите удалить"
+
+#: include/meta/class-bulk-delete-comment-meta.php:173
+#: include/meta/class-bulk-delete-post-meta.php:188
+#: include/meta/class-bulk-delete-user-meta.php:153
+msgid "Enter time in Y-m-d H:i:s format or enter now to use current time"
+msgstr "Введите время в формате Y-m-d H:i:s или введите now для использования текущего времени"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:183
+#: include/meta/class-bulk-delete-post-meta.php:217
+msgid "Are you sure you want to delete all the post meta fields that match the selected filters?"
+msgstr "Вы уверены, что хотите удалить все мета-поля записи, соответствующие выбранным фильтрам?"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:47
+#: include/meta/class-bulk-delete-post-meta.php:91
+msgid "Delete based on post meta key name only"
+msgstr "Удалять только на основе мета-ключа"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:169
+#: include/meta/class-bulk-delete-comment-meta.php:202
+msgid "Are you sure you want to delete all the comment meta fields that match the selected filters?"
+msgstr "Вы действительно хотите удалить все мета-поля комментарией, соответствующие выбранным фильтрам?"
+
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:42
+#: include/meta/class-bulk-delete-post-meta.php:86
+msgid "Choose your post meta field settings"
+msgstr "Выберите настройки поля метаданных вашей записи"
+
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:34
+#: include/meta/class-bulk-delete-user-meta.php:61
+msgid "Select the user role whose user meta fields you want to delete"
+msgstr "Выберите роль пользователя, мета-поля которой вы хотите удалить"
+
+#: include/meta/class-bulk-delete-comment-meta.php:133
+#: include/meta/class-bulk-delete-post-meta.php:148
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:110
+#: include/ui/form.php:45
+msgid "older than"
+msgstr "старше"
+
+#: include/meta/class-bulk-delete-comment-meta.php:145
+#: include/meta/class-bulk-delete-post-meta.php:160
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:124
+msgid "Use this option if there are more than 1000 posts and the script times out."
+msgstr "Используйте эту настройку при удалении более, чем 1000 записей или при возникновении «белой страницы» после выполнения скрипта."
+
+#: include/Core/Base/Mixin/Renderer.php:629
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:56
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:66
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:55
+#: include/meta/class-bulk-delete-comment-meta.php:100
+#: include/meta/class-bulk-delete-comment-meta.php:166
+#: include/meta/class-bulk-delete-post-meta.php:100
+#: include/meta/class-bulk-delete-post-meta.php:110
+#: include/meta/class-bulk-delete-post-meta.php:181
+#: include/meta/class-bulk-delete-user-meta.php:92
+#: include/meta/class-bulk-delete-user-meta.php:146
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:83
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:169
+#: include/ui/form.php:138
+msgid "Only available in Pro Addon"
+msgstr "Доступно только в Pro-дополнении"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:79
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:79
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:64
+#: include/meta/class-bulk-delete-comment-meta.php:108
+#: include/meta/class-bulk-delete-post-meta.php:123
+#: include/meta/class-bulk-delete-user-meta.php:100
+msgid "Meta Key"
+msgstr "Мета-ключ"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:78
+#: include/meta/class-bulk-delete-comment-meta.php:107
+msgid "Comment Meta Key "
+msgstr "Мета-ключ комментария"
+
+#: include/license/class-license-list-table.php:179
+msgid "You don't have any valid addon license yet."
+msgstr "У вас ещё нет лицензий для дополнений."
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:21
+#: include/meta/class-bulk-delete-comment-meta.php:38
+msgid "Bulk Delete Comment Meta"
+msgstr "Массовое удаление мета-полей комментариев"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:64
+#: include/meta/class-bulk-delete-comment-meta.php:91
+msgid "Delete based on comment meta key name only"
+msgstr "Удалить только на основе имени мета-поля комментария"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:72
+#: include/meta/class-bulk-delete-comment-meta.php:98
+msgid "Delete based on comment meta key name and value"
+msgstr "Удалить на основе имени и значения мета-поля комментария"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:96
+#: include/Core/Metas/Modules/DeletePostMetaModule.php:97
+#: include/Core/Metas/Modules/DeleteUserMetaModule.php:80
+#: include/meta/class-bulk-delete-comment-meta.php:124
+#: include/meta/class-bulk-delete-post-meta.php:139
+#: include/meta/class-bulk-delete-user-meta.php:116
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:130
+msgid "Choose your deletion options"
+msgstr "Выберите настройки удаления"
+
+#: include/meta/class-bulk-delete-comment-meta.php:144
+msgid "comments."
+msgstr "комментариев."
+
+#: include/meta/class-bulk-delete-comment-meta.php:143
+msgid "Only delete comment meta field from first "
+msgstr "Удалить мета-поля только у первых"
+
+#: include/meta/class-bulk-delete-comment-meta.php:134
+msgid "commented within last"
+msgstr "прокоментировало в течении последних"
+
+#: include/meta/class-bulk-delete-comment-meta.php:131
+msgid "Only restrict to comments which are "
+msgstr "Ограничьте только комментарии которые"
+
+#: include/Core/Metas/Modules/DeleteCommentMetaModule.php:59
+#: include/meta/class-bulk-delete-comment-meta.php:86
+msgid "Choose your comment meta field settings"
+msgstr "Выберите настройки поля метаданных вашего комментария"
+
+#: include/license/class-license-list-table.php:169
+msgid "N/A"
+msgstr "Неизвестно"
+
+#: include/license/class-license-list-table.php:53
+msgid "License Code"
+msgstr "Лицензионный код"
+
+#: include/license/class-license-list-table.php:52
+msgid "Addon Name"
+msgstr "Название дополнения"
+
+#: include/license/class-license-list-table.php:102
+msgid "Deactivate"
+msgstr "Деактивировать"
+
+#: include/license/class-bd-license.php:300
+msgid "The license key for \"%s\" addon is invalid"
+msgstr "Лицензионный ключ для дополнения «%s» неверен"
+
+#: include/license/class-bd-license.php:296
+msgid "The license key for \"%s\" addon has expired. Kindly buy a new license."
+msgstr "Лицензионный ключ для дополнения «%s» истек. Пожалуйста, купите новую лицензию."
+
+#: include/license/class-bd-license.php:292
+msgid "The license key for \"%s\" addon is revoked. Kindly buy a new license."
+msgstr "Лицензионный ключ для дополнения «%s» отозван. Пожалуйста, купите новую лицензию."
+
+#: include/license/class-license-list-table.php:54
+msgid "Validity"
+msgstr "Период действия"
+
+#: include/license/class-license-list-table.php:38
+msgid "This is the list of addon license that are currently registered with the plugin."
+msgstr "Это список лицензий для дополнений, которые в настоящее время зарегистрированы в плагине."
+
+#: include/license/class-bd-license.php:288
+msgid "The license key for \"%s\" addon doesn't have any more activations left. Kindly buy a new license."
+msgstr "Лицензионный ключ для дополнения «%s» больше не активируется. Пожалуйста, купите новую лицензию."
+
+#: include/license/class-license-list-table.php:55
+msgid "Expires"
+msgstr "Заканчивается"
+
+#: include/license/class-bd-license.php:66
+msgid "Activate License"
+msgstr "Активировать лицензию"
+
+#: include/license/class-bd-license-handler.php:252
+msgid "Addon License Key"
+msgstr "Лицензионный ключ дополнения"
+
+#: include/license/class-bd-license-handler.php:272
+msgid "Enter license key"
+msgstr "Введите лицензионный ключ"
+
+#: include/license/class-bd-license.php:225
+msgid "The license key was successfully deleted"
+msgstr "Лицензионный ключ успешно удален"
+
+#: include/license/class-bd-license.php:198
+msgid "The license key for \"%s\" addon was successfully deactivated"
+msgstr "Лицензионный ключ для дополнения «%s» успешно деактивирован"
+
+#: include/license/class-bd-license.php:202
+msgid "There was some problem while trying to deactivate license key for \"%s\" addon. Kindly try again"
+msgstr "Возникли проблемы при деактивации лицензионного ключа для дополнения «%s». Пожалуйста, попробуйте ещё раз."
+
+#: include/license/class-bd-license.php:271
+msgid "There was some problem in contacting our store to activate the license key for \"%s\" addon"
+msgstr "Не удалось связаться с нашим магазином, чтобы активировать лицензионный ключ для дополнения «%s»"
+
+#: include/libraries/EDD_SL_Plugin_Updater.php:399
+msgid "You do not have permission to install plugin updates"
+msgstr "У вас нет разрешения на установку обновлений плагинов"
+
+#: include/libraries/EDD_SL_Plugin_Updater.php:399
+msgid "Error"
+msgstr "Ошибка"
+
+#: include/Core/Cron/CronListTable.php:173
+#: include/cron/class-cron-list-table.php:155
+msgid "You have not scheduled any bulk delete jobs."
+msgstr "Вы не запланировали каких-либо массовых удалений."
+
+#: include/Core/Cron/CronListTable.php:113
+#: include/cron/class-cron-list-table.php:114
+#: include/license/class-license-list-table.php:98
+msgid "Delete"
+msgstr "Удалить"
+
+#: include/Core/Cron/CronListTable.php:64
+#: include/cron/class-cron-list-table.php:52
+msgid "Options"
+msgstr "Параметры"
+
+#: include/Core/Cron/CronListTable.php:63
+#: include/cron/class-cron-list-table.php:51
+msgid "Type"
+msgstr "Тип"
+
+#: include/Core/Base/Mixin/Renderer.php:583
+#: include/Core/Cron/CronListTable.php:62
+#: include/cron/class-cron-list-table.php:50
+#: include/meta/class-bulk-delete-comment-meta.php:152
+#: include/meta/class-bulk-delete-post-meta.php:167
+#: include/meta/class-bulk-delete-user-meta.php:132
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:155
+#: include/ui/form.php:127
+msgid "Schedule"
+msgstr "планировать"
+
+#: include/Core/Cron/CronListTable.php:46
+#: include/cron/class-cron-list-table.php:35
+msgid "Note: "
+msgstr "Примечание: "
+
+#: include/base/users/class-bd-user-meta-box-module.php:192
+#: include/Core/Users/UsersModule.php:283
+msgid "Need the free \"Simple Login Log\" Plugin"
+msgstr "Необходим бесплатный плагин «Simple Login Log»"
+
+#: include/base/users/class-bd-user-meta-box-module.php:201
+#: include/Core/Users/UsersModule.php:292
+msgid "Enter \"0 days\" to delete users who have never logged in after the \"Simple Login Log\" plugin has been installed."
+msgstr "Введите «0 дней» для удаления пользователей, которые никогда не заходили на сайт (необходим установленный плагин «Simple Login Log»)."
+
+#: include/Core/Cron/CronListTable.php:48
+#: include/cron/class-cron-list-table.php:37
+msgid "Scheduling auto post or user deletion is available only when you buy pro addons."
+msgstr "Автоматическое удаление записей и пользователей возможно только после покупки Pro-дополнений."
+
+#: include/Core/Cron/CronListTable.php:42
+#: include/cron/class-cron-list-table.php:33
+msgid "This is the list of jobs that are currently scheduled for auto deleting posts in Bulk Delete Plugin."
+msgstr "Это список заданий, которые в настоящее время запланированы для автоматического удаления записей в Bulk Delete Plugin."
+
+#: include/Core/Cron/CronListTable.php:61
+#: include/cron/class-cron-list-table.php:49
+msgid "Next Due"
+msgstr "Следующий запуск"
+
+#: include/addons/posts.php:25
+msgid "Posts in Trash"
+msgstr "Записи в корзине"
+
+#: include/addons/posts.php:24
+#: include/Core/Users/Modules/DeleteUsersByUserRoleModule.php:29
+#: include/users/modules/class-bulk-delete-users-by-user-role.php:50
+msgid "By User Role"
+msgstr "По роли пользователя"
+
+#: include/addons/posts.php:22
+msgid "By Title"
+msgstr "По заголовку"
+
+#: include/addons/posts.php:21
+msgid "By Custom Field"
+msgstr "По произвольному полю"
+
+#: include/addons/pages.php:21
+msgid "Pages in Trash"
+msgstr "Страницы в корзине"
+
+#: include/addons/addon-list.php:33
+msgid "Adds the ability to delete posts based on title"
+msgstr "Добавляет возможность удалять записи на основе заголовка"
+
+#: include/base/users/class-bd-user-meta-box-module.php:189
+#: include/Core/Users/UsersModule.php:279
+#: include/meta/class-bulk-delete-comment-meta.php:136
+#: include/meta/class-bulk-delete-post-meta.php:151
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:113
+#: include/ui/form.php:48
+msgid "days"
+msgstr "дней"
+
+#: include/addons/posts.php:23
+msgid "By Duplicate Title"
+msgstr "По дубликату заголовка"
+
+#: include/addons/posts.php:157
+msgid "You need \"Bulk Delete From Trash\" Addon, to delete post in Trash."
+msgstr "Для удаления записей в корзине необходимо дополнение \"Bulk Delete From Trash\"."
+
+#: include/addons/posts.php:129
+msgid "You need \"Bulk Delete Posts by User Role\" Addon, to delete post based on User Role"
+msgstr "Для удаления записей на основе роли пользователя необходимо дополнение «Bulk Delete Posts by User Role»."
+
+#: include/addons/posts.php:102
+msgid "You need \"Bulk Delete Posts by Duplicate Title\" Addon, to delete post by duplicate title."
+msgstr "Для удаления записей по дубликату заголовка необходимо дополнение «Bulk Delete Posts by Duplicate Title»."
+
+#: include/addons/posts.php:74
+msgid "You need \"Bulk Delete Posts by Title\" Addon, to delete post by title."
+msgstr "Для удаления записей по заголовку необходимо дополнение «Bulk Delete Posts by Title»."
+
+#: include/addons/posts.php:46
+msgid "You need \"Bulk Delete Posts by Custom Field\" Addon, to delete post by custom field."
+msgstr "Для удаления записей по произвольному полю необходимо дополнение «Bulk Delete Posts by Custom Field»."
+
+#: include/addons/pages.php:42
+msgid "You need \"Bulk Delete From Trash\" Addon, to delete pages in Trash."
+msgstr "Для удаления страниц в корзине необходимо дополнение \"Bulk Delete From Trash\"."
+
+#: include/addons/addon-list.php:141
+msgid "Adds the ability to delete Jetpack Contact Form Messages based on filters and to schedule automatic deletion"
+msgstr "Добавляет возможность удалять сообщения Jetpack Contact Form с применением фильтрации и запланировать автоматическое удаление"
+
+#: include/addons/addon-list.php:140
+msgid "Delete Jetpack Contact Form Messages"
+msgstr "Delete Jetpack Contact Form Messages"
+
+#: include/addons/addon-list.php:51
+msgid "Adds the ability to delete posts based on user role"
+msgstr "Добавляет возможность удалять записи на основе роли пользователя"
+
+#: include/addons/addon-list.php:45
+msgid "Adds the ability to delete posts based on whether it contains attachment or not"
+msgstr "Добавляем возможность удалять записи в зависимости от наличия вложений"
+
+#. translators: 1 Module url
+#. translators: 1 Number of posts that are deleted.
+#: include/addons/pages.php:32 include/addons/posts.php:36
+#: include/addons/posts.php:64 include/addons/posts.php:92
+#: include/addons/posts.php:120 include/addons/posts.php:147
+#: include/base/class-bd-meta-box-module.php:167
+#: include/Core/Base/BaseModule.php:173
+#: include/meta/class-bulk-delete-comment-meta.php:54
+#: include/meta/class-bulk-delete-post-meta.php:54
+#: include/meta/class-bulk-delete-user-meta.php:54
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:47
+#: include/pages/class-bulk-delete-pages.php:24
+#: include/posts/class-bulk-delete-posts.php:18
+#: include/posts/class-bulk-delete-posts.php:192
+#: include/posts/class-bulk-delete-posts.php:332
+#: include/posts/class-bulk-delete-posts.php:458
+#: include/posts/class-bulk-delete-posts.php:652
+#: include/posts/class-bulk-delete-posts.php:822
+#: include/posts/class-bulk-delete-posts.php:889
+msgid "This section just got enabled. Kindly <a href = \"%1$s\">refresh</a> the page to fully enable it."
+msgstr "Этот раздел только что был включен. Пожалуйста, <a href = \"%1$s\">обновите</a> страницу, чтобы полностью включить его."
+
+#: include/addons/addon-list.php:39
+msgid "Adds the ability to delete posts based on duplicate title"
+msgstr "Добавляет возможность удалять записи по дубликату заголовка"
+
+#: include/addons/addon-list.php:57
+msgid "Adds the ability to delete posts and pages from trash"
+msgstr "Добавляет возможность удалять записи и страницы из корзины"
+
+#: include/base/users/class-bd-user-meta-box-module.php:188
+#: include/Core/Users/UsersModule.php:277
+msgid "Restrict to users who have not logged in the last "
+msgstr "Удалить только пользователей, которые не заходили на сайте в последние"
+
+#. translators: 1 Cron page url
+#. translators: 1 Url to view cron jobs
+#: include/base/class-bd-meta-box-module.php:293
+#: include/Core/Base/BaseModule.php:400
+#: include/meta/class-bulk-delete-comment-meta.php:245
+#: include/meta/class-bulk-delete-post-meta.php:260
+#: include/meta/class-bulk-delete-user-meta.php:221
+#: include/misc/class-bulk-delete-jetpack-contact-form-messages.php:240
+#: include/pages/class-bulk-delete-pages.php:121
+#: include/posts/class-bulk-delete-posts.php:111
+#: include/posts/class-bulk-delete-posts.php:269
+#: include/posts/class-bulk-delete-posts.php:403
+#: include/posts/class-bulk-delete-posts.php:581
+#: include/posts/class-bulk-delete-posts.php:750
+msgid "See the full list of <a href = \"%s\">scheduled tasks</a>"
+msgstr "Посмотреть полный список <a href = \"%s\">запланированных задач</a>"
+
+#: include/addons/addon-list.php:32
+msgid "Delete posts by title"
+msgstr "Delete posts by title"
+
+#: include/addons/addon-list.php:38
+msgid "Delete posts by duplicate title"
+msgstr "Delete posts by duplicate title"
+
+#: include/addons/addon-list.php:44
+msgid "Delete posts by attachment"
+msgstr "Delete posts by attachment"
+
+#: include/addons/addon-list.php:50
+msgid "Delete posts by user role"
+msgstr "Delete posts by user role"
+
+#: include/addons/addon-list.php:56
+msgid "Delete from trash"
+msgstr "Delete from trash"
+
+#: include/addons/addon-list.php:62
+msgid "Scheduler Email"
+msgstr "Scheduler Email"
+
+#: include/addons/addon-list.php:116
+msgid "Delete Post Meta Fields"
+msgstr "Delete Post Meta Fields"
+
+#: include/addons/addon-list.php:122
+msgid "Delete Comment Meta Fields"
+msgstr "Delete Comment Meta Fields"
+
+#: include/addons/addon-list.php:128
+msgid "Delete User Meta Fields"
+msgstr "Delete User Meta Fields"
+
+#: include/addons/addon-list.php:134
+msgid "Delete attachment"
+msgstr "Delete attachment"
+
+#: include/addons/addon-list.php:135
+msgid "Adds the ability to delete attachments based on whether they are attached to a post or not"
+msgstr "Добавляет возможность удаления вложений, в зависимости от того прикреплены они к записи или нет"
+
+#: include/addons/addon-list.php:129
+msgid "Adds the ability to delete user meta fields based on value and to schedule automatic deletion"
+msgstr "Добавляет возможность удаления мета-полей пользователей на основе их значения или запланировать автоматическое удаление"
+
+#: include/addons/addon-list.php:74
+msgid "Scheduler for deleting Posts by Tag"
+msgstr "Scheduler for deleting Posts by Tag"
+
+#: include/addons/addon-list.php:68
+msgid "Scheduler for deleting Posts by Category"
+msgstr "Scheduler for deleting Posts by Category"
+
+#: include/addons/addon-list.php:69
+msgid "Adds the ability to schedule auto delete of posts based on category"
+msgstr "Добавляет возможность запланировать автоматическое удаление записей по рубрикам"
+
+#: include/addons/addon-list.php:110
+msgid "Scheduler for deleting Users by User Meta"
+msgstr "Scheduler for deleting Users by User Meta"
+
+#: include/addons/addon-list.php:104
+msgid "Scheduler for deleting Users by User Role"
+msgstr "Scheduler for deleting Users by User Role"
+
+#: include/addons/addon-list.php:98
+msgid "Scheduler for deleting Pages by Status"
+msgstr "Scheduler for deleting Pages by Status"
+
+#: include/addons/addon-list.php:92
+msgid "Scheduler for deleting Posts by Post Status"
+msgstr "Scheduler for deleting Posts by Post Status"
+
+#: include/addons/addon-list.php:86
+msgid "Scheduler for deleting Posts by Custom Post Type"
+msgstr "Scheduler for deleting Posts by Custom Post Type"
+
+#: include/addons/addon-list.php:80
+msgid "Scheduler for deleting Posts by Custom Taxonomy"
+msgstr "Scheduler for deleting Posts by Custom Taxonomy"
+
+#: include/addons/addon-list.php:81
+msgid "Adds the ability to schedule auto delete of posts based on custom taxonomy"
+msgstr "Добавляет возможность запланировать автоматическое удаление записей на основе произвольной таксономии"
+
+#: include/addons/addon-list.php:87
+msgid "Adds the ability to schedule auto delete of posts based on custom post type"
+msgstr "Добавляет возможность запланировать автоматическое удаление записей на основе произвольной типа записей"
+
+#: include/addons/addon-list.php:99
+msgid "Adds the ability to schedule auto delete pages based on status"
+msgstr "Добавляет возможность запланировать автоматическое удаление страниц на основе статуса"
+
+#: include/addons/addon-list.php:105
+msgid "Adds the ability to schedule auto delete of users based on user role"
+msgstr "Добавляет возможность запланировать автоматическое удаление пользователей на основе роли пользователя"
+
+#: include/addons/addon-list.php:111
+msgid "Adds the ability to schedule auto delete of users based on user meta"
+msgstr "Добавляет возможность запланировать автоматическое удаление пользователей на основе мета-данных"
+
+#: include/addons/addon-list.php:75
+msgid "Adds the ability to schedule auto delete of posts based on tag"
+msgstr "Добавляет возможность запланировать автоматическое удаление записей с определенной меткой"
+
+#: include/addons/base/class-bd-scheduler-addon.php:111
+#: include/Deprecated/class-bd-scheduler-addon.php:112
+msgid "\"%s\" addon requires \"<a href=\"%s\" target=\"_blank\">%s</a>\" addon to be installed and activated!"
+msgstr "Для добавления дополнения «%s» требуется дополнение «<a href=\"%s\" target=\"_blank\">%s</a>», который будет установлен и активирован!"
+
+#: include/addons/addon-list.php:123
+msgid "Adds the ability to delete comment meta fields based on value and to schedule automatic deletion"
+msgstr "Добавляет возможность удалять мета-поля комментариев на основе значения и планировать автоматическое удаление"
+
+#: include/addons/addon-list.php:117
+msgid "Adds the ability to delete post meta fields based on value and to schedule automatic deletion"
+msgstr "Добавляет возможность удалить мета-поля записи на основе значения и запланировать автоматическое удаление"
+
+#: include/addons/addon-list.php:63
+msgid "Sends an email every time a Bulk WP scheduler runs"
+msgstr "Отсылает email при каждом запланированном запуске Bulk WP"
+
+#: include/Core/Posts/Modules/DeletePostsByStatusModule.php:23
+msgid "By Post Status"
+msgstr "По статусу записи"
+
+#: include/Core/Pages/DeletePagesPage.php:25
+#: include/Core/Pages/DeletePagesPage.php:26
+msgid "Bulk Delete Pages"
+msgstr "Массовое удаление страниц"
+
+#: include/Core/Posts/DeletePostsPage.php:30
+#: include/Core/Posts/DeletePostsPage.php:31
+msgid "Bulk Delete Posts"
+msgstr "Массовое удаление записей"
+
+#: include/Core/BulkDelete.php:293 include/Core/BulkDelete.php:294
+#: include/license/class-bd-license.php:33
+msgid "Addon Licenses"
+msgstr "Лицензии дополнений"
+
+#: include/Core/SystemInfo/SystemInfoPage.php:37
+#: include/system-info/class-bd-system-info-page.php:50
+msgid "Bulk Delete - System Info"
+msgstr "Bulk Delete - Системная информация"
+
+#: include/Core/Posts/DeletePostsPage.php:43
+#: include/Core/Posts/DeletePostsPage.php:44
+msgid "Bulk WP"
+msgstr "Bulk WP"
+
+#: include/Core/Pages/Modules/DeletePagesByStatusModule.php:23
+msgid "By Page Status"
+msgstr "По статусу страницы"
+
+#: include/Core/Posts/Modules/DeletePostsByRevisionModule.php:21
+msgid "By Post Revisions"
+msgstr "По редакции записи"
+
+#: include/Core/Posts/Modules/DeletePostsByURLModule.php:21
+msgid "By URL"
+msgstr "по URL"
+
+#: include/Core/Pages/DeletePagesPage.php:30
+msgid "WARNING: Pages deleted once cannot be retrieved back. Use with caution."
+msgstr "ВНИМАНИЕ: Удаленные страницы невозможно восстановить. Используйте с осторожностью."
+
+#: include/Core/Posts/DeletePostsPage.php:35
+#: include/misc/class-bulk-delete-misc.php:130
+msgid "WARNING: Posts deleted once cannot be retrieved back. Use with caution."
+msgstr "ВНИМАНИЕ: Удаленные записи невозможно восстановить. Используйте с осторожностью."
+
+#: include/Core/Cron/CronListPage.php:28
+msgid "Scheduled Jobs"
+msgstr "Запланированные задачи"
+
+#: include/Core/Cron/CronListPage.php:27
+msgid "Bulk Delete Schedules"
+msgstr "Массовое удаление запланированного"
+
+#: include/addons/addon-list.php:27
+msgid "Adds the ability to delete posts based on custom fields"
+msgstr "Добавляет возможность удалять записи на произвольных полей"
+
+#: include/Core/SystemInfo/SystemInfoPage.php:38
+#: include/system-info/class-bd-system-info-page.php:51
+msgid "System Info"
+msgstr "Информация о системе"
+
+#: include/addons/addon-list.php:28 include/addons/addon-list.php:34
+#: include/addons/addon-list.php:40 include/addons/addon-list.php:46
+#: include/addons/addon-list.php:52 include/addons/addon-list.php:58
+#: include/addons/addon-list.php:64 include/addons/addon-list.php:70
+#: include/addons/addon-list.php:76 include/addons/addon-list.php:82
+#: include/addons/addon-list.php:88 include/addons/addon-list.php:94
+#: include/addons/addon-list.php:100 include/addons/addon-list.php:106
+#: include/addons/addon-list.php:112 include/addons/addon-list.php:118
+#: include/addons/addon-list.php:124 include/addons/addon-list.php:130
+#: include/addons/addon-list.php:136 include/addons/addon-list.php:142
+msgid "More Info"
+msgstr "Больше информации"
+
+#: include/addons/addon-list.php:20
+msgid "The following are the list of pro addons that are currently available for purchase."
+msgstr "Список Pro-дополнений доступных для покупки."
+
+#: include/addons/addon-list.php:26
+msgid "Delete posts by custom field"
+msgstr "Delete posts by custom field"
+
+#: include/Deprecated/old-bulk-delete.php:119
+#: include/Deprecated/old-bulk-delete.php:131
+msgid "Cheatin&#8217; huh?"
+msgstr "Хакер, что ли?"

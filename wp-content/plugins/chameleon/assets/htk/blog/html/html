@@ -1,0 +1,73 @@
+
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-12">
+
+                <!-- First Blog Post -->
+                <h2>
+                    Blog Post Title
+                </h2>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
+                <hr>
+                <figure class="thumbnail">
+                    <img class="img-responsive" src="http://placehold.it/1200x400" alt="">
+                                       
+                </figure>
+                <h3>
+                    Sub Title
+                </h3>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="thumbnail">
+                        <img src="http://placehold.it/400x300" alt="" class="img-responsive" />
+                    </figure>
+                </div>
+
+                

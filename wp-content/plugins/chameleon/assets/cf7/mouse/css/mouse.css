@@ -1,0 +1,221 @@
+/*
+Form Name: Mouse
+Form URI: https://github.com/uxglow/contact-form-7/blob/master/classic/1.0/classic.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Contact Form 7, Mouse
+*/
+body {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+}
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
+.wpcf7{
+    max-width:600px;
+	border: 3px solid #2980B9;
+	border-radius: 0px;
+	width:100%;	
+	font-family: 'Open Sans', sans-serif, Arial;
+  	margin: 0px auto 30px auto;
+  	background-color: #ffcaca;
+  	overflow: hidden;
+	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+	color: #888;
+}
+.wpcf7 .wpcf7-form {
+    float: left;
+    padding: 40px 5%;
+    width: 100%;
+	position:relative;
+}
+.wpcf7 .wpcf7-form:before {
+
+	background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAwCAYAAADpVKHaAAADZklEQVRYhe2YXYxNVxSAvwmlmiAkgrTRKoJ4KipKGSSeSPxG4oWEvmhKeZBS/0IaEtIpkvJASLUIIX4iPPh70jFEE0NaYhKUKjMGM/fstZjwsNfcczLunXvOnbnXy6xk5+buvdb61v49e22IJyUgp0D+gtpuMW1aS2q6gv5Hib4Btwvqexc5AFlFib7xAegL0J3wskcxA5gNcjUMQq4XOYDKDiAzQf+3AH709RUfwKF2rQh6+BG4ySCbQI6BloPcAL0MWmNTUOvr5BZoBcgJ0C0g0+FJ5zygVR+CWwByJz3E+RTkHrilCYLQL0CvRBbXY5A94L4DmQbBBEiNANlrgNOQGgnBeJCp4L71O0IeRIL4G4JxOcBBKWi1QZ+CLIfn3TPrylpzvDtz+5PO4BaDPDR/KT8VmXs8DPSZObwKrn/zgeaCN0rqY9ALFkAAbmIThdpuIJWmcAmquzTvMAkc/E6Q46b/LwSfRh1ttIZHEPTN7SwpHKCuZ3oB43Y1VvYK96x+E89RPnAAmREOvwwCdL45uRtvuIMxIAfDaZIqkMP+PMgl59unT0hkNSCHLJqf40Wv27Ls6QPx7GWF8c4BctOMp8aEbzfji3bWnzL7g/Hsg7HhSKe3lw5NCN9uPVmTDO4GgDb4Yzk8o8+C/G7zma38BnI7C/weyP4c9n+AnDT7GtInWuJzuwk8uX11tOc7QVaArG2mLActz9LzG/7z2qz9StAys3/2Pub8c9BXjXOeL7wc3BLQ88WE/5Jln+8vAlyG+CHXHZHfX6F+eBHgLZU2eBu8Dd4GLyy8XwQuVXadbXqZL5DUfxne35Ez9ueH4sB1ro30n4D8ZPCTxYHLPuPtAYLSMJHLlZ+1VOp6gT42+Cz8RV4rrGJVYeFuYZho1HRtUqnVhet9fW+Q+wZfF2m43wnkmjUcLQxcdoe9fucRKTUK1NkIbG1l8JrIdWtKFiW3JKK0GShpBXDk/U425lJeH1E+BkGf/KB1PUEORJKEHTEN3SLQIFyEsgFSn8SzfdkDZFn4XKqvLR1OIsEYkOuRyF+AHAGdB8HXIIMh+AzcQEh9BTrH53KR9Av5B9ykhOBGud0RdD7IrQy5VoN9IBoy3OGrwH3vHxFbLJUdIDXaL0I953ukT0Gf27Tc8fm6lvl3unjQt7Oggi3fanJhAAAAAElFTkSuQmCC");
+	content: ' ';
+	display: block;
+	background-size: 39px 48pxpx;
+	height: 50PX;
+	width: 50PX;
+	position: absolute;
+	right: 19px;
+	top: 7px;
+	background-repeat: no-repeat;
+	transform: rotate(12212deg);
+}
+.wpcf7 h1 {
+  font-size: 24px;
+  color: #b95757;
+  color: rgb(255, 255, 255);
+  padding: 22px 25px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none; 
+  text-align:left;
+}
+
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
+    padding: 0;
+    margin: 10px 0 0 0;
+	width:100%;
+	float:left;
+}
+
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
+    color: #001fa2;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%
+}
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
+	float: left;
+    margin-top: 4px;
+    width: 100%;
+}
+.wpcf7 .wpcf7-form input[type=text],
+.wpcf7 .wpcf7-form input[type=date],
+.wpcf7 .wpcf7-form input[type=datetime],
+.wpcf7 .wpcf7-form input[type=number],
+.wpcf7 .wpcf7-form input[type=search],
+.wpcf7 .wpcf7-form input[type=time],
+.wpcf7 .wpcf7-form input[type=url],
+.wpcf7 .wpcf7-form input[type=email],
+.wpcf7 .wpcf7-form input[type=tel],
+.wpcf7 .wpcf7-form textarea,
+.wpcf7 .wpcf7-form select{
+    display: block;
+	background-color:#ECF0F1;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+    box-sizing: border-box;
+    float: left;
+    height: 36px;
+    margin: 0 0 6px;
+    outline: medium none;
+    padding: 8px 10px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+	color: #333;
+}
+.wpcf7 .wpcf7-form input[type=text]:focus,
+.wpcf7 .wpcf7-form input[type=date]:focus,
+.wpcf7 .wpcf7-form input[type=datetime]:focus,
+.wpcf7 .wpcf7-form input[type=number]:focus,
+.wpcf7 .wpcf7-form input[type=search]:focus,
+.wpcf7 .wpcf7-form input[type=time]:focus,
+.wpcf7 .wpcf7-form input[type=url]:focus,
+.wpcf7 .wpcf7-form input[type=email]:focus,
+.wpcf7 .wpcf7-form input[type=tel]:focus,
+.wpcf7 .wpcf7-form textarea:focus,
+.wpcf7 .wpcf7-form select:focus{
+	border: 2px solid #63AAD9;
+}
+.wpcf7 .wpcf7-form .field-divided{
+    width: 49%;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-form-control{
+    width: 100%;
+}
+.wpcf7 .wpcf7-form .wpcf7-textarea{
+    height: 100px;
+}
+.wpcf7 .wpcf7-form input[type=submit], 
+.wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
+    background: #EDC418;
+    border: 1px solid #141B21;
+	border-radius: 5px;
+    color: #020202;
+    cursor: pointer;
+    font-size: 15px;
+	font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 8px 25px;
+    text-transform: capitalize;
+	width:auto;
+}
+.wpcf7 .wpcf7-form input[type=submit]:hover, 
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
+    background: #F7E700;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+	color: #000;
+
+}
+.wpcf7 .wpcf7-form .required{
+    color:red;
+}
+.wpcf7 .wpcf7-form .wpcf7-response-output{
+	background-color:#B1531F;
+	color:#fff;
+	margin:30px 0 0 0;
+	padding: 10px 2% 10px;
+	font-size:12px;
+	text-align:center;
+	width: 96%;
+	float:left;
+}
+.wpcf7 .wpcf7-form .wpcf7-not-valid-tip {
+	color: #DA3838;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: right;
+	width: 100%;
+	display: block;
+}
+.wpcf7 .screen-reader-response{
+	display:none;
+}
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ok {
+	border:none;
+	background-color: #049882;
+	color: #fff;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ng {
+	border: none;
+	background-color: #0B62A1;
+	color: #ffdd8e;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-spam-blocked {
+	border: none;
+	background-color: #7b4dc9;
+	color: #feef52;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-validation-errors {
+	border: none;
+	background-color: #f7e700;
+	color: #d71414;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+	margin-top: 10px;
+	display: block;
+}

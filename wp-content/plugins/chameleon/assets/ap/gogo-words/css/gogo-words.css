@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+ul.ap_pagination *, ul.ap_pagination:before *, ul.ap_pagination:after *{
+	box-sizing:border-box;
+}
+ul.ap_pagination {
+	background: none repeat scroll 0 0 #FFF;
+	padding:0px 0px 10px 0px;
+	border: 0;
+	width:98%;
+}
+ul.ap_pagination li{
+	padding:8px 10px;
+	margin:0px;
+}
+ul.layout_V.ap_pagination {
+	overflow: hidden;
+	width: 28px;	
+}
+ul.layout_V.ap_pagination li{
+	padding:2px 2%;
+	margin:0px;
+	width:98%;
+}
+ul.ap_pagination li {
+	padding:0;
+	width: 3.5%;
+	margin-bottom: 3px;
+	background-color: transparent;
+	border: medium none;
+	border-radius: 18px;
+	cursor: pointer;
+	font-size: 14px;
+}
+ul.ap_pagination li:not(.ap_reset) a {
+	color: #21759b;
+	width:100%;
+	padding: 2px 4px;
+	display: block;
+	text-align:center;
+	font-size: 14px;
+}
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited{
+	background-color: #e78e1b;
+}
+ul.ap_pagination li:active, 
+ul.ap_pagination li:visited,
+ul.ap_pagination li:not(.ap_reset) a:hover,
+ul.ap_pagination li:not(.ap_reset) a.selected{
+    background-color: #000000;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: normal;
+	adding: 2px 4px;
+	padding:0;	
+}
+ul.ap_pagination li.ap_reset a.selected,
+ul.ap_pagination li.ap_reset a:hover{
+	background-color: transparent;	
+}

@@ -1,0 +1,51 @@
+# Translation of Plugins - Easy Media Download - Development (trunk) in English (UK)
+# This file is distributed under the same license as the Plugins - Easy Media Download - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-12-16 11:34:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - Easy Media Download - Development (trunk)\n"
+
+#: main.php:65
+msgid "For detailed documentation please visit the plugin homepage <a target=\"_blank\" href=\"%s\">here</a>."
+msgstr "For detailed documentation please visit the plugin homepage <a target=\"_blank\" href=\"%s\">here</a>."
+
+#: main.php:60
+msgid "Easy Media Download Settings"
+msgstr "Easy Media Download Settings"
+
+#: main.php:50
+msgid "Settings"
+msgstr "Settings"
+
+#. Author URI of the plugin/theme
+msgid "https://noorsplugin.com/"
+msgstr "https://noorsplugin.com/"
+
+#. Author of the plugin/theme
+msgid "naa986"
+msgstr "naa986"
+
+#. Description of the plugin/theme
+msgid "Easily embed download buttons for your digital media files"
+msgstr "Easily embed download buttons for your digital media files"
+
+#. Plugin URI of the plugin/theme
+msgid "https://noorsplugin.com/easy-media-download-plugin-for-wordpress/"
+msgstr "https://noorsplugin.com/easy-media-download-plugin-for-wordpress/"
+
+#. #-#-#-#-#  easy-media-download-code.pot (Easy Media Download 1.1.3) 
+#. #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: main.php:60
+msgid "Easy Media Download"
+msgstr "Easy Media Download"
+
+#: main.php:261
+msgid "Please specify the PayPal email address which will receive the payments"
+msgstr "Please specify the PayPal email address which will receive the payments"

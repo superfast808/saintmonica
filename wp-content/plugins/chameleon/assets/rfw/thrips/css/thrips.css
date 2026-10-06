@@ -1,0 +1,92 @@
+/*
+Style Name: Pterygota
+Form URI: https://github.com/uxglow/rss-feed-widget/blob/master/thrips/1.0/thrips.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: RSS Feed Widget, RSS Feed Widget Styles, Pterygota
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.rfw-class.thrips *, 
+.rfw-class.thrips *::after, 
+.rfw-class.thrips *::before{
+	box-sizing: border-box  !important;	
+}
+.rfw-class.thrips .widget_dock {
+	margin: 0px auto;
+	width:100%;
+	max-width:480px;
+	border-radius: 0px;
+	background-color:#eeede9;
+	box-shadow: 0px 0px 6px #ccc;	
+}
+.rfw-class.thrips .widget_dock .bx-wrapper,
+.rfw-class.thrips .widget_dock .rfw_list{
+	background-color: #eeede9;
+	padding: 0px;
+	box-shadow: none;
+	border:0;	
+}
+.rfw-class.thrips .widget_dock,
+.rfw-class.thrips .widget_dock .bx-viewport{
+	padding: 0px;
+	font-family: 'Raleway', Helvetica, sans-serif; 	
+}
+.rfw-class.thrips .widget_dock .rfw_dock li > a,
+.rfw-class.thrips .widget_dock .bx-viewport .rfw_dock li > a {
+	background-color: #eeede9;
+	width: 100%;
+	float: left;
+}
+.rfw-class.thrips .widget_dock .rfw_dock.rfw_list li {
+	float: left;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.rfw-class.thrips .widget_dock .rfw_dock a h3.entry-title,
+.rfw-class.thrips .widget_dock .bx-viewport .rfw_dock h3{
+	background-color: #D83425;
+	padding: 10px 8px;
+	margin:0;
+	font-size:18px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align:justify;
+	color: #fff;
+}
+.rfw-class.thrips .widget_dock li > div.text_div,
+.rfw-class.thrips .widget_dock .bx-viewport li > div.text_div {
+	font-family: 'Arial', Helvetica, sans-serif;
+	background-color: #eeede9;
+    color: #333;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;
+	text-align:justify;	
+}
+.rfw-class.thrips .widget_dock li .image_only.imgn > img{
+	padding: 10px;
+}
+.rfw-class.thrips .widget_dock li > div.feed_img img,
+.rfw-class.thrips .widget_dock .bx-viewport li > div.feed_img img{
+	margin-bottom: 0px;	
+}
+.rfw-class.thrips .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #eeede9;
+	border: 2px solid #D83425;
+}
+.rfw-class.thrips .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color: #4B5262;
+	border: 2px solid #D83425;
+}
+.rfw-class.thrips .text_div > a {
+  color: #F4EA79;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rfw-class.thrips .text_div > a:hover{
+	text-decoration: underline;	
+}

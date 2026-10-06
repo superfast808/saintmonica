@@ -1,0 +1,166 @@
+/*
+Form Name: Melon
+Form URI: https://github.com/uxglow/contact-form-7/blob/master/melon/1.0/melon.css
+Author: UX Glow
+Author URI: http://uxglow.com/
+Description: __desc__
+Version: 1.0
+Tags: Contact Form 7, Melon
+*/
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
+.wpcf7{
+    max-width:600px;
+	width:100%;	
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border-radius: 5px;
+  	margin: 0px auto 30px auto;
+  	background-color: #FFFFFF;
+  	overflow: hidden;
+}
+.wpcf7 .wpcf7-form {
+    float: left;
+    padding: 20px 2% 30px;
+    width: 100%;
+}
+.wpcf7 h1 {
+  font-size: 24px;
+  background: #F6AA93 none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  padding: 22px 25px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none; 
+  text-align:left;
+}
+
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
+    padding: 0;
+    margin: 10px 0 0 0;
+	width:100%;
+	float:left;
+}
+
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
+    color: #777;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight:normal;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%
+}
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
+	float: left;
+    margin-top: 4px;
+    width: 100%;
+}
+.wpcf7 .wpcf7-form input[type=text],
+.wpcf7 .wpcf7-form input[type=date],
+.wpcf7 .wpcf7-form input[type=datetime],
+.wpcf7 .wpcf7-form input[type=number],
+.wpcf7 .wpcf7-form input[type=search],
+.wpcf7 .wpcf7-form input[type=time],
+.wpcf7 .wpcf7-form input[type=url],
+.wpcf7 .wpcf7-form input[type=email],
+.wpcf7 .wpcf7-form input[type=tel],
+.wpcf7 .wpcf7-form textarea,
+.wpcf7 .wpcf7-form select{
+    display: block;
+	border: 1px solid #eee;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+	font-size:14px;
+	line-height: 18px;
+    height: 36px;
+    margin: 0 0 6px;
+    outline: medium none;
+    padding: 0 10px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+    border: 1px solid #ccc;
+	color: #555;	
+}
+.wpcf7 .wpcf7-form input[type=text]:focus,
+.wpcf7 .wpcf7-form input[type=date]:focus,
+.wpcf7 .wpcf7-form input[type=datetime]:focus,
+.wpcf7 .wpcf7-form input[type=number]:focus,
+.wpcf7 .wpcf7-form input[type=search]:focus,
+.wpcf7 .wpcf7-form input[type=time]:focus,
+.wpcf7 .wpcf7-form input[type=url]:focus,
+.wpcf7 .wpcf7-form input[type=email]:focus,
+.wpcf7 .wpcf7-form input[type=tel]:focus,
+.wpcf7 .wpcf7-form textarea:focus,
+.wpcf7 .wpcf7-form select:focus{
+    -moz-box-shadow: 0 0 8px #F6AA93;
+    -webkit-box-shadow: 0 0 8px #F6AA93;
+    box-shadow: 0 0 8px #F6AA93;
+    border: 1px solid #F6AA93;
+	color: #333;
+}
+.wpcf7 .wpcf7-form .field-divided{
+    width: 49%;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-form-control{
+    width: 100%;
+}
+.wpcf7 .wpcf7-form .wpcf7-textarea{
+    height: 100px;
+}
+.wpcf7 .wpcf7-form input[type=submit], 
+.wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
+    background: #F6AA93;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+	cursor:pointer;
+	text-transform: uppercase;
+	font-size:20px;
+}
+.wpcf7 .wpcf7-form input[type=submit]:hover, 
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
+    background: #cf967f;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.wpcf7 .wpcf7-form .required{
+    color:red;
+}
+.wpcf7 .wpcf7-form .wpcf7-response-output{
+	background-color:#F6AA93;
+	color:#fff;
+	margin:30px 0 0 0;
+	padding: 10px 2% 10px;
+	font-size:12px;
+	text-align:center;
+	width: 100%;
+	float:left;
+}
+.wpcf7 .wpcf7-form .wpcf7-not-valid-tip{
+	color:#FF0004;
+	font-size:12px;
+	font-weight:normal;
+}
+.wpcf7 .screen-reader-response{
+	display:none;
+}

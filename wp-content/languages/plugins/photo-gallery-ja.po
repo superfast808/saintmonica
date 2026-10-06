@@ -1,0 +1,318 @@
+# Translation of Plugins - Photo Gallery by WD &#8211; Responsive Photo Gallery for WordPress - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Photo Gallery by WD &#8211; Responsive Photo Gallery for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-11-13 06:04:07+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Photo Gallery by WD &#8211; Responsive Photo Gallery for WordPress - Stable (latest release)\n"
+
+#: addons/addons.php:69
+msgid "GET THIS ADD ON"
+msgstr "アドオンを入手"
+
+#: addons/addons.php:34
+msgid "Add-ons are supported by premium version of Photo Gallery"
+msgstr "アドオンは、Photo Galleryのプレミアムバージョンでサポートされています。"
+
+#: addons/addons.php:33
+msgid "Attention"
+msgstr "注意"
+
+#: addons/addons.php:30
+msgid "Photo Gallery Add-ons"
+msgstr "Photo Gallery アドオン"
+
+#: addons/addons.php:21
+msgid "Photo Gallery Export/Import helps to move created galleries and albums from one site to another. This way you can save the gallery/album options and manual modifications."
+msgstr "Photo Gallery Export/Import は、作成済みのギャラリーやアルバムを別のサイト間で移動できるようにします。これでギャラリー・アルバムの設定や手動カスタマイズも保存できます。"
+
+#: addons/addons.php:19
+msgid "Photo Gallery Export / Import"
+msgstr "Photo Gallery エクスポート / インポート"
+
+#: addons/addons.php:14
+msgid "This addon integrates NextGen with Photo Gallery allowing to import images and related data from NextGen to use with Photo Gallery"
+msgstr "このアドオンは NextGen と Photo Gallery を連携し、NextGen の画像や関連データを Photo Gallery プラグインで使えるようインポートします。"
+
+#: addons/addons.php:12
+msgid "NextGen Gallery Import to Photo Gallery"
+msgstr "NextGen Gallery から Photo Gallery へのインポート"
+
+#: addons/addons.php:7
+msgid "Photo Gallery Facebook is an add-on, which helps to display Facebook photos and videos within Photo Gallery plugin. You can create Facebook-only galleries, embed individual images and videos or include Facebook albums within mixed type albums."
+msgstr "Photo Gallery Facebook は、Facebook の写真や動画を Photo Gallery プラグインないで表示できるようにするアドオンです。Facebook のみのギャラリーを作成したり、個別画像や動画を埋め込んだり、Facebook アルバムを混合型アルバムに含めたりできます。"
+
+#: addons/addons.php:5
+msgid "Photo Gallery Facebook"
+msgstr "Photo Gallery Facebook"
+
+#. Author URI of the plugin/theme
+msgid "https://web-dorado.com/"
+msgstr "https://web-dorado.com/"
+
+#. Author of the plugin/theme
+msgid "WebDorado"
+msgstr "WebDorado"
+
+#. Description of the plugin/theme
+msgid "This plugin is a fully responsive gallery plugin with advanced functionality.  It allows having different image galleries for your posts and pages. You can create unlimited number of galleries, combine them into albums, and provide descriptions and tags."
+msgstr "高度な機能を持つ完全レスポンシブデザインのギャラリープラグインです。投稿やページに複数の画像ギャラリーを含めれるようになります。数の上限なしでギャラリーを作成し、まとめてアルバムにしたり、説明やタグを追加できます。"
+
+#. Plugin URI of the plugin/theme
+msgid "https://web-dorado.com/products/wordpress-photo-gallery-plugin.html"
+msgstr "https://web-dorado.com/products/wordpress-photo-gallery-plugin.html"
+
+#. Plugin Name of the plugin/theme
+msgid "Photo Gallery"
+msgstr "Photo Gallery"
+
+#: photo-gallery.php:2564
+msgid "This is not a valid email address."
+msgstr "これは有効なメールアドレスではありません。"
+
+#: photo-gallery.php:2563
+msgid "field is required."
+msgstr "フィールドは必須です。"
+
+#: photo-gallery-notices.php:192
+msgid "Maybe Later"
+msgstr "たぶん後で"
+
+#: photo-gallery-notices.php:191
+msgid "I've already left a review"
+msgstr "すでにレビューを残しました"
+
+#: photo-gallery-notices.php:190
+msgid "Sure! I'd love to!"
+msgstr "はい、もちろんです。"
+
+#: photo-gallery-notices.php:189
+msgid "We hope you've enjoyed using WordPress %s! Would you consider leaving us a review on WordPress.org?"
+msgstr "WordPress %s のご利用ありがとうございます。WordPress.org でレビューを書いていただけませんか ?"
+
+#: photo-gallery-notices.php:188
+msgid "Leave A Review?"
+msgstr "レビューを残しますか ?"
+
+#: photo-gallery-notices.php:193 photo-gallery-notices.php:203
+msgid "Never show again"
+msgstr "再度表示しない"
+
+#: photo-gallery-notices.php:202
+msgid "Get Some Help"
+msgstr "ヘルプの入手"
+
+#: photo-gallery-notices.php:201
+msgid "Check out User Guide"
+msgstr "ユーザーガイドをチェックしましょう"
+
+#: photo-gallery-notices.php:200
+msgid "Thank you for using WordPress %s! We hope that you've found everything you need, but if you have any questions:"
+msgstr "WordPress %s のご利用ありがとうございます。お探しのものがすべて見つかったなら幸いですが、もしご質問がある場合は以下をご覧ください。"
+
+#: photo-gallery-notices.php:199
+msgid "Hey! How's It Going?"
+msgstr "こんにちは。"
+
+#: frontend/views/BWGViewImage_browser.php:77
+#: frontend/views/BWGViewSlideshow.php:124
+#: frontend/views/BWGViewThumbnails.php:161
+msgid "There is no gallery selected or the gallery was deleted."
+msgstr "選択されたギャラリーは存在しないまたは削除されました。"
+
+#: frontend/views/BWGViewGalleryBox.php:2189
+#: frontend/views/BWGViewGalleryBox.php:2204
+#: frontend/views/BWGViewSlideshow.php:1433
+#: frontend/views/BWGViewSlideshow.php:1451
+msgid "Pause"
+msgstr "一時停止します"
+
+#: frontend/views/BWGViewGalleryBox.php:2175
+msgid "Exit Fullscreen"
+msgstr "フルスクリーンを終了します"
+
+#: frontend/views/BWGViewGalleryBox.php:2064
+#: frontend/views/BWGViewGalleryBox.php:2264
+msgid "Restore"
+msgstr "復元します"
+
+#: frontend/views/BWGViewGalleryBox.php:1909
+msgid "Hide info"
+msgstr "情報を隠す"
+
+#: frontend/views/BWGViewGalleryBox.php:1765
+msgid "Hide Comments"
+msgstr "コメントを非表示にします"
+
+#: frontend/views/BWGViewGalleryBox.php:1722
+msgid "Show Comments"
+msgstr "コメントを表示"
+
+#: frontend/views/BWGViewGalleryBox.php:871
+msgid "Download original image"
+msgstr "元の画像をダウンロードしてください"
+
+#: frontend/views/BWGViewGalleryBox.php:850
+msgid "Open image in original size."
+msgstr "画像を元のサイズで開く"
+
+#: frontend/views/BWGViewGalleryBox.php:844
+#: frontend/views/BWGViewGalleryBox.php:1913
+msgid "Show info"
+msgstr "情報を表示します"
+
+#: frontend/views/BWGViewGalleryBox.php:842
+#: frontend/views/BWGViewGalleryBox.php:1576
+#: frontend/views/BWGViewGalleryBox.php:2125
+msgid "Fullscreen"
+msgstr "フルスクリーン"
+
+#: frontend/views/BWGViewGalleryBox.php:838
+#: frontend/views/BWGViewGalleryBox.php:1574
+#: frontend/views/BWGViewGalleryBox.php:2027
+#: frontend/views/BWGViewGalleryBox.php:2123
+msgid "Maximize"
+msgstr "最大化します"
+
+#: frontend/views/BWGViewGalleryBox.php:814
+msgid "The image has been deleted."
+msgstr "画像は削除されました"
+
+#: frontend/views/BWGViewAlbum_extended_preview.php:807
+msgid "Hide"
+msgstr "非表示にします"
+
+#: frontend/views/BWGViewAlbum_extended_preview.php:689
+#: frontend/views/BWGViewAlbum_extended_preview.php:812
+msgid "More"
+msgstr "もっと"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:798
+#: frontend/views/BWGViewAlbum_extended_preview.php:768
+#: frontend/views/BWGViewGalleryBox.php:834
+#: frontend/views/BWGViewGalleryBox.php:2195
+#: frontend/views/BWGViewSlideshow.php:1442
+#: frontend/views/BWGViewThumbnails.php:448
+msgid "Play"
+msgstr "再生"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:742
+#: frontend/views/BWGViewAlbum_extended_preview.php:724
+msgid "Gallery is empty."
+msgstr "ギャラリーは空です"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:737
+#: frontend/views/BWGViewAlbum_extended_preview.php:719 photo-gallery.php:2565
+msgid "There are no images matching your search."
+msgstr "検索に一致する画像がありません。"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:619
+#: frontend/views/BWGViewAlbum_extended_preview.php:588
+msgid "Album is empty."
+msgstr "アルバムは空です"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:596
+#: frontend/views/BWGViewAlbum_extended_preview.php:577
+msgid "Back"
+msgstr " バック"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:177
+#: frontend/views/BWGViewAlbum_extended_preview.php:122
+#: frontend/views/BWGViewImage_browser.php:83
+#: frontend/views/BWGViewSlideshow.php:129
+#: frontend/views/BWGViewThumbnails.php:169
+msgid "There are no images in this gallery."
+msgstr "このギャラリーには画像がありません"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:155
+#: frontend/views/BWGViewAlbum_compact_preview.php:189
+#: frontend/views/BWGViewAlbum_extended_preview.php:100
+#: frontend/views/BWGViewAlbum_extended_preview.php:134
+msgid "There is no album selected or the album was deleted."
+msgstr "選択されたアルバムは存在しないまたは削除されました。"
+
+#: frontend/views/BWGViewAlbum_compact_preview.php:148
+#: frontend/views/BWGViewAlbum_extended_preview.php:93
+#: frontend/views/BWGViewImage_browser.php:72
+#: frontend/views/BWGViewSlideshow.php:46
+#: frontend/views/BWGViewSlideshow.php:86
+#: frontend/views/BWGViewThumbnails.php:150
+msgid "There is no theme selected or the theme was deleted."
+msgstr "選択されたテーマは存在しないまたは削除されました。"
+
+#: framework/WDWLibrary.php:772
+msgid "Random"
+msgstr "ランダム"
+
+#: framework/WDWLibrary.php:771
+msgid "Size"
+msgstr "サイズ"
+
+#: framework/WDWLibrary.php:770
+msgid "Filename"
+msgstr "ファイル名"
+
+#: framework/WDWLibrary.php:769
+msgid "Default"
+msgstr "デフォルト"
+
+#: framework/WDWLibrary.php:767
+msgid "Order by: "
+msgstr "命令により"
+
+#: framework/WDWLibrary.php:725
+msgid "Search"
+msgstr "検索"
+
+#: framework/WDWLibrary.php:722
+msgid "Reset"
+msgstr "リセットします"
+
+#: framework/WDWLibrary.php:562
+msgid "Load More..."
+msgstr "さらに読み込む…"
+
+#: framework/WDWLibrary.php:550
+msgid "Go to the last page"
+msgstr "最後のページに移動します"
+
+#: framework/WDWLibrary.php:549
+msgid "Go to the next page"
+msgstr "次のページに移動します"
+
+#: framework/WDWLibrary.php:545
+msgid "of"
+msgstr "の"
+
+#: framework/WDWLibrary.php:543
+msgid "Go to the previous page"
+msgstr "前のページに移動します"
+
+#: framework/WDWLibrary.php:542
+msgid "Go to the first page"
+msgstr "最初のページに移動します"
+
+#: framework/WDWLibrary.php:524
+msgid "Last"
+msgstr "最後"
+
+#: framework/WDWLibrary.php:523
+msgid "Next"
+msgstr " 次へ"
+
+#: framework/WDWLibrary.php:522
+msgid "Previous"
+msgstr "前"
+
+#: framework/WDWLibrary.php:521
+msgid "First"
+msgstr "最初"
+
+#: framework/WDWLibrary.php:516
+msgid " item(s)"
+msgstr "アイテム"

@@ -1,0 +1,55 @@
+.srr_settings h4{
+    border-bottom: 1px solid #DFDFDF;
+    margin: 15px 0;
+    padding: 0 0 10px 0;
+}
+.srr_settings label{
+    font-size: 12px;
+}
+.srr_settings td {
+    padding: 5px 0;
+}
+.srr_smalltext{
+    font-size: 11px;
+    color: #666666;
+}
+.srr_coffee {
+    border: 1px solid #4CAF50;
+    border-radius: 3px;
+    padding: 10px 200px 10px 60px;
+    background: url(../images/coffee.svg) 12px 10px no-repeat;
+    background-size: 7%;
+    position: relative;
+    margin: 20px 0px;
+}
+.srr_coffee p{
+    margin: 0;
+    font-size: 11px;
+}
+.srr_coffee_wrap{
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    width: 200px;
+}
+.srr_coffee_wrap p{
+    display: inline-block;
+}
+.srr_coffee_btn{
+    height: 24px !important;
+    font-size: 12px !important;
+    vertical-align: middle !important;
+}
+.srr_note{
+    border: 1px solid #FFD893;
+    padding: 10px;
+    background: #FFFEDA;
+    margin: 10px 0 0;
+    display: block;
+    border-radius: 3px;
+}
+#available-widgets [id*="super_rss_reader"] .widget-title h3 {
+    background-image: url(../images/super-rss-reader-sm.png);
+    background-position: 94%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,24 @@
+/* CSS Document */
+.bpc_list{
+	list-style:none;
+}
+.bpc_list li{
+	float:left;
+	margin:0 10px 10px 0;
+	list-style:none;
+	
+}
+.bpc_list li:hover,
+.bpc_list li.bpc_activated{
+	box-shadow: 10px 10px 5px #888888;
+}
+.bpc_list li a{
+	text-align:center;
+	cursor:pointer;
+}
+.bpc_list li a img{
+	height:270px;
+}
+.bpc_list li a h4{
+	
+}

@@ -1,0 +1,36 @@
+# Translation of Plugins - Easy Media Download - Development (trunk) in Russian
+# This file is distributed under the same license as the Plugins - Easy Media Download - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-05-05 09:18:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Easy Media Download - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://noorsplugin.com/"
+msgstr "http://noorsplugin.com/"
+
+#. Author of the plugin/theme
+msgid "naa986"
+msgstr "naa986"
+
+#. Description of the plugin/theme
+msgid "Easily embed download buttons for your digital media files"
+msgstr "С легкостью встраивайте кпопки загрузки для ваших файлов мультимедиа"
+
+#. Plugin URI of the plugin/theme
+msgid "http://noorsplugin.com/easy-media-download-plugin-for-wordpress/"
+msgstr "http://noorsplugin.com/easy-media-download-plugin-for-wordpress/"
+
+#. Plugin Name of the plugin/theme
+msgid "Easy Media Download"
+msgstr "Easy Media Download"
+
+#: main.php:234
+msgid "Please specify the PayPal email address which will receive the payments"
+msgstr "Пожалуйста укажите адрес эл.почты PayPal для получения платежей"
