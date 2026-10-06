@@ -4,26 +4,43 @@
   <section class="page-hero compact-hero">
     <div>
       <p class="eyebrow">Parish updates</p>
-      <h1>Weekly bulletins.</h1>
+      <h1>Weekly bulletins</h1>
       <p>Mass information, parish notices, events and community news from St Monica’s.</p>
     </div>
   </section>
 
   <section class="section bulletin-library">
-    <div class="split-heading">
+    <div class="split-heading bulletin-heading">
       <div><p class="eyebrow">Archive</p><h2>Parish bulletins</h2></div>
-      <p><%= bulletins.length %> bulletin PDF<%= bulletins.length === 1 ? '' : 's' %> found in the imported parish archive.</p>
+      <p>Browse the archive by year. Each bulletin opens as the original PDF.</p>
     </div>
 
-    <% if(bulletins.length){ %>
-      <div class="bulletin-list">
-        <% bulletins.forEach((item,index) => { %>
-          <a href="<%= item.url %>" target="_blank" rel="noopener">
-            <span class="bulletin-number"><%= String(index + 1).padStart(2,'0') %></span>
-            <span class="pdf-mark">PDF</span>
-            <strong><%= item.title %></strong>
-            <span class="bulletin-open">Open ↗</span>
-          </a>
+    <% if(bulletinGroups.length){ %>
+      <nav class="bulletin-years" aria-label="Bulletin archive years">
+        <% bulletinGroups.forEach(group => { %>
+          <a href="#bulletins-<%= group.year %>"><%= group.year %><span><%= group.items.length %></span></a>
+        <% }) %>
+      </nav>
+
+      <div class="bulletin-archive">
+        <% bulletinGroups.forEach(group => { %>
+          <section class="bulletin-year" id="bulletins-<%= group.year %>">
+            <header class="bulletin-year-heading">
+              <span><%= group.year %></span>
+              <p><%= group.items.length %> bulletin<%= group.items.length === 1 ? '' : 's' %></p>
+            </header>
+
+            <div class="bulletin-list">
+              <% group.items.forEach(item => { %>
+                <a href="<%= item.url %>" target="_blank" rel="noopener">
+                  <span class="bulletin-month"><%= item.monthLabel || 'PDF' %></span>
+                  <span class="pdf-mark">PDF</span>
+                  <strong><%= item.title %></strong>
+                  <span class="bulletin-open">Open <span aria-hidden="true">↗</span></span>
+                </a>
+              <% }) %>
+            </div>
+          </section>
         <% }) %>
       </div>
     <% } else { %>
