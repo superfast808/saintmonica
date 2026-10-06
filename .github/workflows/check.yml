@@ -27,3 +27,6 @@ jobs:
 
       - name: Validate server, browser JavaScript and EJS templates
         run: npm run check
+
+      - name: Build production Docker image
+        run: docker build -t saintmonica-check .
