@@ -418,3 +418,84 @@
   }
   .bulletin-year .pdf-mark{display:none}
 }
+
+
+/* Approved parish hall photography */
+.hall-hero .page-hero-art img{object-position:center}
+.hall-showcase{background:var(--cream);padding-bottom:76px}
+.hall-showcase-heading{
+  padding-bottom:34px;
+  display:grid;
+  grid-template-columns:1fr .72fr;
+  gap:60px;
+  align-items:end;
+}
+.hall-showcase-heading h2{
+  margin:0;
+  max-width:760px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2.25rem,3.8vw,3.7rem);
+  line-height:1.03;
+  letter-spacing:-.035em;
+  color:var(--wine-dark);
+  font-weight:500;
+}
+.hall-showcase-heading>p{
+  margin:0;
+  max-width:500px;
+  color:var(--muted);
+  font-size:1rem;
+}
+.hall-photo-grid{
+  width:min(var(--max),calc(100% - 48px));
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.3fr .7fr 1fr;
+  grid-template-rows:270px 270px;
+  gap:12px;
+}
+.hall-photo{
+  margin:0;
+  overflow:hidden;
+  border-radius:14px;
+  background:#d7cdc7;
+  box-shadow:0 12px 34px rgba(52,32,39,.08);
+}
+.hall-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .35s ease;
+}
+.hall-photo:hover img{transform:scale(1.025)}
+.hall-photo-1{grid-row:1/3}
+.hall-photo-2{grid-column:2/4}
+.hall-photo-3{grid-column:2}
+.hall-photo-4{grid-column:3}
+.hall-photo-5{display:none}
+
+@media(max-width:900px){
+  .hall-showcase-heading{grid-template-columns:1fr;gap:16px}
+  .hall-photo-grid{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:300px 220px 220px;
+  }
+  .hall-photo-1{grid-column:1/3;grid-row:1}
+  .hall-photo-2{grid-column:1;grid-row:2}
+  .hall-photo-3{grid-column:2;grid-row:2}
+  .hall-photo-4{grid-column:1;grid-row:3}
+  .hall-photo-5{display:block;grid-column:2;grid-row:3}
+}
+@media(max-width:600px){
+  .hall-showcase{padding-bottom:56px}
+  .hall-photo-grid{
+    width:calc(100% - 32px);
+    grid-template-columns:1fr;
+    grid-template-rows:240px 260px 220px 220px 260px;
+  }
+  .hall-photo-1,.hall-photo-2,.hall-photo-3,.hall-photo-4,.hall-photo-5{
+    display:block;
+    grid-column:1;
+    grid-row:auto;
+  }
+}
