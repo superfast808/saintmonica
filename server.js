@@ -406,7 +406,7 @@ app.post('/admin/news', requireAdmin, requireCsrf, (req, res) => {
     slug = slugify(title) + '-' + suffix++;
   }
   db.prepare('INSERT INTO posts(title,slug,excerpt,body_html,published) VALUES(?,?,?,?,?)')
-    .run(title, slug, excerpt, body, req.body.published === '0' ? 0 : 1);
+    .run(title, slug, excerpt, body, req.body.published === '1' ? 1 : 0);
   res.redirect('/admin#news');
 });
 
