@@ -5,12 +5,14 @@
     <% if(media.hero){ %><img class="hero-image" src="<%= media.hero %>" alt="" fetchpriority="high"><% } %>
     <div class="hero-shade"></div>
     <div class="hero-copy">
-      <p class="eyebrow">St Monica’s Catholic Church · Coatbridge</p>
-      <h1><%= settings.hero_title %></h1>
-      <p><%= settings.hero_text %></p>
-      <div class="hero-actions">
-        <a class="button button-gold" href="/mass-times">Mass times</a>
-        <a class="text-link text-link-light" href="/contact">Get in touch <span>→</span></a>
+      <div class="hero-copy-inner">
+        <p class="eyebrow">St Monica’s Catholic Church · Coatbridge</p>
+        <h1><%= settings.hero_title %></h1>
+        <p class="hero-intro"><%= settings.hero_text %></p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="/mass-times">Mass times</a>
+          <a class="text-link text-link-light" href="/contact">Get in touch <span>→</span></a>
+        </div>
       </div>
     </div>
     <div class="hero-service-card">
